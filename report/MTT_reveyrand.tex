@@ -168,446 +168,64 @@ This part of the data shows, when certain apartments are available and when they
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{pdf/01.pdf}\\
-  \caption{occupied ratio of appartments}\label{soccupied_ratio_of_appartments}
+  \caption{occupied ratio of appartments}\label{occupied_ratio_of_appartments}
   \end{center}
 \end{figure}
 
-Therefore, the ideal half-wave rectifier converts all available RF power to DC power if the the DC loading resistance set to the value given in (\ref{DC_resistance}). The RF-DC conversion efficiency as a function of $R_{DC} / R_s(f_0)$ was simulated in Microwave Office$\textsuperscript{\textregistered}$ for varying rectifier on-resistance and is shown in Fig.~\ref{sim_opt_eff_classFinv}. The harmonic balance settings were identical to those used for the class-C rectifier above. The peak efficiency as a function of on-resistance is higher than for the class-C rectifier, although the efficiency degrades more quickly when the non-ideal DC load is applied.
+While in January only half of the apartments have been occupied, the number of rented apartments raised until April when a sudden drop in rented apartments appeared. The same procedure repeats in July. After that second drop the number of occupied accommodations raises again. Nevertheless, it has to be mentioned that the percentage of free apartments never exceeds 40\% after February anymore but also never drops below 20\%. At this point the question, whether there is a correlation between the degree of booking and a ‘perfect’ description exists and therefore the percentage of free apartments can be decreased by mentioning the right aspects in the description. 
 
-%For zero on-resistance, the optimal DC load is exactly that predicted by (\ref{DC_resistance}).
-%The reason for the increase in optimal DC load as the on-resistance increases is that the current
-%through the on-resistance is reduced, thus reducing the loss.  However, there is a penalty paid in
-%reflected power from the rectifying element due to the non-ideal match.  This limits the benefit of
-%increasing the DC load infinitely with a fixed fundamental frequency match.  Theoretically, if the
-%fundamental and DC loads could be increased infinitely the efficiency would approach 100\,\% no matter
-%how large the on-resistance became.
-%
-% SHOULD WE MAYBE MOVE THIS TO DISCUSSION OR POSSIBLY DELETE?
-
-% ==== FIG 4
-\begin{figure}[!b]
-  \begin{center}
-  \includegraphics[width=3.5in]{pdf/04.pdf}
-  %  \vspace{-15pt}
-  \caption{Simulated efficiency of class-F$^{-1}$ rectifier versus $R_{DC} / R_s(f_0)$ for varying rectifier on-resistance.}\label{sim_opt_eff_classFinv}
-  \end{center}
-\end{figure}
-
-The waveforms including parasitic on-resistance and threshold voltage are next investigated assuming the rectifier impedance from (\ref{nonideal_rectifier_resistance}). The time domain voltage and current waveforms are approximated as
-\begin{equation}\label{diode_voltage_waveform_finv_par}
-v(\theta) =
-\begin{cases}
-    V_{max}\sin\theta, & v(\theta) > -V_{tr}\\
-    -V_{tr} - I_{max}R_{on}, & v(\theta) \leq -V_{tr}
-\end{cases}
-\end{equation}
-\begin{equation}\label{diode_current_waveform_finv_par}
-i(\theta) =
-\begin{cases}
-    0, & V(\theta) > -V_{tr}\\
-    I_{max}, & v(\theta) \leq -V_{tr}
-\end{cases}
-\end{equation}
-
-
-
-% === FIG 5
-\begin{figure}[!b]
-  \begin{center}
-  \includegraphics[width=3.0in]{pdf/05.pdf}
-     % \vspace{-5pt}
-  \caption{\hl{Non-ideal class-F$^{-1}$ voltage (solid) and current (dashed) waveforms, normalized to their peak respective values.}}\label{finv_waveform_nonideal}
-  \end{center}
-\end{figure}
-
-As an example, Fig.~\ref{finv_waveform_nonideal} shows the current and voltage waveforms for a specific set of non-ideal parameters ($V_{tr} = 0.7\,\textrm{V}$, $V_{max} = 20\,\textrm{V}$, $I_{max} = 200\,\textrm{mA}$, and $R_{on} = 5\,\Omega$). When the device is conducting current, it creates a voltage drop across the on-resistance which is constant due to the constant current. If the on-resistance were zero, the only difference between the waveform in (\ref{diode_voltage_waveform_finv_par}) and the ideal voltage waveform would be the minimum value, which would be $-V_{tr}$ rather than zero. The values of $\theta$ at which the transition between the conducting and non-conducting regions occurs are found to be
-\begin{equation}\label{trans_points_thetafinv2}
-\begin{array}{l}
-    \theta_{t1} = 2\pi - \arcsin\left(\frac{V_{tr}}{V_{max}}\right) \\
-    \theta_{t2} = \pi + \arcsin\left(\frac{V_{tr}}{V_{max}}\right)
-\end{array}
-\end{equation}
-
-The DC and fundamental frequency values of the voltage and current waveforms can be found through a Fourier analysis using the transition points in (\ref{trans_points_thetafinv2}). The first Fourier coefficient of $v(t)$ gives the DC component of the voltage, which can be derived as
-\begin{equation}\label{finv_dc_comp_5}\begin{split}
-    V_{DC} &= \frac{1}{2\pi}\left(2V_{max}\sqrt{1 - \left(\frac{V_{tr}}{V_{max}}\right)^2} \right. \\
-    &-(V_{tr} + I_{max}R_{on})\left[\pi - 2\arcsin\left(\frac{V_{tr}}{V_{max}}\right)\right]\Bigg)
-\end{split}\end{equation}
-
-The fundamental frequency voltage is found from $V(f_0)=a_v+jb_v$, where
-\begin{shaded}
-\begin{equation}
-a_v=\frac{1}{\pi}\int_0^{2\pi}v(\theta)\cos \theta d\theta = 0
-\end{equation}
-\end{shaded}
-and $b_v$ can be reduced to
-
-
-\begin{equation}\label{finv_vf0_comp_5}\begin{split}
-    b_v =& \frac{1}{\pi}\Bigg(V_{max}\arcsin\left(\frac{V_{tr}}{V_{max}}\right)+ \frac{\pi V_{max}}{2}  \\
-    &+ \left.\left(V_{tr} + 2I_{max}R_{on}\right) \sqrt{1 - \left(\frac{V_{tr}}{V_{max}}\right)^2}\right)
-\end{split}\end{equation}
-
-Similarly, the DC component of the current waveform is found to be
-
-\begin{equation}\label{finv_idc_comp_3}
-    I_{DC} = \frac{I_{max}}{2\pi}\left(\pi - 2\arcsin\left(\frac{V_{tr}}{V_{max}}\right)\right)
-\end{equation}
-The fundamental frequency current $i(t)=a_i+jb_i$ has $a_i=0$ and the coefficient $b_i$ can be shown to be equal to
-
-\begin{equation}\label{finv_if0_comp_2}
-    b_i = -\frac{2I_{max}}{\pi}\sqrt{1 - \left(\frac{V_{tr}}{V_{max}}\right)^2}
-\end{equation}
-The input power \hl{at the fundamental frequency} is found from 
-
-
-\begin{equation}\label{Pin}
-  P_{in} = \Re\left\{\frac{V(f_0)I^{*}(f_0)}{2}\right\}
-\end{equation}
-
-
-\hl{Substituting (}\ref{finv_vf0_comp_5}) and (\ref{finv_if0_comp_2}) into the above results in
-
-\begin{shaded}
-\begin{equation}\begin{split}\label{Pin_diode2}
-    P_{in} =& \frac{kI_{max}}{\pi^2}\left(V_{max}\arcsin\left(\frac{V_{tr}}{V_{max}}\right) + \frac{\pi V_{max}}{2} \right. \\
-   &+ \left(V_{tr}+2I_{max}R_{on}\right)k\bigg)
-\end{split}\end{equation}
-\end{shaded}
-where $k$ is defined as
-\begin{equation}\label{k}
-    k = \sqrt{1 - \left(\frac{V_{tr}}{V_{max}}\right)^2}
-\end{equation}
-
-Solving for $I_{max}$ as a function of $P_{in}$ when $R_{on}$ is non-zero after some arithmetic results in two solutions, one of which is negative. The positive solution for the maximal current is
-
-\begin{equation}\label{Imax_solved1}
-    I_{max} = \frac{ \sqrt{\alpha^2 + 8\pi^2P_{in}R_{on}}-\alpha}{4R_{on}k}
-\end{equation}
-with $\alpha=V_{max}\left(\arcsin\left(\frac{V_{tr}}{V_{max}}\right)+ \frac{\pi}{2} + k\frac{V_{tr}}{V_{max}}\right)$.
-
-In the case where $R_{on}$ is zero, (\ref{Imax_solved1}) simplifies to
-\begin{equation}\label{Imax_solve_zeroron_solved}
-    I_{max} = P_{in}\frac{\pi^2}{kV_{max}\left(\arcsin\left(\frac{V_{tr}}{V_{max}}\right)+ \frac{\pi}{2} + k\frac{V_{tr}}{V_{max}}\right)}
-\end{equation}
-
-Note that in the case of an ideal rectifying element, $k = 1$ and $V_{tr} = 0$, therefore
-\begin{equation}\label{Imax_solve_zeroron_solved_ideal}
-    I_{max,ideal} = \frac{2\pi P_{in}}{V_{max}}
-\end{equation}
-
-Now that $I_{max}$ is fully expressed given known rectifier parameters, $V_{DC}$ and $I_{DC}$, $V(f_0)$ and $I(f_0)$ may be calculated, and from this, the DC load and the load at fundamental frequency determined from the following expressions:
-
-\begin{equation}\label{rdcf}
-    R_{DC} = \frac{V_{DC}}{I_{DC}}
-\end{equation}
-
-\begin{equation}\label{rf0f}
-    R(f_0) = -\frac{V(f_0)}{I(f_0)} = -\frac{b_v}{b_i}
-\end{equation}
-The negative impedance in (\ref{rf0f}) indicates that power is delivered to the rectifying element and gives the impedance of the source delivering power to the rectifying element.  The rectifier efficiency is given by
-\begin{equation}\label{efff}
-    \eta = \frac{P_{DC}}{P_{in}} = \frac{V_{DC}I_{DC}}{P_{in}}
-\end{equation}
-
-\subsection {Design example based on class-F$^{-1}$ theory}
-
-To understand the usefulness of the presented theory, assume the rectifying element has the following parameters: $V_{max} = 10$\,V, $R_{on} = 5$\,$\Omega$, $V_{tr} = 0.7$\,V and $P(f_0)$ = 1\,W.  First, (\ref{Imax_solved1}) is used to calculate $I_{max}=456.7$\,mA. Next, the DC voltage and current are evaluated using (\ref{finv_dc_comp_5}) and (\ref{finv_idc_comp_3}), respectively, to give $V_{DC}=1.75$\,V and $I_{DC}=218.2$\,mA. The fundamental frequency voltage and current Fourier coefficients are then calculated to be $V(f_0)=6.896$\,V and $I(f_0)=-290$\,mA, respectively.  The DC and fundamental frequency resistances are then calculated using (\ref{rdcf}) and (\ref{rf0f}) to be $R_{DC}=8.02$\,$\Omega$ and $R(f_0)=23.77$\,$\Omega$, respectively.  The efficiency is then calculated using (\ref{efff}) to be $\eta$ = 38.18\,\%. If the input power is selected as 0.1\,W rather than 1\,W, the resultant efficiency is 72.43\,\% instead.  A specific rectification device will always have an approximate input drive level at which it can be most efficient, just as with power transistors in power amplifiers. To maximize efficiency, the goal is always to minimize the amount of power dissipation in the on-resistance of the rectifying element and maximize the power dissipated in the DC load resistor.
-
-
-
-
-
-
-
-
-
-% === III. Schottky-Diode Class-C Rectifier =======================================
-% =================================================================================
-\section{Schottky-Diode Class-C Rectifier}
-
-The Skyworks SMS7630 Schottky diode in the SC-79 package was selected for the half-wave rectifier. Source-pull was performed at 2.45\,GHz with 0-10\,dBm available input power for various DC loads in order to identify the combination of input power, fundamental load and DC load resulting in highest efficiency.  The best case occurred at 6\,dBm input power, with the source-pull contours being shown in Fig.~\ref{lpcontours}.  The on-resistance of the SMS7630 is 20\,$\Omega$ with the optimal DC load of 1080\,$\Omega$. Therefore $R_{on}$ is approximately 2\% of $R_{DC}$\hl{,} which in theory is 4\% of $R_s(f_0)$.  From Fig.~\ref{sim_opt_eff}, a peak efficiency of 87\% occurs with infinite harmonic terminations, therefore the achieved 77.6\% is very reasonable considering only the 2$^{\rm nd}$ and 3$^{\rm rd}$ harmonics were explicitly terminated.
-
-
-
+\section{Models and analysis}
+\subsection{Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?}
+In order to know what words the lessors are supposed to use in the description, we take a look at the reviews with a wordcloud. The bigger the words in the wordcloud, the more often the word was used. For example, if the customers often write the word walk in the reviews due to informing what was in walking distance of the Airbnb, the work walk will be big in the wordcloud. 
+To answer this question the six most reviewed cities Capitol Hill, Ballard, Queen Anne, Belltown, Minor, Wallingford were analyzed. First, you can see that all cities have the words walk, park and restaurant written in big. The word “downtown” is also used often. For minor, the word “lake” is very important. The rest of the words indicate that words like minute, shop, market are used often by customers. Interestingly, the word “Washington” is important for the cities Minor and Capitol Hill.
+\subsection{Which factors did influence the degree of booking of former rented apartments? }
+In order to answer this question, the Extra Tree Classifier was used. With the help of the Extra Tree Classifier one can see the feature importance. According to the feature importance the number of reviews influences the degree of booking of former rented apartments the most. Customers also care about how long the host has been on the platform and extra people. Almost equally as important are the number of reviews per month. This underlines how important the reviews are. The amount of host listings, the response rate and what is included for the guests influences the results of ones booking almost on the same level. The host should also care about the response rate and the number of beds as the next important thing on the list. Less important are the cancellation policy, bedrooms, bathrooms and if the host is verified on Airbnb. The Room type, host acceptance rate, phone verification and if the host has a profile picture are the least important factors influencing the degree of booking the apartments.
+\subsection{5.3	Which price can be charged for an apartment with certain characteristics?}
+First of all, we created a Linear Regression model in order to predict the price influenced by all other attributes. For this prediction we achieved a Mean Absolute Error of 44.28, which is, taking into account that the minimum rent is 10 dollar and maximum rent per night 1,650\$, very low. Therefore, we can assume that the listed attributes have a significant impact on the price of an accommodation and it is possible to estimate the rental price by these attributes and therefore it makes sense to use a classification tree, which takes these attributes into account.
+Figure Linear regression
+In the following, we use the Extra Tree Classifier in order to find out, which attributes have a strong correlation with the price and therefore influence the price of an apartment the most. A classification tree uses the values of attributes to create groups, in which all the apartments have the same (or at least similar) values for the attributes. According to our analysis, the attributes with the highest influence on the price have a correlation coefficient in a range of 0.01 and 0.2. The highest influence on the price is the number of reviews an apartment has. This attribute has a correlation of approximately 20\%, which is almost twice as much as the second important attribute has by showing 0.112 as correlation coefficient. This attribute indicates how long the lessor is already registered as host on Airbnb. As third important factor, with a correlation coefficient of a little bit less than 0.1 the number of extra people influences the price. Other attributes which influence the price are for example the number of listings a host has/ had, number of beds, number of bath- and bedrooms. The least significant attribute in our visualization is, whether the guest needs a profile picture (with a coefficient of about 0.01). (Figure \ref{correlation-attribute-price})
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.0in]{pdf/06.pdf}\\
- \caption{\hl{Source-pull contours with available input power to the diode set to 6\,dBm.  The impedance is referenced to the junction capacitance of the diode, therefore the lead inductance of the package has been compensated for. Setting $R_{DC}$ to 1080\,$\Omega$ was found to result in the optimal efficiency for this input power. The highest efficiency of 77.6\% is obtained at $Z_{p6}=(68+j245)\Omega$ with $V_{DC}$=1.82\,V.}}\label{lpcontours}
+  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \caption{correlation attribute-price}\label{correlation-attribute-price}
   \end{center}
 \end{figure}
- 
-%  \caption{Source-pull contours with available input power to the diode set to 6\,dBm.  The impedance is referenced to the junction capacitance of the diode, therefore the lead inductance of the package has been compensated for. Setting $R_{DC}$ to 1080\,$\Omega$ was found to result in the optimal efficiency for this input power.}\label{lpcontours}
-
-
+In order to check that all the attributes only determine the price and do not have an influence on the price via another attribute, we also compute a heatmap to see the correlation of attributes among each other. This visualizes that host-response-time, host-response-rate and host-acceptance-rate correlate with each other and also the number of bedrooms, bathrooms and beds. So, these attributes groups influence each other and their impact on the price should be considered in a group. Furthermore, we can mention that the number of bathrooms, bedrooms and beds influence each other. So, a lessor should also take into account that if an apartment has for example a high number of bedrooms then also the number of bathrooms is high. According to this a lessor can also get some indication for the price he can charge. If his apartment has many bedrooms but only one bathroom, he can assume that other accommodations with the same number of bedrooms has more bathroom and therefore can also charge a higher price. So, this correlation is interesting for the lessors to get some price indication. (Figure \ref{heatmap })
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.5in]{pdf/07.pdf}\\
- \caption{\hl{RF-DC conversion efficiency versus DC load for fixed available input powers with 0.6\,dB matching network loss de-embedded.  The maximum efficiency of 72.8\% occurred at 8\,dBm with $R_{DC}$ = 742\,$\Omega$ and $V_{DC}$=1.91\,V, which is lower than the 1080\,$\Omega$ found during source-pull.  However, the efficiency at 1080\,$\Omega$ is 69.9\% which is very close to the peak value.}}\label{final_dc_sweep}
+  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \caption{correlation attribute-price}\label{heatmap }
   \end{center}
 \end{figure}
- 
-%  \caption{RF-DC conversion efficiency versus DC load fixed available input powers with 0.6\,dB matching network loss de-embedded.  The maximum efficiency of 72.8\% occurred at 8\,dBm with $R_{DC}$ = 742\,$\Omega$, which is lower than the 1080\,$\Omega$ found during source-pull.  However, the efficiency at 1080\,$\Omega$ is 69.9\% which is very close to the peak value.}\label{final_dc_sweep}
-
-
-Measurements of a rectifier designed using the source-pull data show a maximum RF-DC conversion efficiency of 72.8\% when matched to 50$\Omega$, obtained after the 0.6\,dB matching network loss is de-embedded.  The fabricated rectifier and DC load sweep measurements are shown in Fig.~\ref{final_dc_sweep}. Open circuit shunt stubs are used to present short-circuit terminations at the second and third harmonic.  A shunt capacitor is used for presenting the fundamental frequency impedance to reduce size and allow tunability.  The reduction in efficiency relative to the source-pull measurements is due to the matching circuit not presenting the ideal impedance found during source-pull.
-
-
-
-
-
-The class-C rectifier can be applied to improving the efficiency of a wireless powering reception device as demonstrated in \cite{robergIMS2012} with a dual-linearly polarized patch rectenna, with a rectifier circuit for each polarization. In this circuit, the first 5 harmonics are shorted and the impedances are validated by calibrated measurements and are presented in \cite{robergIMS2012}.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% === IV. Transistor Class-F inv Rectifier ========================================
-% =================================================================================
-\section{Transistor Class-F$^{-1}$ Rectifier}
-
-To prove experimentally the duality between harmonically terminated PAs and rectifiers, a high-efficiency class-F$^{\rm -1}$ PA was designed, measured first as an amplifier, and then as a rectifier. In the rectifier measurements, RF power is input into the drain which is unbiased. The gate is terminated in a variable impedance and biased close to pinch-off. Measurements of efficiency and DC voltage are performed in time domain as a function of input RF power, gate RF load, gate bias and drain DC load. 
-
-\subsection {Circuit design}
-
-A 2.14-GHz power amplifier, pictured on Fig.~\ref{amplifier}, is designed using the Triquint TGF2023-02 GaN pHEMT \cite{gan_pa_letter}. Class F$^{-1}$ harmonic terminations are implemented at the second and third harmonic. The performance of the PA, illustrated in  Fig.~\ref{PA_meas}, was characterized at 2.14\,GHz with a drain voltage bias of 28\,V and a bias current of 160\,mA. The PA exhibits a PAE of 84\% with an output power of 37.6\,dBm and a gain of 15.7\,dB under 3\,dB compression. The same PA design was used for rectifier measurements as shown in Fig.~\ref{measurement_setup}. \hl{The PA is connected to an input RF source at the drain, with the drain supply disconnected. The gate terminal is biased, and connected to an impedance tuner, converting the two-port transistor PA to a one-port rectifier, corresponding to the generalized schematic of Fig.}~\ref{circuit_diagram}.
-
-% === FIG : Amplifier Picture
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=3.0in]{pdf/08.pdf}
-\caption{Photograph of the class-F$^{-1}$ power amplifier, working at 2.14 GHz and presented in \cite{gan_pa_letter}.}
-\label{amplifier}
-\end{figure}
-
-
-% === FIG : PA measurements
+So, if a lessor wants to (re)determine the price for his accommodation, he first of all needs to consider how many reviews he got so far for the apartment. (Note: As we noted before, the reviews all give a high rating, so they are all positive. Taking this into account, it is very likely that the lessor needs to check the number of positive reviews for determining the price.) Furthermore, the lessor needs to consider how long he is already registered as host and how many people can stay in the apartment. If he considers the impact of the number of bedrooms, bathrooms and beds, he should also take into account, the correlation of the three attributes among each other.
+As we already saw in figure \ref{correlation-attribute-price}, the number of beds, bedrooms and bathrooms do not have the highest impact on the price although somebody might expect, that the price is strongly influenced by these factors. By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation})
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.0in]{pdf/09.pdf}
-  \caption{\hl{Large-signal measurements performed on the class-F$^{-1}$ power amplifier at $f_0=2.14$\,GHz, $V_{GS}=-3.8$\,V and $V_{DS}=28$\,V}}
-\label{PA_meas}
+  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \caption{number-of-bedroom-price-correlation}\label{bedroom-price-correlation}
+  \end{center}
+\end{figure}
+The same change can also be seen for the correlation of bathrooms and price but the change of the entry level is not that big. Therefore, the ‘strong’ change in the entry level price becomes already visible for 4 bathrooms. (Figure \ref{bathrooms-price-correlation})
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \caption{number of bathrooms price correlation}\label{bathrooms-price-correlation}
   \end{center}
 \end{figure}
 
+\subsection{5.4	When can lessors increase the price per night for their apartment and when should they lower it?}
+To answer this question, we want to predict the price changes for 2017. First of all, we started by checking out the change of mean flat prices in 2016 (Figure \ref{correlation-attribute-price}). 
+Prices increase from January to July form about 120 to 150 dollar and decrease until November to 135 dollar. During the last month prices slightly start to increase again. It can be seen that the correlation between charged prices and the occupation ratio is rather low, as the first drop of the occupation ratio in April does not reflect in a price drop. Nevertheless, the second decrease in the number of rented apartments does reflect in the charged prices as also the price curve decreases after July. But during the month of December, prices increase as well as the number of free apartments decrease. This irregularity might be due to the fact that many people travel during Christmas time and therefore their willingness to pay is slightly increased. 
+
+\subsection{5.5	What is a good point in time to start a marketing campaign?}
+In order to find the right point in time to start a marketing campaign, we need to know, during which periods the number of visitors decreases. To get some good results, we plotted a graph showing the number of visitors according to the time.
+In Figure 5.2 it can be seen that the number of visitors fluctuates very strong also within a month. This might be caused by changes within a week, as usually on weekends more people consider to travel and therefore more apartments are rented as well as public holidays influence the number of tourists. As exactly reflecting this fluctuation in a model would lead to a very complex model, which is expensive to create and the risk of a model overfit becomes very high, we use Linear Regression to reflect the trend of 2016 and in a second step predict the numbers of visitors for 2017. We can see that the number of visitors decreases between January and March and increases between March and July. After that there is a decrease until December. Nevertheless, the fluctuation is about 200 visitors. Compared to a total number of over 2400 visitors this change is quite small.
+The predicted number of visitors can be seen in Figure 5.3.
+
+For 2017 it is predicted that the number of visitors raises from January to March and decreases until July. For the rest of the Year the number of visitors will raise again. So, the best point in time to start a marketing campaign would be during February till March. As the number of visitors will fall from March to July, the marketing campaign should prevent this. A campaign usually needs some time until its effectiveness can be seen so it should be started earlier than the actual decrease takes place and when the predicted decrease should take place, the effect of the campaign should keep the number of visitors on the level of March or even increase it. The campaign could be stopped in August, as its effect will last a little bit longer and between September and October the number of visitors will be on the level of March again without any campaign.
 
 
-
-
-
-
-
-
-\subsection {Measurement setup}
-% 
-The class-F$^{\rm -1}$ power amplifier described above is fully characterized in large signal in a rectifier configuration with the setup shown in Fig.~\ref{measurement_setup}. The commercial time-domain large signal measurement instrument is a VTD SWAP four-channel receiver \cite{SWAP}. In order to acquire time domain waveforms at the reference plane, an 8 error term model calibration similar to the one performed for LSNA \hl{(Large Signal Network Analyzer)} measurements is applied. After \hl{an absolute VNA-like calibration} \cite{verspecht}, the RF voltage and current waveforms at the input (V1 and I1) and at the output (V2 and I2) of the DUT are measured at the coaxial reference plane. In this case, the RF input is the drain port of the PA, while the RF output is connected to the gate port. Thus, performing a load pull on this device consists of varying the load at $f_0$ at the RF gate port of the PA with a passive tuner. This kind of measurement is similar to large signal characterization of switch devices recently reported in \cite{switch,faraj_arftg_2012}. The gate DC path is connected to a power supply so the gate bias can be varied. The drain DC bias is the output of the rectifier and is connected to a variable resistance $R_{DC}$, and the DC voltage across it is measured with a voltmeter. The DC current is then found from the value of $R_{DC}$ from (\ref{rdcf}). During the measurement, several parameters are varied systematically: the RF load impedance applied at the PA gate port $Z_g(f_0)=V_g(f_0)/I_g(f_0)$; the resistor in the DC drain output $R_{DC}$; and the gate bias voltage $V_{GS}$. The conversion efficiency of the rectifier and the DC power delivered at the drain output of the rectifier $P_{DC}= V_{DC} \cdot I_{DC}$ are measured as these parameters are varied, and as a function of input power at the drain port $P_{in}(f_0)$.
-
-
-
-
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=3.5in]{pdf/10.pdf}
-\caption{Time-domain non-linear rectifier measurement block diagram. The SWAP \cite{SWAP} performs sampling of current and voltage and the calibration refers the sampled quantities to the reference planes at the DUT. The drain output DC resistance $R_{DC}$ , the gate bias $V_{GS}$ and the gate RF impedance $Z_g$ are varied as the input power at the drain is swept from 10 to 42\,dBm.}
-\label{measurement_setup}
-\end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection {Self-synchronous transistor rectifier results}
-
-The measurements of the rectifier are performed in self-synchronous mode, i.e. there is no input RF power incident externally into the gate port of the PA, unlike in previous transistor rectifier work \cite{JoseIMS-rect,Kaz}. The following parameters are varied in order, while keeping the other parameters constant and sweeping the input RF power at the drain port, and the results are described in the same order:
-
-\begin{enumerate}
-\item RF impedance at the gate, $Z_g$;
-\item load resistance at drain bias output, $R_{DC}$;
-\item gate DC bias, $V_{GS}$.
-\end{enumerate}
-
-%\subsubsection{Sweeping \textbf{Tuner} - the RF load impedance at $f_0$ at the output (gate access)}
-The gate load-pull was performed to determine the optimum impedance for maximum efficiency with a constant resistive DC load of 98.5\,$\Omega$ (nominally 100\,$\Omega$) and a constant transistor gate bias in pinch-off of -4.4\,V. The RF signal is coupled from the drain to the gate matching network through the feedback capacitance $C_{gd}$, and thus the precise impedance presented at the gate of the transistor is imperative to achieving high efficiency. Fig.~\ref{time-domain} shows the time-domain voltage and current waveforms measured at the drain and gate RF port of the amplifier when the RF input power at the drain port is swept from 11\,dBm to 42\,dBm. These values are chosen because the rectifier in PA operation gives up to 42\,dBm output power. The feedback signal present at the gate allows for the rectifier to operate in self-synchronous mode without any additional control signal. Unlike in the synchronously driven case where an external generator is connected to the gate, here the impedance presented at the gate is always passive (inside the Smith chart), keeping the device in a safe operating mode.
-
-% === FIG : Time-domain waveforms
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=3.4in]{pdf/11.png}
-\caption{\hl{Time-domain waveforms measured at drain (a) and gate (b) of the rectifier with $V_{GS}=-4.4$\,V, $R_{DC}=98.5$\,$\Omega$ and $Z_g(f_0)=\left(230+j10\right)\Omega$. The RF input power at the drain is swept from 10 to 42\,dBm, corresponding to the range of output power of the class-F$^{-1}$ PA.}}
-\label{time-domain}
-\end{figure}
-
-Measured RF-DC conversion efficiency is shown in Fig.~\ref{MEAS_LP_sweep} for four different RF gate impedances. A maximal conversion efficiency of 85\% is achieved with a DC output voltage of 36\,V and an input power at the drain of 42\,dBm \hl{with $R_{DC}=98.5\,\Omega$}. This peak efficiency is for a RF gate load of around 230\,$\Omega$ (green \hl{hexagon} in the Smith chart in Fig.~\ref{MEAS_LP_sweep}), which is the highest impedance that was achievable with the specific tuner in the setup. For the low gate impedance (red \hl{triangle} in the Smith chart), the efficiency is significantly lower. By observing the gate current (Fig.~\ref{MEAS_LP_sweep}d), it can be seen that for a low RF gate impedance, the gate diode turns on at around $P_{in}=25$\,dBm. Since the input power cannot be increased much beyond this point to avoid breakdown, this limits the DC voltage at the output to around 4\,V. For the gate impedance with highest efficiency (\hl{green line with hexagon symbol}), the gate diode is off for input drain powers below 41\,dBm, allowing for high DC voltage output.
-
-
-%talk about Gate Idc ?
-
-
-
-
-% === FIG : LP SWEEP
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=3.4in]{pdf/12.pdf}
-\caption{\hl{Conversion efficiency, gate DC current and drain DC voltage versus input power for several RF load impedance values presented at the gate. $V_{GS}=-4.4$\,V and $R_{DC}=98.5$\,$\Omega$. The green point on the Smith chart corresponds to the highest efficiency point at $Z_g(f_0)=\left(230+j10\right)\Omega$. }}
-\label{MEAS_LP_sweep}
-\end{figure}
-
-
-
-
-
-% ===================================================================================================================================
-% ===================================================================================================================================
-
-
-%\subsubsection{Sweeping \textbf{Rd} - the resistance at the DC drain access}
-After the optimal gate impedance for highest efficiency was obtained, a power sweep for three different $R_{DC}$ values in the drain output was obtained. From Fig.~\ref{Rd_sweep_final}, a maximal efficiency of 85\% was measured for a DC resistive load of 98\,$\Omega$ while an efficiency drop of 13\% was observed for a DC load of 21\,$\Omega$ with 40\,dBm input power. As expected, the DC output voltage decreases from a maximum \hl{30\,V} for $R_{DC}=98$\,$\Omega$ at 40\,dBm input power, to a maximum of 13.4\,V for $R_{DC}=21$\,$\Omega$ with the same input power. It is interesting to see how the input impedance of the rectifier at the RF drain port approaches 50\,$\Omega$ as the input power increases, Fig.~\ref{Rd_sweep_Zin}. This is expected, since the PA was designed for maximal saturated power delivered into a 50\,$\Omega$ load. This again points to the similarities between the same circuit operated as a power rectifier and a power amplifier.
-
-% === FIG : Rd SWEEP
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=3.4in]{pdf/13.pdf}
-\caption{\hl{Conversion efficiency and drain DC output voltage versus input power for several DC drain resistor values. $V_{GS}=-4.4V$ and $Z_g(f_0)=\left(230+j10\right)\Omega$. The highest efficiency of 85\% is obtained at $P_{in}$=40\,dBm with a $V_{DC}$=30\,V.}}
-\label{Rd_sweep_final}
-\end{figure}
-
-
-% === FIG : Zin
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=3in]{pdf/14.pdf}
-\caption{\hl{RF impedance at $f_0$ measured at the input (drain port) versus input power for several DC drain resistor values. $V_{GS}=-4.4V$ and $Z_g(f_0)=\left(230+j10\right)\Omega$.}}
-\label{Rd_sweep_Zin}
-\end{figure}
-
-
-
-% ===================================================================================================================================
-% ===================================================================================================================================
-% \subsubsection{Sweeping \textbf{Vg} - the gate power supply}
-
-Finally, the effect of the gate bias $V_{GS}$ on the rectifier efficiency, output voltage and input impedance was investigated. The gate impedance in this case was set for highest efficiency (230\,$\Omega$), and a DC load of 58\,$\Omega$ was selected in order to protect the transistor from high drain voltages that occur for the 98\,$\Omega$ load that corresponds to the highest efficiency. The measurements were performed for six different values of gate bias $V_{GS}$ as shown in Fig.~\ref{VG_sweep_final}. \hl{With $R_{DC}=58\Omega$,} a maximum efficiency of 83\% was obtained with the transistor biased deeply into the pinch-off region with $V_{GS}=-4.4$\,V, and a drop of only  3\% was measured for $V_{GS}=-3.5$\,V. Furthermore, the gate bias \hl{has a minimal impact} on the output DC voltage or on the drain impedance.
-
-
-% === FIG : SWEEP VG
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=3.4in]{pdf/15.pdf}
-\caption{Measured conversion efficiency and drain DC voltage versus input power for several DC gate voltage biases. For this data, $R_{DC}=58\Omega$ and $Z_g(f_0)=\left(230+j10\right)\Omega$.}
-\label{VG_sweep_final}
-\end{figure}
-
-
-
-
-
-% ===================================================================================================================================
-% ===================================================================================================================================
-
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
 %
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation Results}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command, the
-% \label for the overall figure must come after \caption.
-% \hfil must be used as a separator to get equal spacing.
-% The subfigure.sty package works much the same way, except \subfigure is
-% used instead of \subfloat.
-%
-%\begin{figure*}[!t]
-%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
-%\label{fig_second_case}}}
-%\caption{Simulation results}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-
-
-% An example of a floating table. Note that, for IEEE style tables, the 
-% \caption command should come BEFORE the table. Table text will default to
-% \footnotesize as IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals use top floats exclusively.
-% Note that, LaTeX2e, unlike IEEE journals, places footnotes above bottom
-% floats. This can be corrected via the \fnbelowfloat command of the
-% stfloats package.
-
 
 
 \section{Conclusion}
