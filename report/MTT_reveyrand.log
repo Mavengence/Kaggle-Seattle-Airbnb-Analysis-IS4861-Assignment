@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.2)  5 DEC 2019 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.2)  5 DEC 2019 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,146 +350,136 @@ Underfull \hbox (badness 2343) in paragraph at lines 82--85
 cal anal-y-sis of
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 132.
 [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<pdf/01.pdf, id=13, 699.61375pt x 161.60374pt>
+[2]
+<pdf/01.pdf, id=16, 568.1214pt x 187.60419pt>
 File: pdf/01.pdf Graphic file (type pdf)
 <use pdf/01.pdf>
-Package pdftex.def Info: pdf/01.pdf  used on input line 149.
-(pdftex.def)             Requested size: 252.94499pt x 58.42635pt.
+Package pdftex.def Info: pdf/01.pdf  used on input line 167.
+(pdftex.def)             Requested size: 252.94499pt x 83.52795pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 149--149
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 167--167
  [] 
  []
 
+
+LaTeX Warning: Reference `DC_resistance' on page 3 undefined on input line 176.
+
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 150.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 211.
+(Font)              <7> on input line 176.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 176.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 211.
- [2 <./pdf/01.pdf>]
-<pdf/02.pdf, id=47, 512.91624pt x 371.3875pt>
-File: pdf/02.pdf Graphic file (type pdf)
-<use pdf/02.pdf>
-Package pdftex.def Info: pdf/02.pdf  used on input line 221.
-(pdftex.def)             Requested size: 202.35622pt x 146.51794pt.
-<pdf/03.pdf, id=48, 562.8631pt x 375.32222pt>
-File: pdf/03.pdf Graphic file (type pdf)
-<use pdf/03.pdf>
-Package pdftex.def Info: pdf/03.pdf  used on input line 230.
-(pdftex.def)             Requested size: 252.94499pt x 168.66435pt.
-
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 230--232
- [] 
- []
-
-[3 <./pdf/02.pdf> <./pdf/03.pdf>]
-<pdf/04.pdf, id=120, 557.80423pt x 371.82915pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
+<pdf/04.pdf, id=17, 557.80423pt x 371.82915pt>
 File: pdf/04.pdf Graphic file (type pdf)
 <use pdf/04.pdf>
-Package pdftex.def Info: pdf/04.pdf  used on input line 306.
+Package pdftex.def Info: pdf/04.pdf  used on input line 191.
 (pdftex.def)             Requested size: 252.94499pt x 168.60948pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 306--308
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 191--193
  [] 
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 193.
 
-Underfull \hbox (badness 1769) in paragraph at lines 312--313
+LaTeX Warning: Reference `nonideal_rectifier_resistance' on page 3 undefined on
+ input line 197.
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 197--198
 \OT1/ptm/m/n/10 old volt-age are next in-ves-ti-gated as-sum-ing the rec-ti-fie
 r
  []
 
-<pdf/05.pdf, id=121, 506.89375pt x 366.36874pt>
+<pdf/05.pdf, id=18, 506.89375pt x 366.36874pt>
 File: pdf/05.pdf Graphic file (type pdf)
 <use pdf/05.pdf>
-Package pdftex.def Info: pdf/05.pdf  used on input line 333.
+Package pdftex.def Info: pdf/05.pdf  used on input line 218.
 (pdftex.def)             Requested size: 216.81pt x 156.70253pt.
-[4 <./pdf/04.pdf> <./pdf/05.pdf>]
-<pdf/06.pdf, id=180, 389.455pt x 200.75pt>
+[3 <./pdf/01.pdf> <./pdf/04.pdf>] [4 <./pdf/05.pdf>]
+
+LaTeX Warning: Reference `sim_opt_eff' on page 5 undefined on input line 339.
+
+<pdf/06.pdf, id=103, 389.455pt x 200.75pt>
 File: pdf/06.pdf Graphic file (type pdf)
 <use pdf/06.pdf>
-Package pdftex.def Info: pdf/06.pdf  used on input line 460.
+Package pdftex.def Info: pdf/06.pdf  used on input line 345.
 (pdftex.def)             Requested size: 216.81pt x 111.75757pt.
-<pdf/07.pdf, id=181, 420.57124pt x 316.18124pt>
+<pdf/07.pdf, id=104, 420.57124pt x 316.18124pt>
 File: pdf/07.pdf Graphic file (type pdf)
 <use pdf/07.pdf>
-Package pdftex.def Info: pdf/07.pdf  used on input line 470.
+Package pdftex.def Info: pdf/07.pdf  used on input line 355.
 (pdftex.def)             Requested size: 252.94499pt x 190.16371pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 470--470
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 355--355
  [] 
  []
 
+
+LaTeX Warning: Reference `circuit_diagram' on page 5 undefined on input line 39
+3.
+
 [5 <./pdf/06.pdf> <./pdf/07.pdf>]
-<pdf/08.pdf, id=231, 285.065pt x 199.74625pt>
+<pdf/08.pdf, id=154, 285.065pt x 199.74625pt>
 File: pdf/08.pdf Graphic file (type pdf)
 <use pdf/08.pdf>
-Package pdftex.def Info: pdf/08.pdf  used on input line 513.
+Package pdftex.def Info: pdf/08.pdf  used on input line 398.
 (pdftex.def)             Requested size: 216.81pt x 151.91844pt.
-<pdf/09.pdf, id=232, 541.02126pt x 365.365pt>
+<pdf/09.pdf, id=155, 541.02126pt x 365.365pt>
 File: pdf/09.pdf Graphic file (type pdf)
 <use pdf/09.pdf>
-Package pdftex.def Info: pdf/09.pdf  used on input line 522.
+Package pdftex.def Info: pdf/09.pdf  used on input line 407.
 (pdftex.def)             Requested size: 216.81pt x 146.41658pt.
-<pdf/10.pdf, id=233, 715.67375pt x 474.77374pt>
+<pdf/10.pdf, id=156, 715.67375pt x 474.77374pt>
 File: pdf/10.pdf Graphic file (type pdf)
 <use pdf/10.pdf>
-Package pdftex.def Info: pdf/10.pdf  used on input line 546.
+Package pdftex.def Info: pdf/10.pdf  used on input line 431.
 (pdftex.def)             Requested size: 252.94499pt x 167.79605pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 546--547
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 431--432
  [][] 
  []
 
-[6 <./pdf/08.pdf> <./pdf/09.pdf>]
-<pdf/11.png, id=249, 1377.145pt x 867.24pt>
+[6 <./pdf/08.pdf> <./pdf/09.pdf> <./pdf/10.pdf>]
+<pdf/11.png, id=181, 1377.145pt x 867.24pt>
 File: pdf/11.png Graphic file (type png)
 <use pdf/11.png>
-Package pdftex.def Info: pdf/11.png  used on input line 580.
+Package pdftex.def Info: pdf/11.png  used on input line 465.
 (pdftex.def)             Requested size: 245.71754pt x 154.73346pt.
-
-Underfull \hbox (badness 7030) in paragraph at lines 581--581
-\OT1/ptm/m/n/8 Fig. 11.   []Time[]-[]do[]-[]main[] [][][]wave[]-[]forms[] [][][
-]mea[]-[]sured[] [][][]at[] [][][]drain[] [][][](a)[] [][][]and[]
- []
-
-
-Underfull \hbox (badness 4531) in paragraph at lines 581--581
-[][][]\OT1/ptm/m/n/8 gate[] [][][](b)[] [][][]of[] [][][]the[] [][][]rec[]-[]ti
-[]-[]fier[] [][][]with[] [][][][]V,[] [][][][][][] [][][]and[]
- []
-
-<pdf/12.pdf, id=251, 1068.99374pt x 808.01875pt>
+<pdf/12.pdf, id=183, 1068.99374pt x 808.01875pt>
 File: pdf/12.pdf Graphic file (type pdf)
 <use pdf/12.pdf>
-Package pdftex.def Info: pdf/12.pdf  used on input line 596.
+Package pdftex.def Info: pdf/12.pdf  used on input line 481.
 (pdftex.def)             Requested size: 245.71754pt x 185.72943pt.
-<pdf/13.pdf, id=252, 549.05125pt x 374.39874pt>
+<pdf/13.pdf, id=184, 549.05125pt x 374.39874pt>
 File: pdf/13.pdf Graphic file (type pdf)
 <use pdf/13.pdf>
-Package pdftex.def Info: pdf/13.pdf  used on input line 615.
+Package pdftex.def Info: pdf/13.pdf  used on input line 500.
 (pdftex.def)             Requested size: 245.71754pt x 167.55238pt.
-<pdf/14.pdf, id=253, 427.5975pt x 290.08376pt>
+<pdf/14.pdf, id=185, 427.5975pt x 290.08376pt>
 File: pdf/14.pdf Graphic file (type pdf)
 <use pdf/14.pdf>
-Package pdftex.def Info: pdf/14.pdf  used on input line 624.
+Package pdftex.def Info: pdf/14.pdf  used on input line 509.
 (pdftex.def)             Requested size: 216.81pt x 147.08205pt.
-[7 <./pdf/10.pdf> <./pdf/11.png> <./pdf/12.pdf>]
-<pdf/15.pdf, id=272, 579.16376pt x 373.395pt>
+<pdf/15.pdf, id=186, 579.16376pt x 373.395pt>
 File: pdf/15.pdf Graphic file (type pdf)
 <use pdf/15.pdf>
-Package pdftex.def Info: pdf/15.pdf  used on input line 641.
+Package pdftex.def Info: pdf/15.pdf  used on input line 526.
 (pdftex.def)             Requested size: 245.71754pt x 158.41444pt.
- (./MTT_reveyrand.bbl [8 <./pdf/13.pdf> <./pdf/14.pdf> <./pdf/15.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./pdf/11.png> <./pdf/12.pdf> <./pdf/13.pdf>] (./MTT_reveyrand.bbl [8 <./pd
+f/14.pdf> <./pdf/15.pdf>]
 Underfull \hbox (badness 6608) in paragraph at lines 170--174
 []\OT1/ptm/m/n/8 M. Roberg, E. Falken-stein, and Z. Popovic, ``High-efficiency
  []
@@ -500,43 +490,47 @@ Underfull \hbox (badness 2478) in paragraph at lines 192--197
 quet,
  []
 
-) [9] (./MTT_reveyrand.aux) ) 
+) [9
+
+] (./MTT_reveyrand.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4082 strings out of 492616
- 58594 string characters out of 6129481
- 160672 words of memory out of 5000000
- 7914 multiletter control sequences out of 15000+600000
- 41492 words of font info for 78 fonts, out of 8000000 for 9000
+ 4062 strings out of 492616
+ 58169 string characters out of 6129481
+ 165214 words of memory out of 5000000
+ 7895 multiletter control sequences out of 15000+600000
+ 42599 words of font info for 79 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,19n,35p,1914b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvip
-s/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
-fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
-9/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on MTT_reveyrand.pdf (9 pages, 2582850 bytes).
+ 41i,19n,35p,2678b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2019/texmf-dist/font
+s/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2019/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/
+utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pf
+b></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on MTT_reveyrand.pdf (9 pages, 2543230 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
+ 285 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
