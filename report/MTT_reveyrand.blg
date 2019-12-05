@@ -1,60 +1,97 @@
-This is BibTeX, Version 0.99d (TeX Live 2019)
+This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: MTT_reveyrand.aux
 The style file: IEEEtran.bst
+Illegal, another \bibdata command---line 157 of file MTT_reveyrand.aux
+ : \bibdata
+ :         {IEEEabrv,Bibliography}
+I'm skipping whatever remains of this command
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: IEEEabrv.bib
-Database file #2: Bibliography.bib
+Database file #1: Bibliography.bib
+Warning--I didn't find a database entry for "IEEEexample:BSTcontrol"
+Warning--I didn't find a database entry for "tesla"
+Warning--I didn't find a database entry for "early_rect1"
+Warning--I didn't find a database entry for "early_rect2"
+Warning--I didn't find a database entry for "converter_history"
+Warning--I didn't find a database entry for "purdue_rect"
+Warning--I didn't find a database entry for "brown_rect1"
+Warning--I didn't find a database entry for "brown_rect2"
+Warning--I didn't find a database entry for "nasa_report1"
+Warning--I didn't find a database entry for "cyclotron_rect1"
+Warning--I didn't find a database entry for "cyclotron_rect2"
+Warning--I didn't find a database entry for "brown1_1970"
+Warning--I didn't find a database entry for "brown3_1970"
+Warning--I didn't find a database entry for "brown"
+Warning--I didn't find a database entry for "rect_power_combine"
+Warning--I didn't find a database entry for "erezMTT2012"
+Warning--I didn't find a database entry for "hagerty"
+Warning--I didn't find a database entry for "erez_thesis"
+Warning--I didn't find a database entry for "asbeck"
+Warning--I didn't find a database entry for "4500dcdc"
+Warning--I didn't find a database entry for "JoseIMS-rect"
+Warning--I didn't find a database entry for "rectifier_harmonic_generation"
+Warning--I didn't find a database entry for "low_cost_rectenna"
+Warning--I didn't find a database entry for "Jose-DC-DC-IMS"
+Warning--I didn't find a database entry for "Kaz"
+Warning--I didn't find a database entry for "raab01_finiteharmonics"
+Warning--I didn't find a database entry for "raab02_PAoverview"
+Warning--I didn't find a database entry for "kee_rutledge"
+Warning--I didn't find a database entry for "roberg2011"
+Warning--I didn't find a database entry for "robergIMS2012"
+Warning--I didn't find a database entry for "gan_pa_letter"
+Warning--I didn't find a database entry for "SWAP"
+Warning--I didn't find a database entry for "verspecht"
+Warning--I didn't find a database entry for "switch"
+Warning--I didn't find a database entry for "faraj_arftg_2012"
+Warning--I didn't find a database entry for "roberg_phd"
 -- IEEEtran.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-** IEEEtran BST control entry "IEEEexample:BSTcontrol" detected.
-Warning--empty note in SWAP
 
 Done.
-You've used 36 entries,
+You've used 0 entries,
             3975 wiz_defined-function locations,
-            1388 strings with 20370 characters,
-and the built_in function-call counts, 29145 in all, are:
-= -- 2346
-> -- 696
-< -- 282
-+ -- 388
-- -- 123
-* -- 1410
-:= -- 4317
-add.period$ -- 70
-call.type$ -- 36
-change.case$ -- 39
-chr.to.int$ -- 650
-cite$ -- 37
-duplicate$ -- 2085
-empty$ -- 2261
-format.name$ -- 133
-if$ -- 6774
+            840 strings with 7625 characters,
+and the built_in function-call counts, 92 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 15
+:= -- 25
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 3
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 348
-newline$ -- 128
-num.names$ -- 35
-pop$ -- 725
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 20
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 4
-skip$ -- 2267
+quote$ -- 2
+skip$ -- 1
 stack$ -- 0
-substring$ -- 1523
-swap$ -- 1827
-text.length$ -- 70
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
-top$ -- 6
+top$ -- 5
 type$ -- 0
-warning$ -- 1
-while$ -- 117
-width$ -- 38
-write$ -- 372
-(There was 1 warning)
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 19
+(There was 1 error message)
