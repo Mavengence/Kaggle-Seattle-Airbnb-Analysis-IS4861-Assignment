@@ -40,8 +40,6 @@
 \hyphenation{op-tical net-works semi-conduc-tor}
 
 %\bstctlcite{IEEE:BSTcontrol}
-
-
 %=== TITLE & AUTHORS ====================================================================
 \begin{document}
 \bstctlcite{IEEEexample:BSTcontrol}
@@ -54,8 +52,7 @@
       PANG Tsz Ching,
       and~BAL Kiran Jeniffer% <-this % stops a space
       
-      
-
+     
   \thanks{Manuscript received July 10, 2012. \hl{This paper is an expanded paper from the IEEE MTT-S Int. Microwave Symposium held on June 17-22, 2012 in Montreal, Canada.} This work was funded in part by the Office of Naval Research under the Defense Advanced Research Projects Agency (DARPA) Microscale Power Conversion (MPC) Program under Grant N00014-11-1-0931, and in part by the Advanced Research Projects Agency-Energy (ARPA-E), U.S. Department of Energy, under Award Number DE-AR0000216.}
   \thanks{M. Roberg is with TriQuint Semiconductor, 500 West Renner Road Richardson, TX 75080 USA (e-mail: michael.roberg@tqs.com).}% <-this % stops a space
   \thanks{T. Reveyrand is with the XLIM Laboratory, UMR 7252, University of Limoges, 87060 Limoges, France (e-mail: tibault.reveyrand@xlim.fr).}%
@@ -109,16 +106,6 @@ This paper presents a theoretical analysis of harmonically-terminated high-effic
 % ====================================================================
 % ====================================================================
 
-
-
-
-
-
-
-
-
-
-
 % === I. INTRODUCTION =============================================================
 % =================================================================================
 \section{Project background and motivation}
@@ -166,10 +153,24 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \caption{score and number of reviews ratio}\label{score_reviews_ratio}
   \end{center}
 \end{figure}
-
-
-The conversion efficiency, defined as the ratio of the DC power dissipated in the load resistor to the available fundamental frequency RF power, is evaluated as
-
+\ref{score_reviews_ratio} shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
+In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{score_reviews_ratio_neighborhood}).
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \caption{mean rating and number of reviews ratio (per neighborhood)}\label{score_reviews_ratio_neighborhood}
+  \end{center}
+\end{figure}
+In this figure it becomes visible that neighborhoods, whose apartments in total got 50 to 100 reviews score a mean rating of about 9.2 to 9.7. Approximately the same mean rating is also achieved by district where the apartments are rated 125 to 300 times. There is only one outlier (‘University District’), which scored al pretty low mean rating value compared to all other districts. As this is the only outlier, we will neglect this in our following assumptions.
+To sum up, we can conclude that both figures (\ref{score_reviews_ratio_neighborhood} and \ref{score_reviews_ratio}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district.
+\subsubsection{Calendar}
+This part of the data shows, when certain apartments are available and when they are rented out. Within our analysis we assume, that an apartment, which is listed as ‘not available’ in the ‘calender.csv’ is occupied by a visitor. If it is ‘available’ we assume that the owners would have liked to rent the apartment out but there has not been any visitor renting it. In figure \ref{occupied_ratio_of_appartments} the ratio of occupied and available apartments in 2016 is presented.
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \caption{occupied_ratio_of_appartments)}\label{occupied_ratio_of_appartments}
+  \end{center}
+\end{figure}
 
 Therefore, the ideal half-wave rectifier converts all available RF power to DC power if the the DC loading resistance set to the value given in (\ref{DC_resistance}). The RF-DC conversion efficiency as a function of $R_{DC} / R_s(f_0)$ was simulated in Microwave Office$\textsuperscript{\textregistered}$ for varying rectifier on-resistance and is shown in Fig.~\ref{sim_opt_eff_classFinv}. The harmonic balance settings were identical to those used for the class-C rectifier above. The peak efficiency as a function of on-resistance is higher than for the class-C rectifier, although the efficiency degrades more quickly when the non-ideal DC load is applied.
 
@@ -308,15 +309,6 @@ The negative impedance in (\ref{rf0f}) indicates that power is delivered to the 
 \begin{equation}\label{efff}
     \eta = \frac{P_{DC}}{P_{in}} = \frac{V_{DC}I_{DC}}{P_{in}}
 \end{equation}
-
-
-
-
-
-
-
-
-
 
 \subsection {Design example based on class-F$^{-1}$ theory}
 
