@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.2)  5 DEC 2019 14:49
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.25)  5 DEC 2019 14:48
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.25)  5 DEC 2019 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -93,24 +89,36 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEeqncolcnt=\count90
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count91
-<<<<<<< HEAD
-\@IEEEtranrubishbin=\box27
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/bibentry.sty
+\@IEEEtranrubishbin=\box26
+)
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 <
+     <<<<<< HEAD
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
-=======
-\@IEEEtranrubishbin=\box26
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+Overfull \hbox (18.26859pt too wide) in paragraph at lines 3--2
+[]\OT1/ptm/m/n/10 <<<<<<< HEAD                                                 
+                                          
+ []
+
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -143,6 +151,23 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen122
 \FrameSep=\dimen123
 )
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 =
+     ======
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (27.55817pt too wide) in paragraph at lines 7--10
+[]\OT1/ptm/m/n/10 ======= >>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c 
+ []
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -274,37 +299,33 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./MTT_reveyrand.aux)
+Runaway argument?
+{\contentsline {figure}{\numberline {11}{\ignorespaces \texthl 
+! File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.32 \begin{document}
+                     
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \openout1 = `MTT_reveyrand.aux'.
 
-<<<<<<< HEAD
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
- (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-=======
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
- (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
 \scratchdimen=\dimen146
@@ -372,620 +393,434 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    External font `cmex10' loaded for size
-<<<<<<< HEAD
-(Font)              <9> on input line 64.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 64.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 64.
-
-Underfull \hbox (badness 2343) in paragraph at lines 62--65
-=======
-(Font)              <9> on input line 79.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 79.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 79.
-
-
-LaTeX Warning: Citation `RN1' on page 1 undefined on input line 79.
-
-
-Underfull \hbox (badness 2343) in paragraph at lines 77--80
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
-[]\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---This pa-per presents a the-o-ret-i-
-cal anal-y-sis of
- []
-
-
-LaTeX Warning: Citation `tesla' on page 1 undefined on input line 123.
-
-
-LaTeX Warning: Citation `early_rect1' on page 1 undefined on input line 123.
-
-
-LaTeX Warning: Citation `early_rect2' on page 1 undefined on input line 123.
-
-
-LaTeX Warning: Citation `converter_history' on page 1 undefined on input line 1
-23.
-
-
-LaTeX Warning: Citation `purdue_rect' on page 1 undefined on input line 123.
-
-
-LaTeX Warning: Citation `brown_rect1' on page 1 undefined on input line 123.
-
-
-LaTeX Warning: Citation `brown_rect2' on page 1 undefined on input line 123.
-
-
-LaTeX Warning: Citation `nasa_report1' on page 1 undefined on input line 123.
-
-
-LaTeX Warning: Citation `cyclotron_rect1' on page 1 undefined on input line 125
-.
-
-
-LaTeX Warning: Citation `cyclotron_rect2' on page 1 undefined on input line 125
-.
-
-
-LaTeX Warning: Citation `brown1_1970' on page 1 undefined on input line 125.
-
-
-LaTeX Warning: Citation `brown3_1970' on page 1 undefined on input line 125.
-
-
-LaTeX Warning: Citation `brown' on page 1 undefined on input line 125.
-
-
-LaTeX Warning: Citation `rect_power_combine' on page 1 undefined on input line 
-125.
-
-
-LaTeX Warning: Citation `erezMTT2012' on page 1 undefined on input line 127.
-
-
-LaTeX Warning: Citation `hagerty' on page 1 undefined on input line 127.
-
-
-LaTeX Warning: Citation `erez_thesis' on page 1 undefined on input line 127.
-
-
-LaTeX Warning: Citation `asbeck' on page 1 undefined on input line 127.
-
-
-LaTeX Warning: Citation `4500dcdc' on page 1 undefined on input line 127.
-
-
-LaTeX Warning: Citation `JoseIMS-rect' on page 1 undefined on input line 127.
-
-
-LaTeX Warning: Citation `rectifier_harmonic_generation' on page 1 undefined on 
-input line 127.
-
-
-LaTeX Warning: Citation `low_cost_rectenna' on page 1 undefined on input line 1
-27.
-
-
-LaTeX Warning: Citation `JoseIMS-rect' on page 1 undefined on input line 127.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 127.
-
-LaTeX Warning: Citation `Jose-DC-DC-IMS' on page 1 undefined on input line 127.
-
-
-
-LaTeX Warning: Citation `Kaz' on page 1 undefined on input line 127.
-
-
-LaTeX Warning: Citation `raab01_finiteharmonics' on page 1 undefined on input l
-ine 129.
-
-
-LaTeX Warning: Citation `raab02_PAoverview' on page 1 undefined on input line 1
-29.
-
-
-LaTeX Warning: Citation `kee_rutledge' on page 1 undefined on input line 129.
-
-
-LaTeX Warning: Citation `roberg2011' on page 1 undefined on input line 129.
-
-
-LaTeX Warning: Citation `robergIMS2012' on page 1 undefined on input line 129.
-
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<<<<<<< HEAD
-[2]
-<pdf/01.pdf, id=15, 568.1214pt x 187.60419pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 68.
+
+
+LaTeX Warning: Citation `RN1' on page 2 undefined on input line 70.
+
+[2
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+
+LaTeX Warning: Citation `RN1' on page 4 undefined on input line 145.
+
+
+LaTeX Warning: Reference `score_reviews_ratio' on page 4 undefined on input lin
+e 147.
+
+
+LaTeX Warning: Citation `tesla' on page 4 undefined on input line 151.
+
+
+LaTeX Warning: Citation `early_rect1' on page 4 undefined on input line 151.
+
+
+LaTeX Warning: Citation `early_rect2' on page 4 undefined on input line 151.
+
+
+LaTeX Warning: Citation `converter_history' on page 4 undefined on input line 1
+51.
+
+
+LaTeX Warning: Citation `purdue_rect' on page 4 undefined on input line 151.
+
+
+LaTeX Warning: Citation `brown_rect1' on page 4 undefined on input line 151.
+
+
+LaTeX Warning: Citation `brown_rect2' on page 4 undefined on input line 151.
+
+
+LaTeX Warning: Citation `nasa_report1' on page 4 undefined on input line 151.
+
+
+LaTeX Warning: Citation `cyclotron_rect1' on page 4 undefined on input line 153
+.
+
+
+LaTeX Warning: Citation `cyclotron_rect2' on page 4 undefined on input line 153
+.
+
+
+LaTeX Warning: Citation `brown1_1970' on page 4 undefined on input line 153.
+
+
+LaTeX Warning: Citation `brown3_1970' on page 4 undefined on input line 153.
+
+
+LaTeX Warning: Citation `brown' on page 4 undefined on input line 153.
+
+
+LaTeX Warning: Citation `rect_power_combine' on page 4 undefined on input line 
+153.
+
+
+! Package xcolor Error: Undefined color `shadecolor'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 \begin{shaded}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `erezMTT2012' on page 4 undefined on input line 155.
+
+
+LaTeX Warning: Citation `hagerty' on page 4 undefined on input line 155.
+
+
+LaTeX Warning: Citation `erez_thesis' on page 4 undefined on input line 155.
+
+
+LaTeX Warning: Citation `asbeck' on page 4 undefined on input line 155.
+
+
+LaTeX Warning: Citation `4500dcdc' on page 4 undefined on input line 155.
+
+
+LaTeX Warning: Citation `JoseIMS-rect' on page 4 undefined on input line 155.
+
+
+LaTeX Warning: Citation `rectifier_harmonic_generation' on page 4 undefined on 
+input line 155.
+
+
+LaTeX Warning: Citation `low_cost_rectenna' on page 4 undefined on input line 1
+55.
+
+
+LaTeX Warning: Citation `JoseIMS-rect' on page 4 undefined on input line 155.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 155.
+
+LaTeX Warning: Citation `Jose-DC-DC-IMS' on page 4 undefined on input line 155.
+
+
+
+LaTeX Warning: Citation `Kaz' on page 4 undefined on input line 155.
+
+
+! Package xcolor Error: Undefined color `shadecolor'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{shaded}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `shadecolor'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{shaded}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `shadecolor'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{shaded}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4]
+
+! Package xcolor Error: Undefined color `shadecolor'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{shaded}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `shadecolor'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{shaded}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `raab01_finiteharmonics' on page 5 undefined on input l
+ine 157.
+
+
+LaTeX Warning: Citation `raab02_PAoverview' on page 5 undefined on input line 1
+57.
+
+
+LaTeX Warning: Citation `kee_rutledge' on page 5 undefined on input line 157.
+
+
+LaTeX Warning: Citation `roberg2011' on page 5 undefined on input line 157.
+
+
+LaTeX Warning: Citation `robergIMS2012' on page 5 undefined on input line 157.
+
+<pdf/01.pdf, id=22, 568.1214pt x 187.60419pt>
 File: pdf/01.pdf Graphic file (type pdf)
 <use pdf/01.pdf>
-Package pdftex.def Info: pdf/01.pdf  used on input line 142.
+Package pdftex.def Info: pdf/01.pdf  used on input line 173.
 (pdftex.def)             Requested size: 252.94499pt x 83.52795pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 142--142
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 173--173
  [] 
  []
 
-
-LaTeX Warning: Reference `DC_resistance' on page 3 undefined on input line 151.
-
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 151.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 151.
-=======
-<pdf/01.pdf, id=13, 568.1214pt x 187.60419pt>
-File: pdf/01.pdf Graphic file (type pdf)
-<use pdf/01.pdf>
-Package pdftex.def Info: pdf/01.pdf  used on input line 144.
-(pdftex.def)             Requested size: 252.94499pt x 83.52795pt.
+(Font)              <8> on input line 174.
+[5 <./pdf/01.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 235.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 144--144
- [] 
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 145.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 206.
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-<<<<<<< HEAD
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
-<pdf/04.pdf, id=16, 557.80423pt x 371.82915pt>
-File: pdf/04.pdf Graphic file (type pdf)
-<use pdf/04.pdf>
-Package pdftex.def Info: pdf/04.pdf  used on input line 166.
-(pdftex.def)             Requested size: 252.94499pt x 168.60948pt.
-
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 166--168
- [] 
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 168.
-
-LaTeX Warning: Reference `nonideal_rectifier_resistance' on page 3 undefined on
- input line 172.
-
-
-Underfull \hbox (badness 1769) in paragraph at lines 172--173
-=======
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 206.
- [2 <./pdf/01.pdf>]
-<pdf/02.pdf, id=34, 512.91624pt x 371.3875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 235.
+<pdf/02.pdf, id=43, 512.91624pt x 371.3875pt>
 File: pdf/02.pdf Graphic file (type pdf)
 <use pdf/02.pdf>
-Package pdftex.def Info: pdf/02.pdf  used on input line 216.
+Package pdftex.def Info: pdf/02.pdf  used on input line 245.
 (pdftex.def)             Requested size: 202.35622pt x 146.51794pt.
-<pdf/03.pdf, id=35, 562.8631pt x 375.32222pt>
+<pdf/03.pdf, id=44, 562.8631pt x 375.32222pt>
 File: pdf/03.pdf Graphic file (type pdf)
 <use pdf/03.pdf>
-Package pdftex.def Info: pdf/03.pdf  used on input line 225.
+Package pdftex.def Info: pdf/03.pdf  used on input line 254.
 (pdftex.def)             Requested size: 252.94499pt x 168.66435pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 225--227
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 254--256
  [] 
  []
 
-[3 <./pdf/02.pdf> <./pdf/03.pdf>]
-<pdf/04.pdf, id=111, 557.80423pt x 371.82915pt>
+[6 <./pdf/02.pdf> <./pdf/03.pdf>]
+<pdf/04.pdf, id=120, 557.80423pt x 371.82915pt>
 File: pdf/04.pdf Graphic file (type pdf)
 <use pdf/04.pdf>
-Package pdftex.def Info: pdf/04.pdf  used on input line 301.
+Package pdftex.def Info: pdf/04.pdf  used on input line 330.
 (pdftex.def)             Requested size: 252.94499pt x 168.60948pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 301--303
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 330--332
  [] 
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 307--308
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
+Underfull \hbox (badness 1769) in paragraph at lines 336--337
 \OT1/ptm/m/n/10 old volt-age are next in-ves-ti-gated as-sum-ing the rec-ti-fie
 r
  []
 
-<<<<<<< HEAD
-<pdf/05.pdf, id=17, 506.89375pt x 366.36874pt>
+<pdf/05.pdf, id=121, 506.89375pt x 366.36874pt>
 File: pdf/05.pdf Graphic file (type pdf)
 <use pdf/05.pdf>
-Package pdftex.def Info: pdf/05.pdf  used on input line 193.
+Package pdftex.def Info: pdf/05.pdf  used on input line 357.
 (pdftex.def)             Requested size: 216.81pt x 156.70253pt.
-[3 <./pdf/01.pdf> <./pdf/04.pdf>]
 
-LaTeX Warning: Reference `finv_vf0_comp_5' on page 4 undefined on input line 21
-3.
-
-
-LaTeX Warning: Reference `finv_if0_comp_2' on page 4 undefined on input line 21
-3.
+LaTeX Warning: Reference `finv_vf0_comp_5' on page 7 undefined on input line 37
+7.
 
 
-LaTeX Warning: Reference `finv_idc_comp_3' on page 4 undefined on input line 24
-8.
+LaTeX Warning: Reference `finv_if0_comp_2' on page 7 undefined on input line 37
+7.
 
+[7 <./pdf/04.pdf> <./pdf/05.pdf>]
 
-LaTeX Warning: Reference `sim_opt_eff' on page 4 undefined on input line 262.
+LaTeX Warning: Reference `finv_idc_comp_3' on page 8 undefined on input line 41
+2.
 
-<pdf/06.pdf, id=81, 389.455pt x 200.75pt>
+<pdf/06.pdf, id=181, 389.455pt x 200.75pt>
 File: pdf/06.pdf Graphic file (type pdf)
 <use pdf/06.pdf>
-Package pdftex.def Info: pdf/06.pdf  used on input line 268.
+Package pdftex.def Info: pdf/06.pdf  used on input line 432.
 (pdftex.def)             Requested size: 216.81pt x 111.75757pt.
-<pdf/07.pdf, id=82, 420.57124pt x 316.18124pt>
+<pdf/07.pdf, id=182, 420.57124pt x 316.18124pt>
 File: pdf/07.pdf Graphic file (type pdf)
 <use pdf/07.pdf>
-Package pdftex.def Info: pdf/07.pdf  used on input line 278.
+Package pdftex.def Info: pdf/07.pdf  used on input line 442.
 (pdftex.def)             Requested size: 252.94499pt x 190.16371pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 278--278
-=======
-<pdf/05.pdf, id=112, 506.89375pt x 366.36874pt>
-File: pdf/05.pdf Graphic file (type pdf)
-<use pdf/05.pdf>
-Package pdftex.def Info: pdf/05.pdf  used on input line 328.
-(pdftex.def)             Requested size: 216.81pt x 156.70253pt.
-[4 <./pdf/04.pdf> <./pdf/05.pdf>]
-<pdf/06.pdf, id=170, 389.455pt x 200.75pt>
-File: pdf/06.pdf Graphic file (type pdf)
-<use pdf/06.pdf>
-Package pdftex.def Info: pdf/06.pdf  used on input line 455.
-(pdftex.def)             Requested size: 216.81pt x 111.75757pt.
-<pdf/07.pdf, id=171, 420.57124pt x 316.18124pt>
-File: pdf/07.pdf Graphic file (type pdf)
-<use pdf/07.pdf>
-Package pdftex.def Info: pdf/07.pdf  used on input line 465.
-(pdftex.def)             Requested size: 252.94499pt x 190.16371pt.
-
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 465--465
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 442--442
  [] 
  []
 
 
-<<<<<<< HEAD
-LaTeX Warning: Citation `robergIMS2012' on page 4 undefined on input line 292.
+LaTeX Warning: Citation `robergIMS2012' on page 8 undefined on input line 456.
 
 
-LaTeX Warning: Citation `robergIMS2012' on page 4 undefined on input line 292.
-
-[4 <./pdf/05.pdf>]
-
-LaTeX Warning: Citation `gan_pa_letter' on page 5 undefined on input line 316.
+LaTeX Warning: Citation `robergIMS2012' on page 8 undefined on input line 456.
 
 
-LaTeX Warning: Reference `circuit_diagram' on page 5 undefined on input line 31
-6.
+Underfull \vbox (badness 6792) has occurred while \output is active []
 
-<pdf/08.pdf, id=104, 285.065pt x 199.74625pt>
+ [8 <./pdf/06.pdf> <./pdf/07.pdf>]
+
+LaTeX Warning: Citation `gan_pa_letter' on page 9 undefined on input line 480.
+
+<pdf/08.pdf, id=232, 285.065pt x 199.74625pt>
 File: pdf/08.pdf Graphic file (type pdf)
 <use pdf/08.pdf>
-Package pdftex.def Info: pdf/08.pdf  used on input line 321.
+Package pdftex.def Info: pdf/08.pdf  used on input line 485.
 (pdftex.def)             Requested size: 216.81pt x 151.91844pt.
 
-LaTeX Warning: Citation `gan_pa_letter' on page 5 undefined on input line 322.
+LaTeX Warning: Citation `gan_pa_letter' on page 9 undefined on input line 486.
 
 
-LaTeX Warning: Citation `gan_pa_letter' on page 5 undefined on input line 322.
+LaTeX Warning: Citation `gan_pa_letter' on page 9 undefined on input line 486.
 
-<pdf/09.pdf, id=105, 541.02126pt x 365.365pt>
+<pdf/09.pdf, id=233, 541.02126pt x 365.365pt>
 File: pdf/09.pdf Graphic file (type pdf)
 <use pdf/09.pdf>
-Package pdftex.def Info: pdf/09.pdf  used on input line 330.
+Package pdftex.def Info: pdf/09.pdf  used on input line 494.
 (pdftex.def)             Requested size: 216.81pt x 146.41658pt.
 
-LaTeX Warning: Citation `SWAP' on page 5 undefined on input line 346.
+LaTeX Warning: Citation `SWAP' on page 9 undefined on input line 510.
 
 
-LaTeX Warning: Citation `verspecht' on page 5 undefined on input line 346.
+LaTeX Warning: Citation `verspecht' on page 9 undefined on input line 510.
 
 
-LaTeX Warning: Citation `switch' on page 5 undefined on input line 346.
+LaTeX Warning: Citation `switch' on page 9 undefined on input line 510.
 
 
-LaTeX Warning: Citation `faraj_arftg_2012' on page 5 undefined on input line 34
-6.
+LaTeX Warning: Citation `faraj_arftg_2012' on page 9 undefined on input line 51
+0.
 
-[5 <./pdf/06.pdf> <./pdf/07.pdf> <./pdf/08.pdf> <./pdf/09.pdf>]
-<pdf/10.pdf, id=167, 715.67375pt x 474.77374pt>
+<pdf/10.pdf, id=234, 715.67375pt x 474.77374pt>
 File: pdf/10.pdf Graphic file (type pdf)
 <use pdf/10.pdf>
-Package pdftex.def Info: pdf/10.pdf  used on input line 354.
+Package pdftex.def Info: pdf/10.pdf  used on input line 518.
 (pdftex.def)             Requested size: 252.94499pt x 167.79605pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 354--355
-=======
-LaTeX Warning: Citation `robergIMS2012' on page 5 undefined on input line 479.
-
-
-LaTeX Warning: Citation `robergIMS2012' on page 5 undefined on input line 479.
-
-[5 <./pdf/06.pdf>]
-
-LaTeX Warning: Citation `gan_pa_letter' on page 6 undefined on input line 503.
-
-<pdf/08.pdf, id=188, 285.065pt x 199.74625pt>
-File: pdf/08.pdf Graphic file (type pdf)
-<use pdf/08.pdf>
-Package pdftex.def Info: pdf/08.pdf  used on input line 508.
-(pdftex.def)             Requested size: 216.81pt x 151.91844pt.
-
-LaTeX Warning: Citation `gan_pa_letter' on page 6 undefined on input line 509.
-
-
-LaTeX Warning: Citation `gan_pa_letter' on page 6 undefined on input line 509.
-
-<pdf/09.pdf, id=189, 541.02126pt x 365.365pt>
-File: pdf/09.pdf Graphic file (type pdf)
-<use pdf/09.pdf>
-Package pdftex.def Info: pdf/09.pdf  used on input line 517.
-(pdftex.def)             Requested size: 216.81pt x 146.41658pt.
-
-LaTeX Warning: Citation `SWAP' on page 6 undefined on input line 533.
-
-
-LaTeX Warning: Citation `verspecht' on page 6 undefined on input line 533.
-
-
-LaTeX Warning: Citation `switch' on page 6 undefined on input line 533.
-
-
-LaTeX Warning: Citation `faraj_arftg_2012' on page 6 undefined on input line 53
-3.
-
-<pdf/10.pdf, id=190, 715.67375pt x 474.77374pt>
-File: pdf/10.pdf Graphic file (type pdf)
-<use pdf/10.pdf>
-Package pdftex.def Info: pdf/10.pdf  used on input line 541.
-(pdftex.def)             Requested size: 252.94499pt x 167.79605pt.
-
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 541--542
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 518--519
  [][] 
  []
 
 
-<<<<<<< HEAD
-LaTeX Warning: Citation `SWAP' on page 6 undefined on input line 355.
+LaTeX Warning: Citation `SWAP' on page 9 undefined on input line 519.
 
 
-LaTeX Warning: Citation `SWAP' on page 6 undefined on input line 355.
+LaTeX Warning: Citation `SWAP' on page 9 undefined on input line 519.
 
 
-LaTeX Warning: Citation `JoseIMS-rect' on page 6 undefined on input line 361.
+LaTeX Warning: Citation `JoseIMS-rect' on page 9 undefined on input line 525.
 
 
-LaTeX Warning: Citation `Kaz' on page 6 undefined on input line 361.
+LaTeX Warning: Citation `Kaz' on page 9 undefined on input line 525.
 
-<pdf/11.png, id=168, 1377.145pt x 867.24pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./pdf/08.pdf> <./pdf/09.pdf> <./pdf/10.pdf>]
+
+LaTeX Warning: Reference `time-domain' on page 10 undefined on input line 534.
+
+<pdf/11.png, id=258, 1377.145pt x 867.24pt>
 File: pdf/11.png Graphic file (type png)
 <use pdf/11.png>
-Package pdftex.def Info: pdf/11.png  used on input line 375.
-(pdftex.def)             Requested size: 245.71754pt x 154.73346pt.
-<pdf/12.pdf, id=170, 1068.99374pt x 808.01875pt>
-File: pdf/12.pdf Graphic file (type pdf)
-<use pdf/12.pdf>
-Package pdftex.def Info: pdf/12.pdf  used on input line 391.
-(pdftex.def)             Requested size: 245.71754pt x 185.72943pt.
-[6 <./pdf/10.pdf> <./pdf/11.png>]
-<pdf/13.pdf, id=184, 549.05125pt x 374.39874pt>
-File: pdf/13.pdf Graphic file (type pdf)
-<use pdf/13.pdf>
-Package pdftex.def Info: pdf/13.pdf  used on input line 410.
-=======
-LaTeX Warning: Citation `SWAP' on page 6 undefined on input line 542.
-
-
-LaTeX Warning: Citation `SWAP' on page 6 undefined on input line 542.
-
-[6 <./pdf/07.pdf> <./pdf/08.pdf> <./pdf/09.pdf>]
-
-LaTeX Warning: Citation `JoseIMS-rect' on page 7 undefined on input line 561.
-
-
-LaTeX Warning: Citation `Kaz' on page 7 undefined on input line 561.
-
-<pdf/11.png, id=240, 1377.145pt x 867.24pt>
-File: pdf/11.png Graphic file (type png)
-<use pdf/11.png>
-Package pdftex.def Info: pdf/11.png  used on input line 575.
+Package pdftex.def Info: pdf/11.png  used on input line 539.
 (pdftex.def)             Requested size: 245.71754pt x 154.73346pt.
 
-Underfull \hbox (badness 7030) in paragraph at lines 576--576
+Underfull \hbox (badness 7030) in paragraph at lines 540--540
 \OT1/ptm/m/n/8 Fig. 11.   []Time[]-[]do[]-[]main[] [][][]wave[]-[]forms[] [][][
 ]mea[]-[]sured[] [][][]at[] [][][]drain[] [][][](a)[] [][][]and[]
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 576--576
+Underfull \hbox (badness 4531) in paragraph at lines 540--540
 [][][]\OT1/ptm/m/n/8 gate[] [][][](b)[] [][][]of[] [][][]the[] [][][]rec[]-[]ti
 []-[]fier[] [][][]with[] [][][][]V,[] [][][][][][] [][][]and[]
  []
 
-<pdf/12.pdf, id=242, 1068.99374pt x 808.01875pt>
+
+LaTeX Warning: Reference `MEAS_LP_sweep' on page 10 undefined on input line 544
+.
+
+
+LaTeX Warning: Reference `MEAS_LP_sweep' on page 10 undefined on input line 544
+.
+
+
+LaTeX Warning: Reference `MEAS_LP_sweep' on page 10 undefined on input line 544
+.
+
+<pdf/12.pdf, id=260, 1068.99374pt x 808.01875pt>
 File: pdf/12.pdf Graphic file (type pdf)
 <use pdf/12.pdf>
-Package pdftex.def Info: pdf/12.pdf  used on input line 591.
+Package pdftex.def Info: pdf/12.pdf  used on input line 555.
 (pdftex.def)             Requested size: 245.71754pt x 185.72943pt.
-[7 <./pdf/10.pdf> <./pdf/11.png> <./pdf/12.pdf>]
+
+LaTeX Warning: Reference `Rd_sweep_final' on page 10 undefined on input line 56
+9.
+
+
+LaTeX Warning: Reference `Rd_sweep_Zin' on page 10 undefined on input line 569.
+
+
 <pdf/13.pdf, id=261, 549.05125pt x 374.39874pt>
 File: pdf/13.pdf Graphic file (type pdf)
 <use pdf/13.pdf>
-Package pdftex.def Info: pdf/13.pdf  used on input line 610.
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
+Package pdftex.def Info: pdf/13.pdf  used on input line 574.
 (pdftex.def)             Requested size: 245.71754pt x 167.55238pt.
 <pdf/14.pdf, id=262, 427.5975pt x 290.08376pt>
 File: pdf/14.pdf Graphic file (type pdf)
 <use pdf/14.pdf>
-<<<<<<< HEAD
-Package pdftex.def Info: pdf/14.pdf  used on input line 419.
-=======
-Package pdftex.def Info: pdf/14.pdf  used on input line 619.
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
+Package pdftex.def Info: pdf/14.pdf  used on input line 583.
 (pdftex.def)             Requested size: 216.81pt x 147.08205pt.
+
+LaTeX Warning: Reference `VG_sweep_final' on page 10 undefined on input line 59
+4.
+
 <pdf/15.pdf, id=263, 579.16376pt x 373.395pt>
 File: pdf/15.pdf Graphic file (type pdf)
 <use pdf/15.pdf>
-<<<<<<< HEAD
-Package pdftex.def Info: pdf/15.pdf  used on input line 436.
+Package pdftex.def Info: pdf/15.pdf  used on input line 600.
 (pdftex.def)             Requested size: 245.71754pt x 158.41444pt.
 
-
-LaTeX Warning: Citation `brown_rect2' on page 7 undefined on input line 534.
-
-
-LaTeX Warning: Citation `asbeck' on page 7 undefined on input line 534.
+LaTeX Warning: Citation `brown_rect2' on page 10 undefined on input line 698.
 
 
-LaTeX Warning: Citation `4500dcdc' on page 7 undefined on input line 534.
+LaTeX Warning: Citation `asbeck' on page 10 undefined on input line 698.
 
 
-LaTeX Warning: Citation `roberg_phd' on page 7 undefined on input line 536.
+LaTeX Warning: Citation `4500dcdc' on page 10 undefined on input line 698.
 
-[7 <./pdf/12.pdf> <./pdf/13.pdf> <./pdf/14.pdf> <./pdf/15.pdf>]
+[10 <./pdf/11.png> <./pdf/12.pdf>]
 
-LaTeX Warning: Citation `robergIMS2012' on page 8 undefined on input line 538.
-
-
-LaTeX Warning: Citation `erezMTT2012' on page 8 undefined on input line 538.
-=======
-Package pdftex.def Info: pdf/15.pdf  used on input line 636.
-(pdftex.def)             Requested size: 245.71754pt x 158.41444pt.
-
-
-LaTeX Warning: Citation `brown_rect2' on page 8 undefined on input line 734.
-
-
-LaTeX Warning: Citation `asbeck' on page 8 undefined on input line 734.
-
-
-LaTeX Warning: Citation `4500dcdc' on page 8 undefined on input line 734.
-
-
-LaTeX Warning: Citation `roberg_phd' on page 8 undefined on input line 736.
-
-
-LaTeX Warning: Citation `robergIMS2012' on page 8 undefined on input line 738.
-
-
-LaTeX Warning: Citation `erezMTT2012' on page 8 undefined on input line 738.
-
-[8 <./pdf/13.pdf> <./pdf/14.pdf> <./pdf/15.pdf>] (./MTT_reveyrand.bbl
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 \end{thebibliography}
-                          
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-) (./MTT_reveyrand.bbl
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 \end{thebibliography}
-                          
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
-
-(./MTT_reveyrand.bbl) [8
-
-] (./MTT_reveyrand.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
-Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 4045 strings out of 492616
- 58057 string characters out of 6129481
- 174327 words of memory out of 5000000
- 7875 multiletter control sequences out of 15000+600000
- 42570 words of font info for 79 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 41i,19n,35p,2678b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
-19/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2019/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
-e1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/tim
-es/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MTT_reveyrand.pdf (8 pages, 2523540 bytes).
-PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
-=======
- 4052 strings out of 492649
- 58176 string characters out of 6129621
- 169307 words of memory out of 5000000
- 7844 multiletter control sequences out of 15000+600000
- 42570 words of font info for 79 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 41i,19n,35p,1914b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/
-utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MTT_reveyrand.pdf (9 pages, 2572948 bytes).
-PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
->>>>>>> d29ad8b688a92e7d867ede9e8bcb4547bcc5851c
- 0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+LaTeX Warning: Citation `roberg_phd' on page 11 undefined 
