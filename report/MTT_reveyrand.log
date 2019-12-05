@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.2)  5 DEC 2019 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.2)  5 DEC 2019 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -89,7 +89,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count91
 \@IEEEtranrubishbin=\box27
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -263,18 +266,18 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./MTT_reveyrand.aux)
 \openout1 = `MTT_reveyrand.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
  (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
@@ -339,13 +342,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 84.
+(Font)              <9> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 84.
+(Font)              <6> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 84.
+(Font)              <5> on input line 64.
 
-Underfull \hbox (badness 2343) in paragraph at lines 82--85
+Underfull \hbox (badness 2343) in paragraph at lines 62--65
 []\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---This pa-per presents a the-o-ret-i-
 cal anal-y-sis of
  []
@@ -355,142 +358,200 @@ cal anal-y-sis of
 
 ]
 [2]
-<pdf/01.pdf, id=16, 568.1214pt x 187.60419pt>
+<pdf/01.pdf, id=15, 568.1214pt x 187.60419pt>
 File: pdf/01.pdf Graphic file (type pdf)
 <use pdf/01.pdf>
-Package pdftex.def Info: pdf/01.pdf  used on input line 167.
+Package pdftex.def Info: pdf/01.pdf  used on input line 142.
 (pdftex.def)             Requested size: 252.94499pt x 83.52795pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 167--167
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 142--142
  [] 
  []
 
 
-LaTeX Warning: Reference `DC_resistance' on page 3 undefined on input line 176.
+LaTeX Warning: Reference `DC_resistance' on page 3 undefined on input line 151.
 
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 176.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 176.
+(Font)              <7> on input line 151.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 151.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
-<pdf/04.pdf, id=17, 557.80423pt x 371.82915pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+<pdf/04.pdf, id=16, 557.80423pt x 371.82915pt>
 File: pdf/04.pdf Graphic file (type pdf)
 <use pdf/04.pdf>
-Package pdftex.def Info: pdf/04.pdf  used on input line 191.
+Package pdftex.def Info: pdf/04.pdf  used on input line 166.
 (pdftex.def)             Requested size: 252.94499pt x 168.60948pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 191--193
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 166--168
  [] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 193.
+(Font)              <8> on input line 168.
 
 LaTeX Warning: Reference `nonideal_rectifier_resistance' on page 3 undefined on
- input line 197.
+ input line 172.
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 197--198
+Underfull \hbox (badness 1769) in paragraph at lines 172--173
 \OT1/ptm/m/n/10 old volt-age are next in-ves-ti-gated as-sum-ing the rec-ti-fie
 r
  []
 
-<pdf/05.pdf, id=18, 506.89375pt x 366.36874pt>
+<pdf/05.pdf, id=17, 506.89375pt x 366.36874pt>
 File: pdf/05.pdf Graphic file (type pdf)
 <use pdf/05.pdf>
-Package pdftex.def Info: pdf/05.pdf  used on input line 218.
+Package pdftex.def Info: pdf/05.pdf  used on input line 193.
 (pdftex.def)             Requested size: 216.81pt x 156.70253pt.
-[3 <./pdf/01.pdf> <./pdf/04.pdf>] [4 <./pdf/05.pdf>]
+[3 <./pdf/01.pdf> <./pdf/04.pdf>]
 
-LaTeX Warning: Reference `sim_opt_eff' on page 5 undefined on input line 339.
+LaTeX Warning: Reference `finv_vf0_comp_5' on page 4 undefined on input line 21
+3.
 
-<pdf/06.pdf, id=103, 389.455pt x 200.75pt>
+
+LaTeX Warning: Reference `finv_if0_comp_2' on page 4 undefined on input line 21
+3.
+
+
+LaTeX Warning: Reference `finv_idc_comp_3' on page 4 undefined on input line 24
+8.
+
+
+LaTeX Warning: Reference `sim_opt_eff' on page 4 undefined on input line 262.
+
+<pdf/06.pdf, id=81, 389.455pt x 200.75pt>
 File: pdf/06.pdf Graphic file (type pdf)
 <use pdf/06.pdf>
-Package pdftex.def Info: pdf/06.pdf  used on input line 345.
+Package pdftex.def Info: pdf/06.pdf  used on input line 268.
 (pdftex.def)             Requested size: 216.81pt x 111.75757pt.
-<pdf/07.pdf, id=104, 420.57124pt x 316.18124pt>
+<pdf/07.pdf, id=82, 420.57124pt x 316.18124pt>
 File: pdf/07.pdf Graphic file (type pdf)
 <use pdf/07.pdf>
-Package pdftex.def Info: pdf/07.pdf  used on input line 355.
+Package pdftex.def Info: pdf/07.pdf  used on input line 278.
 (pdftex.def)             Requested size: 252.94499pt x 190.16371pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 355--355
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 278--278
  [] 
  []
 
 
-LaTeX Warning: Reference `circuit_diagram' on page 5 undefined on input line 39
-3.
+LaTeX Warning: Citation `robergIMS2012' on page 4 undefined on input line 292.
 
-[5 <./pdf/06.pdf> <./pdf/07.pdf>]
-<pdf/08.pdf, id=154, 285.065pt x 199.74625pt>
+
+LaTeX Warning: Citation `robergIMS2012' on page 4 undefined on input line 292.
+
+[4 <./pdf/05.pdf>]
+
+LaTeX Warning: Citation `gan_pa_letter' on page 5 undefined on input line 316.
+
+
+LaTeX Warning: Reference `circuit_diagram' on page 5 undefined on input line 31
+6.
+
+<pdf/08.pdf, id=104, 285.065pt x 199.74625pt>
 File: pdf/08.pdf Graphic file (type pdf)
 <use pdf/08.pdf>
-Package pdftex.def Info: pdf/08.pdf  used on input line 398.
+Package pdftex.def Info: pdf/08.pdf  used on input line 321.
 (pdftex.def)             Requested size: 216.81pt x 151.91844pt.
-<pdf/09.pdf, id=155, 541.02126pt x 365.365pt>
+
+LaTeX Warning: Citation `gan_pa_letter' on page 5 undefined on input line 322.
+
+
+LaTeX Warning: Citation `gan_pa_letter' on page 5 undefined on input line 322.
+
+<pdf/09.pdf, id=105, 541.02126pt x 365.365pt>
 File: pdf/09.pdf Graphic file (type pdf)
 <use pdf/09.pdf>
-Package pdftex.def Info: pdf/09.pdf  used on input line 407.
+Package pdftex.def Info: pdf/09.pdf  used on input line 330.
 (pdftex.def)             Requested size: 216.81pt x 146.41658pt.
-<pdf/10.pdf, id=156, 715.67375pt x 474.77374pt>
+
+LaTeX Warning: Citation `SWAP' on page 5 undefined on input line 346.
+
+
+LaTeX Warning: Citation `verspecht' on page 5 undefined on input line 346.
+
+
+LaTeX Warning: Citation `switch' on page 5 undefined on input line 346.
+
+
+LaTeX Warning: Citation `faraj_arftg_2012' on page 5 undefined on input line 34
+6.
+
+[5 <./pdf/06.pdf> <./pdf/07.pdf> <./pdf/08.pdf> <./pdf/09.pdf>]
+<pdf/10.pdf, id=167, 715.67375pt x 474.77374pt>
 File: pdf/10.pdf Graphic file (type pdf)
 <use pdf/10.pdf>
-Package pdftex.def Info: pdf/10.pdf  used on input line 431.
+Package pdftex.def Info: pdf/10.pdf  used on input line 354.
 (pdftex.def)             Requested size: 252.94499pt x 167.79605pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 431--432
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 354--355
  [][] 
  []
 
-[6 <./pdf/08.pdf> <./pdf/09.pdf> <./pdf/10.pdf>]
-<pdf/11.png, id=181, 1377.145pt x 867.24pt>
+
+LaTeX Warning: Citation `SWAP' on page 6 undefined on input line 355.
+
+
+LaTeX Warning: Citation `SWAP' on page 6 undefined on input line 355.
+
+
+LaTeX Warning: Citation `JoseIMS-rect' on page 6 undefined on input line 361.
+
+
+LaTeX Warning: Citation `Kaz' on page 6 undefined on input line 361.
+
+<pdf/11.png, id=168, 1377.145pt x 867.24pt>
 File: pdf/11.png Graphic file (type png)
 <use pdf/11.png>
-Package pdftex.def Info: pdf/11.png  used on input line 465.
+Package pdftex.def Info: pdf/11.png  used on input line 375.
 (pdftex.def)             Requested size: 245.71754pt x 154.73346pt.
-<pdf/12.pdf, id=183, 1068.99374pt x 808.01875pt>
+<pdf/12.pdf, id=170, 1068.99374pt x 808.01875pt>
 File: pdf/12.pdf Graphic file (type pdf)
 <use pdf/12.pdf>
-Package pdftex.def Info: pdf/12.pdf  used on input line 481.
+Package pdftex.def Info: pdf/12.pdf  used on input line 391.
 (pdftex.def)             Requested size: 245.71754pt x 185.72943pt.
+[6 <./pdf/10.pdf> <./pdf/11.png>]
 <pdf/13.pdf, id=184, 549.05125pt x 374.39874pt>
 File: pdf/13.pdf Graphic file (type pdf)
 <use pdf/13.pdf>
-Package pdftex.def Info: pdf/13.pdf  used on input line 500.
+Package pdftex.def Info: pdf/13.pdf  used on input line 410.
 (pdftex.def)             Requested size: 245.71754pt x 167.55238pt.
 <pdf/14.pdf, id=185, 427.5975pt x 290.08376pt>
 File: pdf/14.pdf Graphic file (type pdf)
 <use pdf/14.pdf>
-Package pdftex.def Info: pdf/14.pdf  used on input line 509.
+Package pdftex.def Info: pdf/14.pdf  used on input line 419.
 (pdftex.def)             Requested size: 216.81pt x 147.08205pt.
 <pdf/15.pdf, id=186, 579.16376pt x 373.395pt>
 File: pdf/15.pdf Graphic file (type pdf)
 <use pdf/15.pdf>
-Package pdftex.def Info: pdf/15.pdf  used on input line 526.
+Package pdftex.def Info: pdf/15.pdf  used on input line 436.
 (pdftex.def)             Requested size: 245.71754pt x 158.41444pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./pdf/11.png> <./pdf/12.pdf> <./pdf/13.pdf>] (./MTT_reveyrand.bbl [8 <./pd
-f/14.pdf> <./pdf/15.pdf>]
-Underfull \hbox (badness 6608) in paragraph at lines 170--174
-[]\OT1/ptm/m/n/8 M. Roberg, E. Falken-stein, and Z. Popovic, ``High-efficiency
- []
+LaTeX Warning: Citation `brown_rect2' on page 7 undefined on input line 534.
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 192--197
-[]\OT1/ptm/m/n/8 G. Cal-let, J. Faraj, O. Jardel, C. Char-bon-ni-aud, J.-C. Jac
-quet,
- []
+LaTeX Warning: Citation `asbeck' on page 7 undefined on input line 534.
 
-) [9
+
+LaTeX Warning: Citation `4500dcdc' on page 7 undefined on input line 534.
+
+
+LaTeX Warning: Citation `roberg_phd' on page 7 undefined on input line 536.
+
+[7 <./pdf/12.pdf> <./pdf/13.pdf> <./pdf/14.pdf> <./pdf/15.pdf>]
+
+LaTeX Warning: Citation `robergIMS2012' on page 8 undefined on input line 538.
+
+
+LaTeX Warning: Citation `erezMTT2012' on page 8 undefined on input line 538.
+
+(./MTT_reveyrand.bbl) [8
 
 ] (./MTT_reveyrand.aux)
 
@@ -498,11 +559,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4062 strings out of 492616
- 58169 string characters out of 6129481
- 165214 words of memory out of 5000000
- 7895 multiletter control sequences out of 15000+600000
- 42599 words of font info for 79 fonts, out of 8000000 for 9000
+ 4045 strings out of 492616
+ 58057 string characters out of 6129481
+ 174327 words of memory out of 5000000
+ 7875 multiletter control sequences out of 15000+600000
+ 42570 words of font info for 79 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  41i,19n,35p,2678b,594s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -518,19 +579,18 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2019/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2019/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
-urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/
-utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MTT_reveyrand.pdf (9 pages, 2543230 bytes).
+onts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
+e1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/tim
+es/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a
+.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on MTT_reveyrand.pdf (8 pages, 2523540 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 278 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

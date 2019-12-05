@@ -1,28 +1,10 @@
-%
-% IEEE Transactions on Microwave Theory and Techniques example
-% Tibault Reveyrand - http://www.microwave.fr
-%
-% http://www.microwave.fr/LaTeX.html
-% ---------------------------------------
-
-
-
-% ================================================
-% Please HIGHLIGHT the new inputs such like this :
-% Text :
-%  \hl{comment}
-% Aligned Eq. 
-% \begin{shaded}
-% \end{shaded}
-% ================================================
-
 \documentclass[journal]{IEEEtran}
 
 %\usepackage[retainorgcmds]{IEEEtrantools}
-%\usepackage{bibentry}  
+\usepackage{bibentry}  
 \usepackage{xcolor,soul,framed} %,caption
 
-\colorlet{shadecolor}{yellow}
+%\colorlet{shadecolor}{yellow}
 % \usepackage{color,soul}
 \usepackage[pdftex]{graphicx}
 \graphicspath{{../pdf/}{../jpeg/}}
@@ -79,7 +61,7 @@ Machine Learning for Business IS4861
 % =================================================================================
 \begin{abstract}
 %\boldmath
-This paper presents a theoretical analysis of harmonically-terminated high-efficiency power rectifiers and experimental validation on a class-C single Schottky-diode rectifier and a class-F$^{\rm -1}$ GaN transistor rectifier. The theory is based on a Fourier analysis of current and voltage waveforms which arise across the rectifying element when different harmonic terminations are presented at its terminals. An analogy to harmonically-terminated power amplifier theory is discussed. From the analysis, one can obtain an optimal value for the DC load given the RF circuit design. An upper limit on rectifier efficiency is derived for each case as a function of the device on-resistance. Measured results from fundamental frequency source-pull measurement of a Schottky diode rectifier with short-circuit terminations at the second and third harmonic are presented. A maximal device rectification efficiency of 72.8\% at 2.45\,GHz matches the theoretical prediction. A 2.14\,GHz GaN pHEMT rectifier is designed based on a class-F$^{\rm -1}$ power amplifier. The gate of the transistor is terminated in an optimal impedance for self-synchronous rectification. Measurements of conversion efficiency and output DC voltage for varying gate RF impedance, DC load and gate bias are shown with varying input RF power at the drain. The rectifier demonstrates an efficiency of 85\% for a 10\,W input RF power at the transistor drain, with a DC voltage of \hl{30\,V} across a 98\,$\Omega$ resistor.
+This paper presents a theoretical analysis of harmonically-terminated high-efficiency power rectifiers and experimental validation on a class-C single Schottky-diode rectifier and a class-F$^{\rm -1}$ GaN transistor rectifier. The theory is based on a Fourier analysis of current and voltage waveforms which arise across the rectifying element when different harmonic terminations are presented at its terminals. An analogy to harmonically-terminated power amplifier theory is discussed. From the analysis, one can obtain an optimal value for the DC load given the RF circuit design. An upper limit on rectifier efficiency is derived for each case as a function of the device on-resistance. Measured results from fundamental frequency source-pull measurement of a Schottky diode rectifier with short-circuit terminations at the second and third harmonic are presented. A maximal device rectification efficiency of 72.8\% at 2.45\,GHz matches the theoretical prediction. A 2.14\,GHz GaN pHEMT rectifier is designed based on a class-Fpower amplifier. The gate of the transistor is terminated in an optimal impedance for self-synchronous rectification. Measurements of conversion efficiency and output DC voltage for varying gate RF impedance, DC load and gate bias are shown with varying input RF power at the drain. The rectifier demonstrates an efficiency of 85\% for a 10\,W input RF power at the transistor drain, with a DC voltage of \hl{30\,V} across a 98\, resistor.
 \end{abstract}
 
 
@@ -88,11 +70,6 @@ This paper presents a theoretical analysis of harmonically-terminated high-effic
 \begin{IEEEkeywords}
 \hl{kaggle, machine learning, business, data analytics, airbnb}
 \end{IEEEkeywords}
-
-
-
-
-
 
 % For peer review papers, you can put extra information on the cover
 % page as needed:
@@ -157,7 +134,7 @@ First of all, we computed how many different values certain attributes can have.
 In a following step we replace all na-values by suitable possible values in order to be able to use the data in the following steps and analyze it in a proper way. To be able to fit our models, we replaced some textual values by numerical ones and split the dataset into a training dataset and a test dataset. The training dataset we will use to ‘create’ or models in order to check our created models and be able to see how good for example predictions will be and which error we need to expect we need the test data.
 \subsection {More detailed dataset description}
 \subsubsection{Listings}
-The listing dataset consists of 92 columns, with attributes that describe different characteristics of the rented apartments. It describes 3818 apartments that are allocated in 79 neighborhoods. Combined with the review dataset it represents a dataset, which can be used to find some attributes, valued as most important by customers. If it is combined with the calendar dataset, a data analysis can help to determine the factors which are important to, not only attract visitors, but also to finally rent it out successfully. Especially we will use this combination to find out which attributes of the apartments did influence the price charged the most.
+The listing dataset consists of 92 columns, with attributes that describe different characteristics of the rented apartments. It describes 3818 apartments that are allocated in 79 neighborhoods. Combined with the review dataset it represents a dataset, which can be used to find some attributes, valued as most important by customers\cite{RN1} .If it is combined with the calendar dataset, a data analysis can help to determine the factors which are important to, not only attract visitors, but also to finally rent it out successfully. Especially we will use this combination to find out which attributes of the apartments did influence the price charged the most.
 \subsubsection{Reviews}
 In order to have an insight whether the reviews are written by satisfied or rather unsatisfied visitors, we computed a bar chart which shows the rating-number of reviews ratio. (Figure \ref{score_reviews_ratio})
 \begin{figure}
@@ -233,50 +210,7 @@ The DC and fundamental frequency values of the voltage and current waveforms can
     &-(V_{tr} + I_{max}R_{on})\left[\pi - 2\arcsin\left(\frac{V_{tr}}{V_{max}}\right)\right]\Bigg)
 \end{split}\end{equation}
 
-The fundamental frequency voltage is found from $V(f_0)=a_v+jb_v$, where
-\begin{shaded}
-\begin{equation}
-a_v=\frac{1}{\pi}\int_0^{2\pi}v(\theta)\cos \theta d\theta = 0
-\end{equation}
-\end{shaded}
-and $b_v$ can be reduced to
-
-
-\begin{equation}\label{finv_vf0_comp_5}\begin{split}
-    b_v =& \frac{1}{\pi}\Bigg(V_{max}\arcsin\left(\frac{V_{tr}}{V_{max}}\right)+ \frac{\pi V_{max}}{2}  \\
-    &+ \left.\left(V_{tr} + 2I_{max}R_{on}\right) \sqrt{1 - \left(\frac{V_{tr}}{V_{max}}\right)^2}\right)
-\end{split}\end{equation}
-
-Similarly, the DC component of the current waveform is found to be
-
-\begin{equation}\label{finv_idc_comp_3}
-    I_{DC} = \frac{I_{max}}{2\pi}\left(\pi - 2\arcsin\left(\frac{V_{tr}}{V_{max}}\right)\right)
-\end{equation}
-The fundamental frequency current $i(t)=a_i+jb_i$ has $a_i=0$ and the coefficient $b_i$ can be shown to be equal to
-
-\begin{equation}\label{finv_if0_comp_2}
-    b_i = -\frac{2I_{max}}{\pi}\sqrt{1 - \left(\frac{V_{tr}}{V_{max}}\right)^2}
-\end{equation}
-The input power \hl{at the fundamental frequency} is found from 
-
-
-\begin{equation}\label{Pin}
-  P_{in} = \Re\left\{\frac{V(f_0)I^{*}(f_0)}{2}\right\}
-\end{equation}
-
-
 \hl{Substituting (}\ref{finv_vf0_comp_5}) and (\ref{finv_if0_comp_2}) into the above results in
-
-\begin{shaded}
-\begin{equation}\begin{split}\label{Pin_diode2}
-    P_{in} =& \frac{kI_{max}}{\pi^2}\left(V_{max}\arcsin\left(\frac{V_{tr}}{V_{max}}\right) + \frac{\pi V_{max}}{2} \right. \\
-   &+ \left(V_{tr}+2I_{max}R_{on}\right)k\bigg)
-\end{split}\end{equation}
-\end{shaded}
-where $k$ is defined as
-\begin{equation}\label{k}
-    k = \sqrt{1 - \left(\frac{V_{tr}}{V_{max}}\right)^2}
-\end{equation}
 
 Solving for $I_{max}$ as a function of $P_{in}$ when $R_{on}$ is non-zero after some arithmetic results in two solutions, one of which is negative. The positive solution for the maximal current is
 
@@ -308,15 +242,6 @@ The negative impedance in (\ref{rf0f}) indicates that power is delivered to the 
 \begin{equation}\label{efff}
     \eta = \frac{P_{DC}}{P_{in}} = \frac{V_{DC}I_{DC}}{P_{in}}
 \end{equation}
-
-
-
-
-
-
-
-
-
 
 \subsection {Design example based on class-F$^{-1}$ theory}
 
@@ -430,19 +355,6 @@ The class-F$^{\rm -1}$ power amplifier described above is fully characterized in
 \caption{Time-domain non-linear rectifier measurement block diagram. The SWAP \cite{SWAP} performs sampling of current and voltage and the calibration refers the sampled quantities to the reference planes at the DUT. The drain output DC resistance $R_{DC}$ , the gate bias $V_{GS}$ and the gate RF impedance $Z_g$ are varied as the input power at the drain is swept from 10 to 42\,dBm.}
 \label{measurement_setup}
 \end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \subsection {Self-synchronous transistor rectifier results}
 

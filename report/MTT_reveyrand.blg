@@ -9,52 +9,67 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: Bibliography.bib
+Warning--I didn't find a database entry for "IEEEexample:BSTcontrol"
+Warning--I didn't find a database entry for "robergIMS2012"
+Warning--I didn't find a database entry for "gan_pa_letter"
+Warning--I didn't find a database entry for "SWAP"
+Warning--I didn't find a database entry for "verspecht"
+Warning--I didn't find a database entry for "switch"
+Warning--I didn't find a database entry for "faraj_arftg_2012"
+Warning--I didn't find a database entry for "JoseIMS-rect"
+Warning--I didn't find a database entry for "Kaz"
+Warning--I didn't find a database entry for "brown_rect2"
+Warning--I didn't find a database entry for "asbeck"
+Warning--I didn't find a database entry for "4500dcdc"
+Warning--I didn't find a database entry for "roberg_phd"
+Warning--I didn't find a database entry for "erezMTT2012"
 -- IEEEtran.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-** IEEEtran BST control entry "IEEEexample:BSTcontrol" detected.
-Warning--empty note in SWAP
+Too many commas in name 1 of "Josh Keating, Ethan Katnic, Christian Hahn, Robin Yang" for entry RN1
+while executing---line 2363 of file IEEEtran.bst
+Warning--missing institution in RN1
 
 Done.
-You've used 36 entries,
+You've used 1 entry,
             3975 wiz_defined-function locations,
-            1388 strings with 20370 characters,
-and the built_in function-call counts, 29145 in all, are:
-= -- 2346
-> -- 696
-< -- 282
-+ -- 388
-- -- 123
-* -- 1410
-:= -- 4317
-add.period$ -- 70
-call.type$ -- 36
-change.case$ -- 39
-chr.to.int$ -- 650
-cite$ -- 37
-duplicate$ -- 2085
-empty$ -- 2261
-format.name$ -- 133
-if$ -- 6774
+            1191 strings with 14569 characters,
+and the built_in function-call counts, 474 in all, are:
+= -- 33
+> -- 4
+< -- 0
++ -- 2
+- -- 1
+* -- 33
+:= -- 100
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 33
+empty$ -- 31
+format.name$ -- 1
+if$ -- 79
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 348
-newline$ -- 128
-num.names$ -- 35
-pop$ -- 725
+int.to.str$ -- 1
+missing$ -- 9
+newline$ -- 25
+num.names$ -- 1
+pop$ -- 18
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 4
-skip$ -- 2267
+quote$ -- 2
+skip$ -- 31
 stack$ -- 0
-substring$ -- 1523
-swap$ -- 1827
-text.length$ -- 70
+substring$ -- 1
+swap$ -- 23
+text.length$ -- 0
 text.prefix$ -- 0
-top$ -- 6
+top$ -- 5
 type$ -- 0
 warning$ -- 1
-while$ -- 117
-width$ -- 38
-write$ -- 372
-(There was 1 warning)
+while$ -- 1
+width$ -- 2
+write$ -- 30
+(There was 1 error message)
