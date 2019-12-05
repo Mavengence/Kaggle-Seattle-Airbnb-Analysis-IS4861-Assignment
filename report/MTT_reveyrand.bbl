@@ -1,0 +1,209 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+\renewcommand\BIBentryALTinterwordstretchfactor{4}
+
+\bibitem{tesla}
+T.~C. Martin and N.~Tesla, \emph{The inventions, researches and writing of
+  Nikola Tesla: with special reference to his work in polyphase currents and
+  high potential lighting}.\hskip 1em plus 0.5em minus 0.4em\relax Milwaukee,
+  WI: Lee Engineering Co., 1952.
+
+\bibitem{early_rect1}
+E.~Peterson and F.~Llewellyn, ``The operation of modulators from a physical
+  viewpoint,'' \emph{Proceedings of the Institute of Radio Engineers}, vol.~18,
+  no.~1, pp. 38 -- 48, jan. 1930.
+
+\bibitem{early_rect2}
+J.~Nelson, ``Some notes on grid circuit and diode rectification,'' \emph{Radio
+  Engineers, Proceedings of the Institute of}, vol.~20, no.~6, pp. 989 --1003,
+  june 1932.
+
+\bibitem{converter_history}
+C.~Edwards, ``Microwave converters,'' \emph{Proceedings of the IRE}, vol.~35,
+  no.~11, pp. 1181 -- 1191, nov. 1947.
+
+\bibitem{purdue_rect}
+R.~George and E.~Sabbagh, ``An efficient means of converting microwave energy
+  to dc using semiconductor diodes,'' \emph{Proceedings of the IEEE}, vol.~51,
+  no.~3, p. 530, march 1963.
+
+\bibitem{brown_rect1}
+W.~Brown, ``Experiments in the transportation of energy by microwave beam,'' in
+  \emph{IRE International Convention Record}, vol.~12, mar 1964, pp. 8 -- 17.
+
+\bibitem{brown_rect2}
+W.~Brown, J.~Mims, and N.~Heenan, ``An experimental microwave-powered
+  helicopter,'' in \emph{IRE International Convention Record}, vol.~13, mar
+  1965, pp. 225 -- 235.
+
+\bibitem{nasa_report1}
+O.~E. Maynard, W.~C. Brown, A.~Edwards, J.~T. Haley, G.~Meltz, J.~M. Howell,
+  and A.~Nathan, ``Microwave power transmission studies. volume 1: Executive
+  summary,'' NASA, Tech. Rep. 19760008506, 1975.
+
+\bibitem{cyclotron_rect1}
+D.~Watson, K.~Talbot, and C.~Johnson, ``A cyclotron-wave microwave power
+  converter,'' \emph{Proceedings of the IEEE}, vol.~53, no.~11, pp. 1797 --
+  1798, nov. 1965.
+
+\bibitem{cyclotron_rect2}
+D.~Watson, R.~Grow, and C.~Johnson, ``A cyclotron-wave rectifier for s-band and
+  x-band,'' \emph{Electron Devices, IEEE Transactions on}, vol.~18, no.~1, pp.
+  3 -- 11, jan 1971.
+
+\bibitem{brown1_1970}
+W.~C. Brown, ``High power, efficient, free-space microwave power transmission
+  systems,'' in \emph{Microwave Conference, 1973. 3rd European}, vol.~2, sept.
+  1973, pp. 1 --4.
+
+\bibitem{brown3_1970}
+W.~Brown, ``The design of large scale terres trial rectennas for low-cost
+  production and erection,'' in \emph{Microwave Symposium Digest, 1978
+  IEEE-MTT-S International}, june 1978, pp. 349 --351.
+
+\bibitem{brown}
+------, ``The history of power transmission by radio waves,'' \emph{Microwave
+  Theory and Tech., IEEE Trans. on}, vol.~32, no.~9, pp. 1230 -- 1242, sep
+  1984.
+
+\bibitem{rect_power_combine}
+R.~Gutmann and J.~Borrego, ``Power combining in an array of microwave power
+  rectifiers,'' \emph{Microwave Theory and Techniques, IEEE Transactions on},
+  vol.~27, no.~12, pp. 958 -- 968, dec 1979.
+
+\bibitem{erezMTT2012}
+E.~Falkenstein, M.~Roberg, and Z.~Popovic, ``Low-power wireless power
+  delivery,'' \emph{Microwave Theory and Techniques, IEEE Transactions on},
+  vol.~60, no.~7, pp. 2277 --2286, july 2012.
+
+\bibitem{hagerty}
+J.~Hagerty, F.~Helmbrecht, W.~McCalpin, R.~Zane, and Z.~Popovic, ``Recycling
+  ambient microwave energy with broad-band rectenna arrays,'' \emph{Microwave
+  Theory and Tech., IEEE Trans. on}, vol.~52, no.~3, pp. 1014 -- 1024, march
+  2004.
+
+\bibitem{erez_thesis}
+E.~Falkenstein, ``Characterization and design of a low-power wireless power
+  delivery system,'' Ph.D. dissertation, University of Colorado at Boulder,
+  Boulder, CO, 2011.
+
+\bibitem{asbeck}
+X.~Zhang, L.~Larson, P.~Asbeck, and R.~Langridge, ``Analysis of power recycling
+  techniques for rf and microwave outphasing power amplifiers,'' \emph{Circuits
+  and Systems II: Analog and Digital Signal Processing, IEEE Trans. on},
+  vol.~49, no.~5, pp. 312 -- 320, may 2002.
+
+\bibitem{4500dcdc}
+S.~Djukic, D.~Maksimovic, and Z.~Popovic, ``A planar 4.5-ghz dc-dc power
+  converter,'' \emph{Microwave Theory and Tech., IEEE Trans. on}, vol.~47,
+  no.~8, pp. 1457 --1460, aug 1999.
+
+\bibitem{JoseIMS-rect}
+M.~Nieves~Ruiz, R.~Marante, and J.~A. Garcia, ``A class e synchronous rectifier
+  based on an e-phemt device for wireless powering applications,'' in
+  \emph{IEEE MTT-S International Microwave Symposium Digest}, Montr\'{e}al,
+  2012.
+
+\bibitem{rectifier_harmonic_generation}
+S.~Imai, S.~Tamaru, K.~Fujimori, M.~Sanagi, and S.~Nogi, ``Efficiency and
+  harmonics generation in microwave to dc conversion circuits of half-wave and
+  full-wave rectifier types,'' in \emph{Microwave Workshop Series on Innovative
+  Wireless Power Transmission: Technologies, Systems, and Applications (IMWS),
+  2011 IEEE MTT-S International}, 2011, pp. 15--18.
+
+\bibitem{low_cost_rectenna}
+H.~Takhedmit, B.~Merabet, L.~Cirio, B.~Allard, F.~Costa, C.~Vollaire, and
+  O.~Picon, ``A 2.45-ghz low cost and efficient rectenna,'' in \emph{Antennas
+  and Propagation (EuCAP), 2010 Proceedings of the Fourth European Conference
+  on}, april 2010, pp. 1 --5.
+
+\bibitem{Jose-DC-DC-IMS}
+R.~Marante, M.~N. Ruiz, L.~Rizo, L.~Cabria, and J.~A. Garcia, ``A uhf class e2
+  dc/dc converter using gan hemts,'' in \emph{Microwave Symposium Digest (MTT),
+  2012 IEEE MTT-S International}, june 2012, pp. 1 --3.
+
+\bibitem{Kaz}
+M.~Kazimierczuk and J.~Jozwik, ``Analysis and design of class e
+  zero-current-switching rectifier,'' \emph{Circuits and Systems, IEEE
+  Transactions on}, vol.~37, no.~8, pp. 1000 --1009, aug 1990.
+
+\bibitem{raab01_finiteharmonics}
+F.~Raab, ``{Class-E}, {Class-C}, and {Class-F} power amplifiers based upon a
+  finite number of harmonics,'' \emph{Microwave Theory and Techniques, IEEE
+  Transactions on}, vol.~49, no.~8, pp. 1462 --1468, Aug 2001.
+
+\bibitem{raab02_PAoverview}
+F.~Raab, P.~Asbeck, S.~Cripps, P.~Kenington, Z.~Popovic, N.~Pothecary,
+  J.~Sevic, and N.~Sokal, ``Power amplifiers and transmitters for {RF} and
+  microwave,'' \emph{Microwave Theory and Techniques, IEEE Transactions on},
+  vol.~50, no.~3, pp. 814 --826, Mar 2002.
+
+\bibitem{kee_rutledge}
+S.~Kee, I.~Aoki, A.~Hajimiri, and D.~Rutledge, ``The class-e/f family of zvs
+  switching amplifiers,'' \emph{Microwave Theory and Techniques, IEEE
+  Transactions on}, vol.~51, no.~6, pp. 1677 -- 1690, jun. 2003.
+
+\bibitem{roberg2011}
+M.~Roberg and Z.~Popovic, ``Analysis of high-efficiency power amplifiers with
+  arbitrary output harmonic terminations,'' \emph{Microwave Theory and
+  Techniques, IEEE Transactions on}, vol.~59, no.~8, pp. 2037 --2048, aug.
+  2011.
+
+\bibitem{robergIMS2012}
+M.~Roberg, E.~Falkenstein, and Z.~Popovic, ``High-efficiency
+  harmonically-terminated rectifier for wireless powering applications,'' in
+  \emph{IEEE MTT-S International Microwave Symposium Digest}, Montr\'{e}al,
+  2012.
+
+\bibitem{gan_pa_letter}
+M.~Roberg, J.~Hoversten, and Z.~Popovi\'c, ``{GaN HEMT PA with over 84\% power
+  added efficiency},'' \emph{Electronics Letters}, vol.~46, no.~23, pp. 1553
+  --1554, 11 2010.
+
+\bibitem{SWAP}
+\BIBentryALTinterwordspacing
+{VTD}, ``Swap-x402 data sheet.'' [Online]. Available:
+  \url{http://www.vtd-rf.com/pdf/productpresentation.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{verspecht}
+J.~Verspecht, ``Calibration of a measurement system for high frequency
+  nonlinear devices,'' Ph.D. dissertation, Vrije Universiteit Brussel (VUB),
+  1995.
+
+\bibitem{switch}
+G.~Callet, J.~Faraj, O.~Jardel, C.~Charbonniaud, J.-C. Jacquet, T.~Reveyrand,
+  E.~Morvan, S.~Piotrowicz, J.-P. Teyssier, and R.~Qu\'{e}r\'{e}, ``A new
+  nonlinear hemt model for algan/gan switch applications,'' \emph{International
+  Journal of Microwave and Wireless Technologies}, vol.~2, no. Special Issue
+  3-4, pp. 283--291, 2010.
+
+\bibitem{faraj_arftg_2012}
+J.~Faraj, G.~Callet, O.~Jardel, A.~El-Rafei, F.~De~Groote, R.~Qu\'{e}r\'{e},
+  and J.~Teyssier, ``Time domain large signal characterization of self-biasing
+  phenomena in switch-mode algan/gan hemts,'' in \emph{74th ARFTG Symposium,
+  International Microwave Symposium Digest}, Montr\'{e}al, Canada, 2012.
+
+\bibitem{roberg_phd}
+M.~Roberg, ``{Analysis \& Design of Non-Linear Amplifiers for Efficient
+  Microwave Transmitters},'' Ph.D. dissertation, University of Colorado at
+  Boulder (CU-Boulder), 2012.
+
+\end{thebibliography}
