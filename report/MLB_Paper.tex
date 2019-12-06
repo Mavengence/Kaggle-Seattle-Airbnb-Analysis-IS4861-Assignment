@@ -109,6 +109,7 @@ According to the Promotion Policy a second issue is to decide where/ via which t
 \noindent The Place Policy considers where customers get in touch with the product and consume it, in order to find a suitable retail location that is accessible for customers. The first contact between lessor and renter happens on Airbnb but the final ‘purchase’ of the product, takes places in Seattle. As Airbnb is a platform, which acts as agent between lessor in Seattle and renter, we do not need to care about this in our data analysis, as this fact is fixed and can not be changed.
 
 \section{Executive summary} 
+\noindent 
 The aim of this report is to find out how the effectiveness of marketing ‘Airbnb Seattle’ can be improved. This report orients itself at the four Ps from Marketing Mix, which are Product, Price, Place and Promotion. 
 The data originally consisted of three data sheets Listing, Reviews and Calendar and had to be prepared for the analyzation. 
 The analysis wants to answer the following five questions: 
@@ -130,7 +131,7 @@ Moreover, it can be beneficial if Airbnb itself starts the marketing campaign sh
 
 \section{Data description with visualization}
 \subsection {General}
-Our dataset consists of three excel sheet: ‘listings.csv’, ‘calendar.csv’ and ‘reviews.csv’.\\
+\noindent Our dataset consists of three excel sheet: ‘listings.csv’, ‘calendar.csv’ and ‘reviews.csv’.\\
 Listings consists of 92 attributes with 3,818 data entries. Every single row represents one apartment in Seattle that has been offered for rent via the platform of Airbnb. Calendar consists of 1,393,570 data entries and 4 columns. The dataset connects a certain time period with an apartment and indicates whether it has been rented out or been available during that period. The last dataset ‘reviews.csv’ contains all reviews former visitors have handed in for an apartment, it contains the reviewer’s Id, name comments, the date as well as the house ID.\\So, if the excel sheets are combined it can be deducted the following information: the key facts about an apartment (like the size, prize, number of beds, usable facilities, …), furthermore one can get a general idea about, what the apartment looks like by the description (written by the lessor) as well as by the reviews (written by former guests) and it is known when the apartment has been available or rented.
 
 \subsection {Data preprocessing}
@@ -160,7 +161,7 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \end{center}
 \end{figure}
 %
-Besides of that, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
+Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
 In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{compare_the_neighbourhoods}).
 %
 %Figure
@@ -221,7 +222,7 @@ The difference between stemming and lemmatization is, lemmatization looks at the
 \subsubsection{}
 \subsection{Which factors did influence the degree of booking of former rented apartments? }
 In order to answer this question, the Extra Tree Classifier was used. With the help of the Extra Tree Classifier one can see the feature importance. According to the feature importance the number of reviews influences the degree of booking of former rented apartments the most. Customers also care about how long the host has been on the platform and extra people. Almost equally as important are the number of reviews per month. This underlines how important the reviews are. The amount of host listings, the response rate and what is included for the guests influences the results of ones booking almost on the same level. The host should also care about the response rate and the number of beds as the next important thing on the list. Less important are the cancellation policy, bedrooms, bathrooms and if the host is verified on Airbnb. The Room type, host acceptance rate, phone verification and if the host has a profile picture are the least important factors influencing the degree of booking the apartments.
-\subsection{5.3	Which price can be charged for an apartment with certain characteristics?}
+\subsection{Which price can be charged for an apartment with certain characteristics?}
 First of all, we created a Linear Regression model in order to predict the price influenced by all other attributes. For this prediction we achieved a Mean Absolute Error of 44.28, which is, taking into account that the minimum rent is 10 dollar and maximum rent per night 1,650\$, very low. Therefore, we can assume that the listed attributes have a significant impact on the price of an accommodation and it is possible to estimate the rental price by these attributes and therefore it makes sense to use a classification tree, which takes these attributes into account.
 Figure Linear regression
 In the following, we use the Extra Tree Classifier in order to find out, which attributes have a strong correlation with the price and therefore influence the price of an apartment the most. A classification tree uses the values of attributes to create groups, in which all the apartments have the same (or at least similar) values for the attributes. According to our analysis, the attributes with the highest influence on the price have a correlation coefficient in a range of 0.01 and 0.2. The highest influence on the price is the number of reviews an apartment has. This attribute has a correlation of approximately 20\%, which is almost twice as much as the second important attribute has by showing 0.112 as correlation coefficient. This attribute indicates how long the lessor is already registered as host on Airbnb. As third important factor, with a correlation coefficient of a little bit less than 0.1 the number of extra people influences the price. Other attributes which influence the price are for example the number of listings a host has/ had, number of beds, number of bath- and bedrooms. The least significant attribute in our visualization is, whether the guest needs a profile picture (with a coefficient of about 0.01). (Figure \ref{correlation-attribute-price})
