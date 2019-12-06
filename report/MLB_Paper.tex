@@ -197,7 +197,7 @@ NLP stands for natural language processing. We can use this technique to process
 The preprocessing steps for transforming the reviews into Wordclouds are below with exactly this sequence of steps:
 \begin{itemize}
  \item Regular Expression Tokenizer
- \item Stopwords -> English + two additional “Seattle” and “Neighbourhood”
+ \item Stopwords for English + two additional Words “Seattle” and “Neighbourhood”
  \item Lowercase
  \item WordNetLemmatizer
 \end{itemize}
@@ -209,17 +209,16 @@ This  tokenizer uses a regular expression term with the intention of cleaning th
 A Text normally contains stop words like ‘the’, ‘is’, ‘are’. Stop words should be filtered from the text to be processed in the best way. There is not an universal list of stop words in NLP research, however the nltk module contains a list of stop words.
 
 \subsubsection{Lowercase}
-%This is just the built-in pyton method „.lower()“ which can be used to turn strings into lowercase.
+This is just the built-in pyton method .lower() which can be used to turn strings into lowercase.
 
 \subsubsection{WordNetLemmatizer}
 Lemmatization is the process of turning the words into their base form. There is a second almost similar approach called stemming. 
 The difference between stemming and lemmatization is, lemmatization looks at the context oft he word and transforms it to its base form, whereas stemming just removes the last few characters. Unfortunately this often leads to incorrect spelling and meaning errors. For example, lemmatization would properly identify the base form of ‘caring‘ to ‘care’, whereas, stemming would cutoff the ‘ing’ part and convert it to car.
 \begin{itemize}
-\item ‘Caring’ -> Lemmatization -> ‘Care’
-\item ‘Caring’ -> Stemming -> ‘Car‘
+\item Caring with \textit{Lemmatization} into Care
+\item Caring with \textit{Stemming} into Car
 \end{itemize}
 
-\subsubsection{}
 \subsection{Which factors did influence the degree of booking of former rented apartments? }
 In order to answer this question, the Extra Tree Classifier was used. With the help of the Extra Tree Classifier one can see the feature importance. According to the feature importance the number of reviews influences the degree of booking of former rented apartments the most. Customers also care about how long the host has been on the platform and extra people. Almost equally as important are the number of reviews per month. This underlines how important the reviews are. The amount of host listings, the response rate and what is included for the guests influences the results of ones booking almost on the same level. The host should also care about the response rate and the number of beds as the next important thing on the list. Less important are the cancellation policy, bedrooms, bathrooms and if the host is verified on Airbnb. The Room type, host acceptance rate, phone verification and if the host has a profile picture are the least important factors influencing the degree of booking the apartments.
 \subsection{Which price can be charged for an apartment with certain characteristics?}
@@ -229,7 +228,7 @@ In the following, we use the Extra Tree Classifier in order to find out, which a
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/9_bathroom_price_correlation.png}\\
-  \caption{correlation attribute-price}\label{correlation-attribute-price}
+  \caption{Correlation attribute-price}\label{correlation-attribute-price}
   \end{center}
 \end{figure}
 In order to check that all the attributes only determine the price and do not have an influence on the price via another attribute, we also compute a heatmap to see the correlation of attributes among each other. This visualizes that host-response-time, host-response-rate and host-acceptance-rate correlate with each other and also the number of bedrooms, bathrooms and beds. So, these attributes groups influence each other and their impact on the price should be considered in a group. Furthermore, we can mention that the number of bathrooms, bedrooms and beds influence each other. So, a lessor should also take into account that if an apartment has for example a high number of bedrooms then also the number of bathrooms is high. According to this a lessor can also get some indication for the price he can charge. If his apartment has many bedrooms but only one bathroom, he can assume that other accommodations with the same number of bedrooms has more bathroom and therefore can also charge a higher price. So, this correlation is interesting for the lessors to get some price indication. (Figure \ref{heatmap })
