@@ -18,6 +18,11 @@
 
 \documentclass[journal]{IEEEtran}
 
+\renewcommand\thesection{\arabic{section}} 
+\renewcommand\thesubsectiondis{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\alph{subsubsection}}
+\renewcommand\theparagraphdis{\arabic{paragraph}.}
+
 %\usepackage[retainorgcmds]{IEEEtrantools}
 %\usepackage{bibentry}  
 \usepackage{xcolor,soul,framed} %,caption
@@ -38,6 +43,8 @@
 \usepackage{url}
 
 \hyphenation{op-tical net-works semi-conduc-tor}
+
+
 
 %\bstctlcite{IEEE:BSTcontrol}
 %=== TITLE & AUTHORS ====================================================================
@@ -200,7 +207,8 @@ This  tokenizer uses a regular expression term with the intention of cleaning th
 \subsubsection{Stop Words}
 A Text normally contains stop words like ‘the’, ‘is’, ‘are’. Stop words should be filtered from the text to be processed in the best way. There is not an universal list of stop words in NLP research, however the nltk module contains a list of stop words.
 
-
+\subsubsection{Lowercase}
+%This is just the built-in pyton method „.lower()“ which can be used to turn strings into lowercase.
 
 \subsubsection{WordNetLemmatizer}
 Lemmatization is the process of turning the words into their base form. There is a second almost similar approach called stemming. 
