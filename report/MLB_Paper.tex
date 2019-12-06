@@ -145,7 +145,7 @@ The listing dataset consists of 92 columns, with attributes that describe differ
 %Figure
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.5in]{photo/districts_room_types.png}\\
+  \includegraphics[width=3.5in]{photo/4_most_acc_split_by_roomtype.png}\\
   \caption{ten districts with most accommodations split by room type}\label{districts_room_types}
   \end{center}
 \end{figure}
@@ -156,7 +156,7 @@ In order to have an insight whether the reviews are written by satisfied or rath
 %Figure
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.5in]{photo/score_and_number_of_reviews_ratio.png}\\
+  \includegraphics[width=3.5in]{photo/2_occurencies_of_review_scores.png}\\
   \caption{score and number of reviews ratio}\label{score_reviews_ratio}
   \end{center}
 \end{figure}
@@ -228,14 +228,14 @@ Figure Linear regression
 In the following, we use the Extra Tree Classifier in order to find out, which attributes have a strong correlation with the price and therefore influence the price of an apartment the most. A classification tree uses the values of attributes to create groups, in which all the apartments have the same (or at least similar) values for the attributes. According to our analysis, the attributes with the highest influence on the price have a correlation coefficient in a range of 0.01 and 0.2. The highest influence on the price is the number of reviews an apartment has. This attribute has a correlation of approximately 20\%, which is almost twice as much as the second important attribute has by showing 0.112 as correlation coefficient. This attribute indicates how long the lessor is already registered as host on Airbnb. As third important factor, with a correlation coefficient of a little bit less than 0.1 the number of extra people influences the price. Other attributes which influence the price are for example the number of listings a host has/ had, number of beds, number of bath- and bedrooms. The least significant attribute in our visualization is, whether the guest needs a profile picture (with a coefficient of about 0.01). (Figure \ref{correlation-attribute-price})
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \includegraphics[width=3.5in]{photo/9_bathroom_price_correlation.png}\\
   \caption{correlation attribute-price}\label{correlation-attribute-price}
   \end{center}
 \end{figure}
 In order to check that all the attributes only determine the price and do not have an influence on the price via another attribute, we also compute a heatmap to see the correlation of attributes among each other. This visualizes that host-response-time, host-response-rate and host-acceptance-rate correlate with each other and also the number of bedrooms, bathrooms and beds. So, these attributes groups influence each other and their impact on the price should be considered in a group. Furthermore, we can mention that the number of bathrooms, bedrooms and beds influence each other. So, a lessor should also take into account that if an apartment has for example a high number of bedrooms then also the number of bathrooms is high. According to this a lessor can also get some indication for the price he can charge. If his apartment has many bedrooms but only one bathroom, he can assume that other accommodations with the same number of bedrooms has more bathroom and therefore can also charge a higher price. So, this correlation is interesting for the lessors to get some price indication. (Figure \ref{heatmap })
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \includegraphics[width=3.5in]{photo/8_heatmap.png}\\
   \caption{correlation attribute-price}\label{heatmap }
   \end{center}
 \end{figure}
@@ -243,14 +243,14 @@ So, if a lessor wants to (re)determine the price for his accommodation, he first
 As we already saw in figure \ref{correlation-attribute-price}, the number of beds, bedrooms and bathrooms do not have the highest impact on the price although somebody might expect, that the price is strongly influenced by these factors. By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation})
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \includegraphics[width=3.5in]{photo/10_bedrooms_price_correlation.png}\\
   \caption{number-of-bedroom-price-correlation}\label{bedroom-price-correlation}
   \end{center}
 \end{figure}
 The same change can also be seen for the correlation of bathrooms and price but the change of the entry level is not that big. Therefore, the ‘strong’ change in the entry level price becomes already visible for 4 bathrooms. (Figure \ref{bathrooms-price-correlation})
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.5in]{pdf/01.pdf}\\
+  \includegraphics[width=3.5in]{photo/9_bathroom_price_correlation.png}\\
   \caption{number of bathrooms price correlation}\label{bathrooms-price-correlation}
   \end{center}
 \end{figure}
