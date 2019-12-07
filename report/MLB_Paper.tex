@@ -213,7 +213,6 @@ The difference between stemming and lemmatization is, lemmatization looks at the
 \item Caring with \textit{Lemmatization} into Care
 \item Caring with \textit{Stemming} into Car
 \end{itemize}
-\subsection{}
 \subsection{Linear Regression}
 Dr Liu described the Linear Regression as one of the most widely used techniuqes for advanced predictions. It is fundamental to more complex models, easy to interpret and easy to solve. \cite{RN7}
 Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
@@ -221,9 +220,15 @@ The fitted line can mathematically described as:
 \begin{equation}
 Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
 \end{equation}
-
-
 \subsection{Extra Tree Classifier }
+The Extra Tree Classifier is a model derived from the random forest model. Decision Trees are the fundamental components of Random Forests.  Aurélien Géron says that Random Forests are among the most powerful Machine Learning algorithms available. We are using it to classify the feature importance. Based on Entropy and the Information Gain, we get the essential feature. Entropy and Information are defined by: 
+\begin{equation}
+Entropy: H(X) = -\sum p(X)\log p(X) 
+\end{equation}
+\begin{equation}
+Information Gain: I(X,Y)= H(X)-H(X|Y)
+\end{equation}
+In other words, we get the feature which organises the data the most. 
 \subsection{Elastic Net CV}
 \subsection{Multinomial Naive Bayes}
 \subsection{LSTM Neuronal Network}
