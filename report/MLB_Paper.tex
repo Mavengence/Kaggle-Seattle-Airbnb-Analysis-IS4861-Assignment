@@ -264,7 +264,19 @@ p(c|f_1,...,f_n) \propto p(c)p(f_1|c)...p(f_n|c)
 \end{equation}
 Of course these assumptions of independence are rarely true, which may explain why some have referred to the model as the "Idiot Bayes" model, but in practice Naive Bayes models have performed surprisingly well, even on complex tasks where it is clear that the strong independence assumptions are false.\\Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
 \subsection{LSTM Neuronal Network}
+<<<<<<< HEAD
 \noindent “LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated as we could explain it in this paper. 
+=======
+“LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated for this paper to explain. 
+
+\section{Analysis}
+
+As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
+We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
+Our deviation of 10\$ from their best result can be explained by that.
+
+\subsection{Why did our neural network score so much worse than the neural network of the paper \textit{Predictive modelling on Airbnb listing prices} \cite{RN1}?}
+>>>>>>> 70fda3cee7a9e005d86e98ef6407d5a3a22eec4c
 
 Our Network is very simple network shown in figure \ref{lstm} has a worse MAE than the Linear Regression in figure \ref{nn}. \\
 The bad result could be explained by the missing features as already explained \cite{RN1}, but also on the not appropriate design of the network.
@@ -349,7 +361,10 @@ As Airbnb itself profits form their lessors renting out their places, it would b
 \section{Related Works}
 \noindent Our main goal is the improve the effectiveness of the marketing. Nevertheless, we searched for other related papers and work and we got inspired from the question \textit{What variables in this data set are most useful in predicting the price of a particular rental?} \cite{RN2}. Not only we wanted to improve the marketing, but with the gained knowledge we also wanted to see which results we can reach with our predictions. \\
  As already mentioned, another paper reached far better results with the price prediction \cite{RN1}. \\
- A lot of further interesting plots were made on this project \cite{RN4}. Unfortunately we could not use any of this information to our advantage, but it further proofs the hypothesis of the little importance of the sentiment feature.
+ A lot of further interesting plots were made on this project \cite{RN4}. Unfortunately we could not use any of this information to our advantage, but it further proofs the hypothesis of the little importance of the sentiment feature. \\
+ An interesting addition for the sentiment was mentioned by Tian Lin \cite{RN3}. Regarding the (figure \ref{score_reviews_ratio}) he explained in his master thesis why people reviewed the accommodations in such a positive way. Tian explained the \textit{too-positive-phenomon} \cite{RN3}, which may be caused by the lessors themselves. Lessors apparently have the tendency to reject costumers who have the probability of reviewing in a bad way. So lessors only accept costumers with a high rate of leaving positive reviews. \\
+ Further graphs and information can be found on the project \textit{How to become top earner in Airbnb?} \cite{RN5}, which is the most upvoted notebook on the Kaggle page of the Seattle dataset itself. \\
+ We did not have the chance to integrate some of the results into our notebook, but this notebook shows other very interesting graphs. 
  
 \section{Conclusion}
 \noindent ToDo
