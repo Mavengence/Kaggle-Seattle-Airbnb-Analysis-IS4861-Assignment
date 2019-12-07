@@ -177,10 +177,6 @@ While in January only half of the apartments have been occupied, the number of r
 
 \section{Models}
 
-As the team of this paper \cite{RN1} mentioned in their average listing price per neighbourhood, they figured out that the neighbourhood has a huge impace on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
-We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
-Our deviation of 10\$ from their best result can be explained by that.
-
 \subsection{Natural Language Processing}
 NLP stands for natural language processing. We can use this technique to process and analyze natural language data from the reviews of our dataset. NLP breaks down language into tinier, elemental pieces, trying to understand the relationships between the pieces and explore how the pieces are related together to generate meanings and conclusions out of it. To perform analysis, we encounter plenty of steps called the preprocessing. Most of this steps can be solved with multiple python packages. We decided to use the NLTK package, because it provides an easy to use dashboard and contains all of the required preprocessing methods.
 The preprocessing steps for transforming the reviews into Wordclouds are below with exactly this sequence of steps:
@@ -269,9 +265,29 @@ Of course these assumptions of independence are rarely true, which may explain w
 Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
 \subsection{LSTM Neuronal Network}
 
+Our Network is very simple network shown in figure \ref{lstm} has a worse MAE than the Linear Regression in figure \ref{nn}. \\
+The bad result could be explained by the missing features as already explained \cite{RN1}, but also on the not appropriate design of the network.
 
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/lstm.png}\\
+  \caption{Errors of the LSTM Neural Network}\label{nn}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/nn.png}\\
+  \caption{LSTM Neural Network}\label{lstm}
+  \end{center}
+\end{figure}
 
 \section{Analysis}
+
+As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
+We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
+Our deviation of 10\$ from their best result can be explained by that.
+
 \subsection{Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?}
 In order to know what words the lessors are supposed to use in the description, we take a look at the reviews with a wordcloud. The bigger the words in the wordcloud, the more often the word was used. For example, if the customers often write the word walk in the reviews due to informing what was in walking distance of the Airbnb, the work walk will be big in the wordcloud. 
 To answer this question the six most reviewed cities Capitol Hill, Ballard, Queen Anne, Belltown, Minor, Wallingford were analyzed. First, you can see that all cities have the words walk, park and restaurant written in big. The word “downtown” is also used often. For minor, the word “lake” is very important. The rest of the words indicate that words like minute, shop, market are used often by customers. Interestingly, the word “Washington” is important for the cities Minor and Capitol Hill.
