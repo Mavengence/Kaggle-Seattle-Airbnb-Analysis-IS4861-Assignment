@@ -1,21 +1,3 @@
-%
-% IEEE Transactions on Microwave Theory and Techniques example
-% Tibault Reveyrand - http://www.microwave.fr
-%
-% http://www.microwave.fr/LaTeX.html
-% ---------------------------------------
-
-
-
-% ================================================
-% Please HIGHLIGHT the new inputs such like this :
-% Text :
-%  \hl{comment}
-% Aligned Eq. 
-% \begin{shaded}
-% \end{shaded}
-% ================================================
-
 \documentclass[journal]{IEEEtran}
 
 \renewcommand\thesection{\arabic{section}} 
@@ -241,7 +223,7 @@ Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
 \end{figure}
 
 \subsection{Extra Tree Classifier }
-The Extra Tree Classifier is a model derived from the random forest model. Decision Trees are the fundamental components of Random Forests.  Aurélien Géron says that Random Forests are among the most powerful Machine Learning algorithms available \cite{ho} . We are using it to classify the feature importance. Based on Entropy and the Information Gain, we get the essential feature\cite{BernardChiu} \cite{decisionforests}. Entropy and Information are defined by: 
+The Extra Tree Classifier is a model derived from the random forest model. Decision Trees are the fundamental components of Random Forests.  Aurélien Géron says that Random Forests are among the most powerful Machine Learning algorithms available \cite{ho} . We are using it to classify the feature importance. Based on Entropy and the Information Gain, we get the essential feature\cite{Bishop} \cite{decisionforests}. Entropy and Information are defined by: 
 \begin{equation}
 Entropy: H(X) = -\sum p(X)\log p(X) 
 \end{equation}
@@ -270,6 +252,21 @@ This leads to the conclusion, that first leafs for predicting the price with a T
 
 \subsection{Elastic Net CV}
 \subsection{Multinomial Naive Bayes}
+43
+The following description of the Naive Bayes is first mentioned in the book "Artificial Intelligence: A Modern Approach" from Stuart J. Russell and Peter Norvig \cite{Russell}.
+The general term Naive Bayes refers the the strong independence assumptions in the model, rather than the particular distribution of each feature. A Naive Bayes model assumes that each of the features it uses are conditionally independent of one another given some class. More formally, if I want to calculate the probability of observing features \(f_1\) through \(f_n\) , given some class \(c\) , under the Naive Bayes assumption the following holds:
+\begin{equation}
+p(f_1,..., f_n|c) = \prod_{i=1}^n p(f_i|c)
+\end{equation}
+
+This means that when I want to use a Naive Bayes model to classify a new example, the posterior probability is much simpler to work with:
+\begin{equation}
+p(c|f_1,...,f_n) \propto p(c)p(f_1|c)...p(f_n|c)
+\end{equation}
+
+Of course these assumptions of independence are rarely true, which may explain why some have referred to the model as the "Idiot Bayes" model, but in practice Naive Bayes models have performed surprisingly well, even on complex tasks where it is clear that the strong independence assumptions are false.
+
+Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
 \subsection{LSTM Neuronal Network}
 
 
