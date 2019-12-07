@@ -163,7 +163,7 @@ In order to have an insight whether the reviews are written by satisfied or rath
 \end{figure}
 %
 Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. \\
-First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading related work to the Seattle-Dataset, we noticed that another group already research this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately they gained the information that this feature has no revelant effect on the prediction for the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, there is no Gaussian-Distribution or any other useful distribution for the reviews. \\
+First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading related work to the Seattle-Dataset, we noticed that another group already research this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately they gained the information in the Data section that this feature has no revelant effect on the prediction for the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, there is no Gaussian-Distribution or any other useful distribution for the reviews. \\
 
 So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
 In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{compare_the_neighbourhoods}).
@@ -225,6 +225,14 @@ The fitted line can mathematically described as:
 \begin{equation}
 Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
 \end{equation}
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/linear_regression.png}\\
+  \caption{Errors of the Linear Regression}\label{linear_regression}
+  \end{center}
+\end{figure}
+
 \subsection{Extra Tree Classifier }
 The Extra Tree Classifier is a model derived from the random forest model. Decision Trees are the fundamental components of Random Forests.  Aurélien Géron says that Random Forests are among the most powerful Machine Learning algorithms available. We are using it to classify the feature importance. Based on Entropy and the Information Gain, we get the essential feature. Entropy and Information are defined by: 
 \begin{equation}
@@ -234,9 +242,22 @@ Entropy: H(X) = -\sum p(X)\log p(X)
 Information Gain: I(X,Y)= H(X)-H(X|Y)
 \end{equation}
 In other words, we get the feature which organises the data the most. 
+
+The features with the according entropy are shown in the following picture:
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/7_feature_importance.png}\\
+  \caption{Feature Importance}\label{feature_importance}
+  \end{center}
+\end{figure}
+
+This leads to the conclusion, that first leafs for predicting the price with a Tree-Classifier should be the amount of reviews. 
 \subsection{Elastic Net CV}
 \subsection{Multinomial Naive Bayes}
 \subsection{LSTM Neuronal Network}
+
+
 
 \section{Analysis}
 \subsection{Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?}
@@ -260,11 +281,14 @@ In order to check that all the attributes only determine the price and do not ha
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/8_heatmap.png}\\
-  \caption{correlation attribute-price}\label{heatmap }
+  \caption{Correlation attribute-price}\label{heatmap }
   \end{center}
 \end{figure}
 So, if a lessor wants to (re)determine the price for his accommodation, he first of all needs to consider how many reviews he got so far for the apartment. (Note: As we noted before, the reviews all give a high rating, so they are all positive. Taking this into account, it is very likely that the lessor needs to check the number of positive reviews for determining the price.) Furthermore, the lessor needs to consider how long he is already registered as host and how many people can stay in the apartment. If he considers the impact of the number of bedrooms, bathrooms and beds, he should also take into account, the correlation of the three attributes among each other.
-As we already saw in figure \ref{correlation-attribute-price}, the number of beds, bedrooms and bathrooms do not have the highest impact on the price although somebody might expect, that the price is strongly influenced by these factors. By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation})
+As we already saw in figure \ref{correlation-attribute-price}, the number of beds, bedrooms and bathrooms do not have the highest impact on the price although somebody might expect, that the price is strongly influenced by these factors. \\
+The same result was already shown by another paper, which further proofs those relevant features \cite{RN1}. 
+
+By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation})
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/10_bedrooms_price_correlation.png}\\
