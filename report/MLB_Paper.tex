@@ -87,7 +87,7 @@ This paper presents a theoretical analysis of harmonically-terminated high-effic
 
 % === I. Project background and motivation
 
-\section{background and motivation}
+\section{Project background and motivation}
 \IEEEPARstart{T}{he} The dataset we are going to analyze contains several information about the renting of apartments via the platform Airbnb in Seattle. By analyzing the data, we want to find possibilities to improve the marketing of Airbnb optimized for Seattle. Mentioning the word ‘marketing’ most people immediately think about advertisement. Indeed, this is a very important part of marketing but it is far not enough to cover the whole meaning of marketing. By definition it rather is about the firm’s effort to address customer needs as well as their expectation and to orient their products according to the requirements of customers. So, it is also about the tradeoff of ‘evoking’ needs and expectation of consumers on a level that the product can satisfy and is able to compete with competitive products. To fulfill this, applying marketing instruments like the marketing mix can be helpful. The marketing mix consists of four policies: Product, Price, Promotion and Place. In the following the tasks and aims arising in these four areas will be described and explained how our data analysis can help to improve tasks in these areas aiming for a better overall marketing.\\As Airbnb is an agent for lessors, who want to rent their apartment to tourists, it ears its money by receiving a commission for every rented apartment. Therefore, Airbnb should aim for a high booking rate to increase their own profit. That is one reason, why Airbnb should care which apartments are offered on their platform and how they are presented (e.g. by the description, price, …). So, it can make sense for Airbnb to give lessors some suggestions how to promote and present their accommodation to achieve a maximal booking rate. Deducted of this assumption, we want to provide some suggestions for lessors to promote their apartments in the perfect manner but also want to give some suggestions, what point in time is best for Airbnb to release a marketing campaign to advertise some apartments in Seattle. 
 \subsection{Product}
 \noindent As already mentioned before, marketing is about fulfilling customer needs and expectations. Within product policy the aim is to understand one’s market and be able to figure out which needs and wants the customers have. In general, one can say that the main need of travelers is to find an accommodation but nowadays it is not only about finding accommodations but even more about discovering the right accommodation. It is not only having a nice and clean room bathroom, with white and clean towels and bead sheets. The surrounding and flair of the accommodation becomes more and more important. This issue Airbnb has already addressed in its advertising spot \cite{RN6}, so Airbnb is aware of the wants of travelers and is responsive to this in its advertisement. Thinking a step further, it is not enough to just show the customer that renting Airbnb apartments is a nice way to ‘really live’ there instead of just ‘go there’. When the customer has been attracted by Airbnb to search for on apartment on their website it is important to present the apartment in a good way. Therefore, the description of the apartments should mention all aspects the customer considers as important. By our data analysis we would like to support the lessor in creating a good and appealing description. By analyzing the reviews of customers and filtering the 50 most mentioned words, we can conclude that these mentioned words are important to customers and therefore lessors should mention them in their description. As Seattle is a huge city with lots of different areas with different style and flairs, we conduct word clouds for every neighborhood. This offers the advantage that we can better address and select certain customer groups. A neighborhood, with lots of parks, is probably better for nature lover than for reveler. So, nature lovers will mention the parks in their reviews very often and according to our word cloud (which is based on the reviews), lessors in this neighborhood will focus on the parks around their accommodation. If a person, who prefers partying at night, reads this description his or her interest will not be raised and therefore the person will search for apartments in another neighborhood. This creates and ‘automatic’ selection and increase the chance that a customer finds an apartment in a neighborhood, which fits his/ her interest. So, a first question we would like to answer is: \begin{itshape}Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?\end{itshape}
@@ -145,7 +145,7 @@ In a following step we replace all na-values by suitable possible values in orde
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/4_most_acc_split_by_roomtype.png}\\
-  \caption{7 Districts with most accommodations split by room type}\label{districts_room_types}
+  \caption{ten districts with most accommodations split by room type}\label{districts_room_types}
   \end{center}
 \end{figure}
 \subsubsection{Reviews}
@@ -160,18 +160,16 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \end{center}
 \end{figure}
 %
-Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. 
-We first thought about generating a new feature called \textit{Sentiment}, which would have been filled with the sentiment of the review. For this we would need to proceed a Sentiment Analysis on the reviews. They scored in their Data section with the Microsoft Azure API values between 0 and 100 for estimating the sentiment, but unfortunately, this score appeared to be insignificant towards predicting pricing relationships \cite{RN1}. \\
-So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
+Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
 In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{compare_the_neighbourhoods}).
 %
 %Figure
 \begin{figure}
   \begin{center}
-  \includegraphics[width=3.5in]{photo/3_count_per_district.png}\\
+  \includegraphics[width=3.5in]{photo/2_2_compare_the_neighbourhoods.png}\\
   \caption{Mean rating and number of reviews ratio (per neighborhood)}\label{compare_the_neighbourhoods}
   \end{center}
-\end{figure} \\
+\end{figure}
 %
 In this figure it becomes visible that neighborhoods, whose apartments in total got 50 to 100 reviews score a mean rating of about 9.2 to 9.7. Approximately the same mean rating is also achieved by district where the apartments are rated 125 to 300 times. There is only one outlier (‘University District’), which scored al pretty low mean rating value compared to all other districts. As this is the only outlier, we will neglect this in our following assumptions.
 To sum up, we can conclude that both figures (\ref{score_reviews_ratio_neighborhood} and \ref{score_reviews_ratio}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district.
@@ -188,21 +186,16 @@ This part of the data shows, when certain apartments are available and when they
 %
 While in January only half of the apartments have been occupied, the number of rented apartments raised until April when a sudden drop in rented apartments appeared. The same procedure repeats in July. After that second drop the number of occupied accommodations raises again. Nevertheless, it has to be mentioned that the percentage of free apartments never exceeds 40\% after February anymore but also never drops below 20\%. At this point the question, whether there is a correlation between the degree of booking and a ‘perfect’ description exists and therefore the percentage of free apartments can be decreased by mentioning the right aspects in the description. 
 
-\section{Models and analysis}
-\subsection{Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?}
-In order to know what words the lessors are supposed to use in the description, we take a look at the reviews with a wordcloud. The bigger the words in the wordcloud, the more often the word was used. For example, if the customers often write the word walk in the reviews due to informing what was in walking distance of the Airbnb, the work walk will be big in the wordcloud. 
-To answer this question the six most reviewed cities Capitol Hill, Ballard, Queen Anne, Belltown, Minor, Wallingford were analyzed. First, you can see that all cities have the words walk, park and restaurant written in big. The word “downtown” is also used often. For minor, the word “lake” is very important. The rest of the words indicate that words like minute, shop, market are used often by customers. Interestingly, the word “Washington” is important for the cities Minor and Capitol Hill.
-
+\section{Models}
 \subsection{Natural Language Processing}
 NLP stands for natural language processing. We can use this technique to process and analyze natural language data from the reviews of our dataset. NLP breaks down language into tinier, elemental pieces, trying to understand the relationships between the pieces and explore how the pieces are related together to generate meanings and conclusions out of it. To perform analysis, we encounter plenty of steps called the preprocessing. Most of this steps can be solved with multiple python packages. We decided to use the NLTK package, because it provides an easy to use dashboard and contains all of the required preprocessing methods.
 The preprocessing steps for transforming the reviews into Wordclouds are below with exactly this sequence of steps:
-\begin{enumerate}
+\begin{itemize}
  \item Regular Expression Tokenizer
  \item Stopwords for English + two additional Words “Seattle” and “Neighbourhood”
  \item Lowercase
  \item WordNetLemmatizer
- \item Wordcloud generation
-\end{enumerate}
+\end{itemize}
 
 \subsubsection{Regular Expression Tokenizer}
 This  tokenizer uses a regular expression term with the intention of cleaning the text completely from any punctuation marks and unnecessary spaces.  The expression r'\textbackslash +' does exactly this, because it avoids every character which is not alphanumeric (A-Z, numbers) and underscore (\_) or an asterisk (*). Everything else will get omitted by the regular expression. The Tokenizer itself detects the ASCII character for the space and splits in this way the words from each other to store it in an array.
@@ -220,6 +213,26 @@ The difference between stemming and lemmatization is, lemmatization looks at the
 \item Caring with \textit{Lemmatization} into Care
 \item Caring with \textit{Stemming} into Car
 \end{itemize}
+\subsection{}
+\subsection{Linear Regression}
+Dr Liu described the Linear Regression as one of the most widely used techniuqes for advanced predictions. It is fundamental to more complex models, easy to interpret and easy to solve. \cite{RN7}
+Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
+The fitted line can mathematically described as:
+\begin{equation}
+Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
+\end{equation}
+
+
+\subsection{Extra Tree Classifier }
+\subsection{Elastic Net CV}
+\subsection{Multinomial Naive Bayes}
+\subsection{LSTM Neuronal Network}
+
+\section{Analysis}
+\subsection{Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?}
+In order to know what words the lessors are supposed to use in the description, we take a look at the reviews with a wordcloud. The bigger the words in the wordcloud, the more often the word was used. For example, if the customers often write the word walk in the reviews due to informing what was in walking distance of the Airbnb, the work walk will be big in the wordcloud. 
+To answer this question the six most reviewed cities Capitol Hill, Ballard, Queen Anne, Belltown, Minor, Wallingford were analyzed. First, you can see that all cities have the words walk, park and restaurant written in big. The word “downtown” is also used often. For minor, the word “lake” is very important. The rest of the words indicate that words like minute, shop, market are used often by customers. Interestingly, the word “Washington” is important for the cities Minor and Capitol Hill.
+
 
 \subsection{Which factors did influence the degree of booking of former rented apartments? }
 In order to answer this question, the Extra Tree Classifier was used. With the help of the Extra Tree Classifier one can see the feature importance. According to the feature importance the number of reviews influences the degree of booking of former rented apartments the most. Customers also care about how long the host has been on the platform and extra people. Almost equally as important are the number of reviews per month. This underlines how important the reviews are. The amount of host listings, the response rate and what is included for the guests influences the results of ones booking almost on the same level. The host should also care about the response rate and the number of beds as the next important thing on the list. Less important are the cancellation policy, bedrooms, bathrooms and if the host is verified on Airbnb. The Room type, host acceptance rate, phone verification and if the host has a profile picture are the least important factors influencing the degree of booking the apartments.
