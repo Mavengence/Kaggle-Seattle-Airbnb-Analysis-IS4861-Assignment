@@ -148,6 +148,8 @@ In a following step we replace all na-values by suitable possible values in orde
   \caption{ten districts with most accommodations split by room type}\label{districts_room_types}
   \end{center}
 \end{figure}
+
+
 \subsubsection{Reviews}
 %
 In order to have an insight whether the reviews are written by satisfied or rather unsatisfied visitors, we computed a bar chart which shows the rating-number of reviews ratio. (Figure \ref{score_reviews_ratio})
@@ -160,7 +162,10 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \end{center}
 \end{figure}
 %
-Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
+Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. \\
+First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading related work to the Seattle-Dataset, we noticed that another group already research this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately they gained the information that this feature has no revelant effect on the prediction for the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, there is no Gaussian-Distribution or any other useful distribution for the reviews. \\
+
+So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
 In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{compare_the_neighbourhoods}).
 %
 %Figure
@@ -172,7 +177,7 @@ In order to make sure that there is no correlation between the number of reviews
 \end{figure}
 %
 In this figure it becomes visible that neighborhoods, whose apartments in total got 50 to 100 reviews score a mean rating of about 9.2 to 9.7. Approximately the same mean rating is also achieved by district where the apartments are rated 125 to 300 times. There is only one outlier (‘University District’), which scored al pretty low mean rating value compared to all other districts. As this is the only outlier, we will neglect this in our following assumptions.
-To sum up, we can conclude that both figures (\ref{score_reviews_ratio_neighborhood} and \ref{score_reviews_ratio}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district.
+To sum up, we can conclude that both figures (\ref{score_reviews_ratio} and \ref{compare_the_neighbourhoods}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district.
 \subsubsection{Calendar}
 This part of the data shows, when certain apartments are available and when they are rented out. Within our analysis we assume, that an apartment, which is listed as ‘not available’ in the ‘calender.csv’ is occupied by a visitor. If it is ‘available’ we assume that the owners would have liked to rent the apartment out but there has not been any visitor renting it. In figure \ref{occupied_ratio_appartments} the ratio of occupied and available apartments in 2016 is presented.
 %
@@ -180,7 +185,7 @@ This part of the data shows, when certain apartments are available and when they
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/11_acc_ratio_occupied.png}\\
-  \caption{occupied ratio of appartments}\label{occupied_ratio_appartments}
+  \caption{Occupied ratio of appartments}\label{occupied_ratio_appartments}
   \end{center}
 \end{figure}
 %
