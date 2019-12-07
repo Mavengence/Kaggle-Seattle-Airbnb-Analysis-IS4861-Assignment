@@ -270,6 +270,7 @@ Of course these assumptions of independence are rarely true, which may explain w
 
 Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
 \subsection{LSTM Neuronal Network}
+“LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated as we could explain it in this paper. 
 
 Our Network is very simple network shown in figure \ref{lstm} has a worse MAE than the Linear Regression in figure \ref{nn}. \\
 The bad result could be explained by the missing features as already explained \cite{RN1}, but also on the not appropriate design of the network.
@@ -280,7 +281,6 @@ The bad result could be explained by the missing features as already explained \
   \caption{Errors of the LSTM Neural Network}\label{nn}
   \end{center}
 \end{figure}
-
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/nn.png}\\
