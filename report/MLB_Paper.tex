@@ -271,8 +271,16 @@ Of course these assumptions of independence are rarely true, which may explain w
 Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
 \subsection{LSTM Neuronal Network}
 
-Our Network is very simple network shown in figure \ref{lstm} has a worse MAE than the Linear Regression in figure \ref{nn}. \\
-The bad result could be explained by the missing features as already explained \cite{RN1}, but also on the not appropriate design of the network.
+\section{Analysis}
+
+As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
+We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
+Our deviation of 10\$ from their best result can be explained by that.
+
+\subsection{Why did our neural network score so much worse than the neural network of the paper \textit{Predictive modelling on Airbnb listing prices} \cite{RN1}?}
+
+The most obvious estimation is that our network's design (figure \ref{lstm}) is not appropriate for this kind of prediction. Even the linear regression (figure \ref{linear_regression}) scored way better than the MAE of the LSTM network (figure \ref{nn}). \\
+The bad result (figure \ref{nn}) could be additionally explained by the missing features as already explained \cite{RN1}.
 
 \begin{figure}
   \begin{center}
@@ -287,12 +295,6 @@ The bad result could be explained by the missing features as already explained \
   \caption{LSTM Neural Network}\label{lstm}
   \end{center}
 \end{figure}
-
-\section{Analysis}
-
-As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
-We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
-Our deviation of 10\$ from their best result can be explained by that.
 
 \subsection{Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?}
 In order to know what words the lessors are supposed to use in the description, we take a look at the reviews with a wordcloud. The bigger the words in the wordcloud, the more often the word was used. For example, if the customers often write the word walk in the reviews due to informing what was in walking distance of the Airbnb, the work walk will be big in the wordcloud. 
