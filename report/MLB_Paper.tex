@@ -142,7 +142,7 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \end{center}
 \end{figure}
 %
-<<<<<<< HEAD
+
 Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
 =======
 Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. \\
@@ -176,6 +176,11 @@ This part of the data shows, when certain apartments are available and when they
 While in January only half of the apartments have been occupied, the number of rented apartments raised until April when a sudden drop in rented apartments appeared. The same procedure repeats in July. After that second drop the number of occupied accommodations raises again. Nevertheless, it has to be mentioned that the percentage of free apartments never exceeds 40\% after February anymore but also never drops below 20\%. At this point the question, whether there is a correlation between the degree of booking and a ‘perfect’ description exists and therefore the percentage of free apartments can be decreased by mentioning the right aspects in the description. 
 
 \section{Models}
+
+As the team of this paper \cite{RN1} mentioned in their average listing price per neighbourhood, they figured out that the neighbourhood has a huge impace on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean squared error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
+We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
+Our deviation of 10\$ from their best result can be explained by that.
+
 \subsection{Natural Language Processing}
 NLP stands for natural language processing. We can use this technique to process and analyze natural language data from the reviews of our dataset. NLP breaks down language into tinier, elemental pieces, trying to understand the relationships between the pieces and explore how the pieces are related together to generate meanings and conclusions out of it. To perform analysis, we encounter plenty of steps called the preprocessing. Most of this steps can be solved with multiple python packages. We decided to use the NLTK package, because it provides an easy to use dashboard and contains all of the required preprocessing methods.
 The preprocessing steps for transforming the reviews into Wordclouds are below with exactly this sequence of steps:
@@ -227,7 +232,7 @@ Information Gain: I(X,Y)= H(X)-H(X|Y)
 \end{equation}
 In other words, we get the feature which organises the data the most. 
 
-The features with the according entropy are shown in the following picture:
+The features with the according entropy are shown in figure \ref{feature_importance}
 
 \begin{figure}
   \begin{center}
