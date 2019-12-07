@@ -117,11 +117,11 @@ Moreover, it can be beneficial if Airbnb itself starts the marketing campaign sh
 Listings consists of 92 attributes with 3,818 data entries. Every single row represents one apartment in Seattle that has been offered for rent via the platform of Airbnb. Calendar consists of 1,393,570 data entries and 4 columns. The dataset connects a certain time period with an apartment and indicates whether it has been rented out or been available during that period. The last dataset ‘reviews.csv’ contains all reviews former visitors have handed in for an apartment, it contains the reviewer’s Id, name comments, the date as well as the house ID.\\So, if the excel sheets are combined it can be deducted the following information: the key facts about an apartment (like the size, prize, number of beds, usable facilities, …), furthermore one can get a general idea about, what the apartment looks like by the description (written by the lessor) as well as by the reviews (written by former guests) and it is known when the apartment has been available or rented.
 
 \subsection {Data preprocessing}
-First of all, we computed how many different values certain attributes can have. Therefore, we computed a table that listed the attribute name as well as how many unique attribute values exist for that attribute.
+\noindent First of all, we computed how many different values certain attributes can have. Therefore, we computed a table that listed the attribute name as well as how many unique attribute values exist for that attribute.
 In a following step we replace all na-values by suitable possible values in order to be able to use the data in the following steps and analyze it in a proper way. To be able to fit our models, we replaced some textual values by numerical ones and split the dataset into a training dataset and a test dataset. The training dataset we will use to ‘create’ or models in order to check our created models and be able to see how good for example predictions will be and which error we need to expect we need the test data.
 
 \subsection {More detailed dataset description}
-\subsubsection{Listings}  The listing dataset consists of 92 columns, with attributes that describe different characteristics of the rented apartments. It describes 3818 apartments that are allocated in 79 neighborhoods. Combined with the review dataset it represents a dataset, which can be used to find some attributes, valued as most important by customers. If it is combined with the calendar dataset, a data analysis can help to determine the factors which are important to, not only attract visitors, but also to finally rent it out successfully. Especially we will use this combination to find out which attributes of the apartments did influence the price charged the most. The Figure \ref{districts_room_types} shows the districts with the most offers, splitted by their room type.
+\noindent \subsubsection{Listings}  The listing dataset consists of 92 columns, with attributes that describe different characteristics of the rented apartments. It describes 3818 apartments that are allocated in 79 neighborhoods. Combined with the review dataset it represents a dataset, which can be used to find some attributes, valued as most important by customers. If it is combined with the calendar dataset, a data analysis can help to determine the factors which are important to, not only attract visitors, but also to finally rent it out successfully. Especially we will use this combination to find out which attributes of the apartments did influence the price charged the most. The Figure \ref{districts_room_types} shows the districts with the most offers, splitted by their room type.
 %
 %Figure
 \begin{figure}
@@ -141,8 +141,8 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \caption{Score and number of reviews ratio}\label{score_reviews_ratio}
   \end{center}
 \end{figure}
-%
 
+%
 Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
 =======
 Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. \\
@@ -163,7 +163,7 @@ In order to make sure that there is no correlation between the number of reviews
 In this figure it becomes visible that neighborhoods, whose apartments in total got 50 to 100 reviews score a mean rating of about 9.2 to 9.7. Approximately the same mean rating is also achieved by district where the apartments are rated 125 to 300 times. There is only one outlier (‘University District’), which scored al pretty low mean rating value compared to all other districts. As this is the only outlier, we will neglect this in our following assumptions.
 To sum up, we can conclude that both figures (\ref{score_reviews_ratio_neighborhood} and \ref{score_reviews_ratio}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district.
 \subsubsection{Calendar}
-This part of the data shows, when certain apartments are available and when they are rented out. Within our analysis we assume, that an apartment, which is listed as ‘not available’ in the ‘calender.csv’ is occupied by a visitor. If it is ‘available’ we assume that the owners would have liked to rent the apartment out but there has not been any visitor renting it. In figure \ref{occupied_ratio_appartments} the ratio of occupied and available apartments in 2016 is presented.
+\noindent This part of the data shows, when certain apartments are available and when they are rented out. Within our analysis we assume, that an apartment, which is listed as ‘not available’ in the ‘calender.csv’ is occupied by a visitor. If it is ‘available’ we assume that the owners would have liked to rent the apartment out but there has not been any visitor renting it. In figure \ref{occupied_ratio_appartments} the ratio of occupied and available apartments in 2016 is presented.
 %
 %Figure
 \begin{figure}
@@ -176,9 +176,8 @@ This part of the data shows, when certain apartments are available and when they
 While in January only half of the apartments have been occupied, the number of rented apartments raised until April when a sudden drop in rented apartments appeared. The same procedure repeats in July. After that second drop the number of occupied accommodations raises again. Nevertheless, it has to be mentioned that the percentage of free apartments never exceeds 40\% after February anymore but also never drops below 20\%. At this point the question, whether there is a correlation between the degree of booking and a ‘perfect’ description exists and therefore the percentage of free apartments can be decreased by mentioning the right aspects in the description. 
 
 \section{Models}
-
 \subsection{Natural Language Processing}
-NLP stands for natural language processing. We can use this technique to process and analyze natural language data from the reviews of our dataset. NLP breaks down language into tinier, elemental pieces, trying to understand the relationships between the pieces and explore how the pieces are related together to generate meanings and conclusions out of it. To perform analysis, we encounter plenty of steps called the preprocessing. Most of this steps can be solved with multiple python packages. We decided to use the NLTK package, because it provides an easy to use dashboard and contains all of the required preprocessing methods.
+\noindent NLP stands for natural language processing. We can use this technique to process and analyze natural language data from the reviews of our dataset. NLP breaks down language into tinier, elemental pieces, trying to understand the relationships between the pieces and explore how the pieces are related together to generate meanings and conclusions out of it. To perform analysis, we encounter plenty of steps called the preprocessing. Most of this steps can be solved with multiple python packages. We decided to use the NLTK package, because it provides an easy to use dashboard and contains all of the required preprocessing methods.
 The preprocessing steps for transforming the reviews into Wordclouds are below with exactly this sequence of steps:
 \begin{itemize}
  \item Regular Expression Tokenizer
@@ -188,23 +187,23 @@ The preprocessing steps for transforming the reviews into Wordclouds are below w
 \end{itemize}
 
 \subsubsection{Regular Expression Tokenizer}
-This  tokenizer uses a regular expression term with the intention of cleaning the text completely from any punctuation marks and unnecessary spaces.  The expression r'\textbackslash +' does exactly this, because it avoids every character which is not alphanumeric (A-Z, numbers) and underscore (\_) or an asterisk (*). Everything else will get omitted by the regular expression. The Tokenizer itself detects the ASCII character for the space and splits in this way the words from each other to store it in an array.
+\noindent This  tokenizer uses a regular expression term with the intention of cleaning the text completely from any punctuation marks and unnecessary spaces.  The expression r'\textbackslash +' does exactly this, because it avoids every character which is not alphanumeric (A-Z, numbers) and underscore (\_) or an asterisk (*). Everything else will get omitted by the regular expression. The Tokenizer itself detects the ASCII character for the space and splits in this way the words from each other to store it in an array.
 
 \subsubsection{Stop Words}
-A Text normally contains stop words like ‘the’, ‘is’, ‘are’. Stop words should be filtered from the text to be processed in the best way. There is not an universal list of stop words in NLP research, however the nltk module contains a list of stop words.
+\noindent A Text normally contains stop words like ‘the’, ‘is’, ‘are’. Stop words should be filtered from the text to be processed in the best way. There is not an universal list of stop words in NLP research, however the nltk module contains a list of stop words.
 
 \subsubsection{Lowercase}
-This is just the built-in pyton method .lower() which can be used to turn strings into lowercase.
+\noindent This is just the built-in pyton method .lower() which can be used to turn strings into lowercase.
 
 \subsubsection{WordNetLemmatizer}
-Lemmatization is the process of turning the words into their base form. There is a second almost similar approach called stemming. 
+\noindent Lemmatization is the process of turning the words into their base form. There is a second almost similar approach called stemming. 
 The difference between stemming and lemmatization is, lemmatization looks at the context oft he word and transforms it to its base form, whereas stemming just removes the last few characters. Unfortunately this often leads to incorrect spelling and meaning errors. For example, lemmatization would properly identify the base form of ‘caring‘ to ‘care’, whereas, stemming would cutoff the ‘ing’ part and convert it to car.
 \begin{itemize}
 \item Caring with \textit{Lemmatization} into Care
 \item Caring with \textit{Stemming} into Car
 \end{itemize}
 \subsection{Linear Regression}
-Dr Liu described the Linear Regression as one of the most widely used techniuqes for advanced predictions. It is fundamental to more complex models, easy to interpret and easy to solve. \cite{RN7}
+\noindent Dr Liu described the Linear Regression as one of the most widely used techniuqes for advanced predictions. It is fundamental to more complex models, easy to interpret and easy to solve. \cite{RN7}
 Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
 The fitted line can mathematically described as:
 \begin{equation}
@@ -219,7 +218,7 @@ Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
 \end{figure}
 
 \subsection{Extra Tree Classifier }
-The Extra Tree Classifier is a model derived from the random forest model. Decision Trees are the fundamental components of Random Forests.  Aurélien Géron says that Random Forests are among the most powerful Machine Learning algorithms available \cite{ho} . We are using it to classify the feature importance. Based on Entropy and the Information Gain, we get the essential feature\cite{Bishop} \cite{decisionforests}. Entropy and Information are defined by: 
+\noindent The Extra Tree Classifier is a model derived from the random forest model. Decision Trees are the fundamental components of Random Forests.  Aurélien Géron says that Random Forests are among the most powerful Machine Learning algorithms available \cite{ho} . We are using it to classify the feature importance. Based on Entropy and the Information Gain, we get the essential feature\cite{Bishop} \cite{decisionforests}. Entropy and Information are defined by: 
 \begin{equation}
 Entropy: H(X) = -\sum p(X)\log p(X) 
 \end{equation}
@@ -247,41 +246,28 @@ This leads to the conclusion, that first leafs for predicting the price with a T
 \end{figure}
 
 \subsection{Elastic Net CV}
-This working paper can not explain the whole math behind the Elastic Net Classiefer, because it is to complicated. A general summary would be that the elastic net is a convex sum of ridge and lasso penalties, so the objective function for a Gaussian error model looks like:
+\noindent This working paper can not explain the whole math behind the Elastic Net Classiefer, because it is to complicated. A general summary would be that the elastic net is a convex sum of ridge and lasso penalties, so the objective function for a Gaussian error model looks like:
 \begin{equation}
 \text{Residual MSE}+\alpha \cdot \text{Ridge Penalty}+(1-\alpha)\cdot \text{LASSO Penalty}
 \end{equation}
 for \(\alpha\in[0,1]\). 
 So, the Elastic Net Classiefer is better as lasso and ridge regression.  It solves the limitations of both methods, while also including each as individual cases. \cite{Zou}.  
 \subsection{Multinomial Naive Bayes}
-43
-The following description of the Naive Bayes is first mentioned in the book "Artificial Intelligence: A Modern Approach" from Stuart J. Russell and Peter Norvig \cite{Russell}.
+\noindent The following description of the Naive Bayes is first mentioned in the book "Artificial Intelligence: A Modern Approach" from Stuart J. Russell and Peter Norvig \cite{Russell}.
 The general term Naive Bayes refers the the strong independence assumptions in the model, rather than the particular distribution of each feature. A Naive Bayes model assumes that each of the features it uses are conditionally independent of one another given some class. More formally, if I want to calculate the probability of observing features \(f_1\) through \(f_n\) , given some class \(c\) , under the Naive Bayes assumption the following holds:
 \begin{equation}
 p(f_1,..., f_n|c) = \prod_{i=1}^n p(f_i|c)
 \end{equation}
-
 This means that when I want to use a Naive Bayes model to classify a new example, the posterior probability is much simpler to work with:
 \begin{equation}
 p(c|f_1,...,f_n) \propto p(c)p(f_1|c)...p(f_n|c)
 \end{equation}
-
-Of course these assumptions of independence are rarely true, which may explain why some have referred to the model as the "Idiot Bayes" model, but in practice Naive Bayes models have performed surprisingly well, even on complex tasks where it is clear that the strong independence assumptions are false.
-
-Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
+Of course these assumptions of independence are rarely true, which may explain why some have referred to the model as the "Idiot Bayes" model, but in practice Naive Bayes models have performed surprisingly well, even on complex tasks where it is clear that the strong independence assumptions are false.\\Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
 \subsection{LSTM Neuronal Network}
-“LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated as we could explain it in this paper. 
+\noindent “LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated as we could explain it in this paper. 
 
-\section{Analysis}
-
-As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
-We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
-Our deviation of 10\$ from their best result can be explained by that.
-
-\subsection{Why did our neural network score so much worse than the neural network of the paper \textit{Predictive modelling on Airbnb listing prices} \cite{RN1}?}
-
-The most obvious estimation is that our network's design (figure \ref{lstm}) is not appropriate for this kind of prediction. Even the linear regression (figure \ref{linear_regression}) scored way better than the MAE of the LSTM network (figure \ref{nn}). \\
-The bad result (figure \ref{nn}) could be additionally explained by the missing features as already explained \cite{RN1}.
+Our Network is very simple network shown in figure \ref{lstm} has a worse MAE than the Linear Regression in figure \ref{nn}. \\
+The bad result could be explained by the missing features as already explained \cite{RN1}, but also on the not appropriate design of the network.
 
 \begin{figure}
   \begin{center}
@@ -296,6 +282,12 @@ The bad result (figure \ref{nn}) could be additionally explained by the missing 
   \end{center}
 \end{figure}
 
+\section{Analysis}
+
+As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
+We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
+Our deviation of 10\$ from their best result can be explained by that.
+
 \subsection{Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?}
 In order to know what words the lessors are supposed to use in the description, we take a look at the reviews with a wordcloud. The bigger the words in the wordcloud, the more often the word was used. For example, if the customers often write the word walk in the reviews due to informing what was in walking distance of the Airbnb, the work walk will be big in the wordcloud. 
 To answer this question the six most reviewed cities Capitol Hill, Ballard, Queen Anne, Belltown, Minor, Wallingford were analyzed. First, you can see that all cities have the words walk, park and restaurant written in big. The word “downtown” is also used often. For minor, the word “lake” is very important. The rest of the words indicate that words like minute, shop, market are used often by customers. Interestingly, the word “Washington” is important for the cities Minor and Capitol Hill.
@@ -304,9 +296,7 @@ To answer this question the six most reviewed cities Capitol Hill, Ballard, Quee
 \subsection{Which factors did influence the degree of booking of former rented apartments? }
 In order to answer this question, the Extra Tree Classifier was used. With the help of the Extra Tree Classifier one can see the feature importance. According to the feature importance the number of reviews influences the degree of booking of former rented apartments the most. Customers also care about how long the host has been on the platform and extra people. Almost equally as important are the number of reviews per month. This underlines how important the reviews are. The amount of host listings, the response rate and what is included for the guests influences the results of ones booking almost on the same level. The host should also care about the response rate and the number of beds as the next important thing on the list. Less important are the cancellation policy, bedrooms, bathrooms and if the host is verified on Airbnb. The Room type, host acceptance rate, phone verification and if the host has a profile picture are the least important factors influencing the degree of booking the apartments.
 \subsection{Which price can be charged for an apartment with certain characteristics?}
-First of all, we created a Linear Regression model in order to predict the price influenced by all other attributes. For this prediction we achieved a Mean Absolute Error of 44.28, which is, taking into account that the minimum rent is 10 dollar and maximum rent per night 1,650\$, very low. Therefore, we can assume that the listed attributes have a significant impact on the price of an accommodation and it is possible to estimate the rental price by these attributes and therefore it makes sense to use a classification tree, which takes these attributes into account.
-Figure Linear regression
-In the following, we use the Extra Tree Classifier in order to find out, which attributes have a strong correlation with the price and therefore influence the price of an apartment the most. A classification tree uses the values of attributes to create groups, in which all the apartments have the same (or at least similar) values for the attributes. According to our analysis, the attributes with the highest influence on the price have a correlation coefficient in a range of 0.01 and 0.2. The highest influence on the price is the number of reviews an apartment has. This attribute has a correlation of approximately 20\%, which is almost twice as much as the second important attribute has by showing 0.112 as correlation coefficient. This attribute indicates how long the lessor is already registered as host on Airbnb. As third important factor, with a correlation coefficient of a little bit less than 0.1 the number of extra people influences the price. Other attributes which influence the price are for example the number of listings a host has/ had, number of beds, number of bath- and bedrooms. The least significant attribute in our visualization is, whether the guest needs a profile picture (with a coefficient of about 0.01). (Figure \ref{correlation-attribute-price})
+First of all, we created a Linear Regression model in order to predict the price influenced by all other attributes. For this prediction we achieved a Mean Absolute Error of 44.28, which is, taking into account that the minimum rent is 10 dollar and maximum rent per night 1,650\$, very low. Therefore, we can assume that the listed attributes have a significant impact on the price of an accommodation and it is possible to estimate the rental price by these attributes and therefore it makes sense to use a classification tree, which takes these attributes into account.\\ In the following, we use the Extra Tree Classifier in order to find out, which attributes have a strong correlation with the price and therefore influence the price of an apartment the most. A classification tree uses the values of attributes to create groups, in which all the apartments have the same (or at least similar) values for the attributes. According to our analysis, the attributes with the highest influence on the price have a correlation coefficient in a range of 0.01 and 0.2. The highest influence on the price is the number of reviews an apartment has. This attribute has a correlation of approximately 20\%, which is almost twice as much as the second important attribute has by showing 0.112 as correlation coefficient. This attribute indicates how long the lessor is already registered as host on Airbnb. As third important factor, with a correlation coefficient of a little bit less than 0.1 the number of extra people influences the price. Other attributes which influence the price are for example the number of listings a host has/ had, number of beds, number of bath- and bedrooms. The least significant attribute in our visualization is, whether the guest needs a profile picture (with a coefficient of about 0.01). (Figure \ref{correlation-attribute-price})
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/9_bathroom_price_correlation.png}\\
@@ -322,9 +312,7 @@ In order to check that all the attributes only determine the price and do not ha
 \end{figure}
 So, if a lessor wants to (re)determine the price for his accommodation, he first of all needs to consider how many reviews he got so far for the apartment. (Note: As we noted before, the reviews all give a high rating, so they are all positive. Taking this into account, it is very likely that the lessor needs to check the number of positive reviews for determining the price.) Furthermore, the lessor needs to consider how long he is already registered as host and how many people can stay in the apartment. If he considers the impact of the number of bedrooms, bathrooms and beds, he should also take into account, the correlation of the three attributes among each other.
 As we already saw in figure \ref{correlation-attribute-price}, the number of beds, bedrooms and bathrooms do not have the highest impact on the price although somebody might expect, that the price is strongly influenced by these factors. \\
-The same result was already shown by another paper, which further proofs those relevant features \cite{RN1}. 
-
-By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation})
+The same result was already shown by another paper, which further proofs those relevant features \cite{RN1}.\\ By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation})
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/10_bedrooms_price_correlation.png}\\
@@ -340,44 +328,34 @@ The same change can also be seen for the correlation of bathrooms and price but 
 \end{figure}
 
 \subsection{When can lessors increase the price per night for their apartment and when should they lower it?}
-To answer this question, we want to predict the price changes for 2017. First of all, we started by checking out the change of mean flat prices in 2016 (Figure \ref{correlation-attribute-price}). 
+\noindent To answer this question, we want to predict the price changes for 2017. First of all, we started by checking out the change of mean flat prices in 2016 (Figure \ref{correlation-attribute-price}). 
 Prices increase from January to July form about 120 to 150 dollar and decrease until November to 135 dollar. During the last month prices slightly start to increase again. It can be seen that the correlation between charged prices and the occupation ratio is rather low, as the first drop of the occupation ratio in April does not reflect in a price drop. Nevertheless, the second decrease in the number of rented apartments does reflect in the charged prices as also the price curve decreases after July. But during the month of December, prices increase as well as the number of free apartments decrease. This irregularity might be due to the fact that many people travel during Christmas time and therefore their willingness to pay is slightly increased. 
 
 \subsection{What is a good point in time to start a marketing campaign?}
-In order to find the right point in time to start a marketing campaign, we need to know, during which periods the number of visitors decreases. To get some good results, we plotted a graph showing the number of visitors according to the time.
-In Figure 5.2 it can be seen that the number of visitors fluctuates very strong also within a month. This might be caused by changes within a week, as usually on weekends more people consider to travel and therefore more apartments are rented as well as public holidays influence the number of tourists. As exactly reflecting this fluctuation in a model would lead to a very complex model, which is expensive to create and the risk of a model overfit becomes very high, we use Linear Regression to reflect the trend of 2016 and in a second step predict the numbers of visitors for 2017. We can see that the number of visitors decreases between January and March and increases between March and July. After that there is a decrease until December. Nevertheless, the fluctuation is about 200 visitors. Compared to a total number of over 2400 visitors this change is quite small.
-The predicted number of visitors can be seen in Figure 5.3.
-
-For 2017 it is predicted that the number of visitors raises from January to March and decreases until July. For the rest of the Year the number of visitors will raise again. So, the best point in time to start a marketing campaign would be during February till March. As the number of visitors will fall from March to July, the marketing campaign should prevent this. A campaign usually needs some time until its effectiveness can be seen so it should be started earlier than the actual decrease takes place and when the predicted decrease should take place, the effect of the campaign should keep the number of visitors on the level of March or even increase it. The campaign could be stopped in August, as its effect will last a little bit longer and between September and October the number of visitors will be on the level of March again without any campaign.
+\noindent In order to find the right point in time to start a marketing campaign, we need to know, during which periods the number of visitors decreases. To get some good results, we plotted a graph showing the number of visitors according to the time.\\ In Figure 5.2 it can be seen that the number of visitors fluctuates very strong also within a month. This might be caused by changes within a week, as usually on weekends more people consider to travel and therefore more apartments are rented as well as public holidays influence the number of tourists. As exactly reflecting this fluctuation in a model would lead to a very complex model, which is expensive to create and the risk of a model overfit becomes very high, we use Linear Regression to reflect the trend of 2016 and in a second step predict the numbers of visitors for 2017. We can see that the number of visitors decreases between January and March and increases between March and July. After that there is a decrease until December. Nevertheless, the fluctuation is about 200 visitors. Compared to a total number of over 2400 visitors this change is quite small.
+The predicted number of visitors can be seen in Figure 5.3.\\ For 2017 it is predicted that the number of visitors raises from January to March and decreases until July. For the rest of the Year the number of visitors will raise again. So, the best point in time to start a marketing campaign would be during February till March. As the number of visitors will fall from March to July, the marketing campaign should prevent this. A campaign usually needs some time until its effectiveness can be seen so it should be started earlier than the actual decrease takes place and when the predicted decrease should take place, the effect of the campaign should keep the number of visitors on the level of March or even increase it. The campaign could be stopped in August, as its effect will last a little bit longer and between September and October the number of visitors will be on the level of March again without any campaign.
 
 
 %
 \section{Your findings and impacts}
-We want to improve the effectiveness of marketing for Airbnb Seattle based on our findings. This can be beneficial for the lessors and Airbnb itself as Airbnb makes money off of the lessors. That means, Airbnb is only profitable if the lessors are able to rent out their listings. As a consequence, Airbnb should help the lessors to attract more visitors. 
-\\
-Referring to the previous analysis one can see that the reviews are the most important factor of the consumers decision. That means the more reviews the lessors have the higher the chance their listings gets rented. This is why the lessors and Airbnb should ask their renters to write a review after they leave in order to attract more people. One should keep in mind that this report is only considering positive reviews. \\
+\noindent We want to improve the effectiveness of marketing for Airbnb Seattle based on our findings. This can be beneficial for the lessors and Airbnb itself as Airbnb makes money off of the lessors. That means, Airbnb is only profitable if the lessors are able to rent out their listings. As a consequence, Airbnb should help the lessors to attract more visitors. \\Referring to the previous analysis one can see that the reviews are the most important factor of the consumers decision. That means the more reviews the lessors have the higher the chance their listings gets rented. This is why the lessors and Airbnb should ask their renters to write a review after they leave in order to attract more people. One should keep in mind that this report is only considering positive reviews. \\
 Another suggestion for the lessors is to update their description with places that are in walking distance. Places that the renters want to visit might be shops, the metro, parks, downtown, etc. One can also mention where the renters can get food with mentioning where the nearest restaurants or cafes are. The bottom line is, the lessors should put every place into the description that is in walking distance. \\
 As mentioned before, the number of reviews plays a huge part in whether a listing gets booked or not and how much can be charged. Another big factor is how long the host has been active and how many listings the host has. As those are qualities that can only be build over time, older hosts get rewarded and can charge more per listing. Consequently, lessors need to be patient in order to show that they are reliable and grow their credibility. This way their listings will get booked more often and they can charge a higher price. \\
 Newer hosts can try to focus on their host\_response\_time, host\_response\_rate and host\_acceptance\_rate. As qualities like number of reviews, number of listings and how long the host has been active needs time, these are factors lessors can work on immediately in order to rent out their listing for a higher price. \\
 If the host has the chance, then it is worth considering that higher number of bedrooms, bathrooms and beds can lead to people willing to pay more for the listing. That can be due to people renting the place to explore the city or work most of the time and only wanting a place to stay and shower at. This gives a reason to suspect that renters will not spend a lot of time in the Airbnb. 
 We already know that the number of visitors fluctuates a lot within a month. This can be due to people visiting new places over the weekend. Consequently, it would be profitable to increase the prices from Friday to Sunday and lower them from Monday to Thursday. Moreover, it makes sense to keep the prices low from January to March before slowly increasing them from March to September. July should be the most expensive month. In December the prices can be increased again. That can be a result of holidays. Because many people decide to visit their families or go on vacation during their holidays, the demand for places to stay increases during that time period. \\
 As Airbnb itself profits form their lessors renting out their places, it would be interesting to know how they can help their lessors. One way is to start campaigning at the right moment. According to the analysis, in the year 2017 the number of visitors will decrease from March to July. Meaning the marketing campaign should start in February and end in August. As Airbnb is an online platform the advertisements should be online as well. This way, possible visitors can be reached who already are comfortable using the internet. 
-
 %
 \section{Related Works}
- Our main goal is the improve the effectiveness of the marketing. Nevertheless, we searched for other related papers and work and we got inspired from the question \textit{What variables in this data set are most useful in predicting the price of a particular rental?} \cite{RN2}. Not only we wanted to improve the marketing, but with the gained knowledge we also wanted to see which results we can reach with our predictions. \\
+\noindent Our main goal is the improve the effectiveness of the marketing. Nevertheless, we searched for other related papers and work and we got inspired from the question \textit{What variables in this data set are most useful in predicting the price of a particular rental?} \cite{RN2}. Not only we wanted to improve the marketing, but with the gained knowledge we also wanted to see which results we can reach with our predictions. \\
  As already mentioned, another paper reached far better results with the price prediction \cite{RN1}. \\
  A lot of further interesting plots were made on this project \cite{RN4}. Unfortunately we could not use any of this information to our advantage, but it further proofs the hypothesis of the little importance of the sentiment feature.
  
- 
- 
 \section{Conclusion}
-ToDo
-
-
+\noindent ToDo
 
 \section*{Acknowledgment}
-The authors would like to thank Dr. Liu for really good supervising of our group. Dr. Liu helped us so much and we wouldn't have reached this result without him. 
+\noindent The authors would like to thank Dr. Liu for really good supervising of our group. Dr. Liu helped us so much and we wouldn't have reached this result without him. 
 
 
 
