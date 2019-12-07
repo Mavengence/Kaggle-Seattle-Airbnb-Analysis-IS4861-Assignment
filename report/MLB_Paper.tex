@@ -247,6 +247,12 @@ This leads to the conclusion, that first leafs for predicting the price with a T
 \end{figure}
 
 \subsection{Elastic Net CV}
+This working paper can not explain the whole math behind the Elastic Net Classiefer, because it is to complicated. A general summary would be that the elastic net is a convex sum of ridge and lasso penalties, so the objective function for a Gaussian error model looks like:
+\begin{equation}
+\text{Residual MSE}+\alpha \cdot \text{Ridge Penalty}+(1-\alpha)\cdot \text{LASSO Penalty}
+\end{equation}
+for \(\alpha\in[0,1]\). 
+So, the Elastic Net Classiefer is better as lasso and ridge regression.  It solves the limitations of both methods, while also including each as individual cases. \cite{Zou}.  
 \subsection{Multinomial Naive Bayes}
 43
 The following description of the Naive Bayes is first mentioned in the book "Artificial Intelligence: A Modern Approach" from Stuart J. Russell and Peter Norvig \cite{Russell}.
