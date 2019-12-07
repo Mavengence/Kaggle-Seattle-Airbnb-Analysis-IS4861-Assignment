@@ -195,7 +195,7 @@ While in January only half of the apartments have been occupied, the number of r
 
 \section{Models}
 
-As the team of this paper \cite{RN1} mentioned in their average listing price per neighbourhood, they figured out that the neighbourhood has a huge impace on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean squared error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
+As the team of this paper \cite{RN1} mentioned in their average listing price per neighbourhood, they figured out that the neighbourhood has a huge impace on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
 We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
 Our deviation of 10\$ from their best result can be explained by that.
 
@@ -260,6 +260,14 @@ The features with the according entropy are shown in figure \ref{feature_importa
 \end{figure}
 
 This leads to the conclusion, that first leafs for predicting the price with a Tree-Classifier should be the amount of reviews. 
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/elastic_net.png}\\
+  \caption{Errors of the Elastic Net}\label{elastic_net}
+  \end{center}
+\end{figure}
+
 \subsection{Elastic Net CV}
 \subsection{Multinomial Naive Bayes}
 \subsection{LSTM Neuronal Network}
