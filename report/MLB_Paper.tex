@@ -24,12 +24,14 @@
 \usepackage{eqparbox}
 \usepackage{url}
 \hyphenation{op-tical net-works semi-conduc-tor}
+\usepackage{graphicx}
 
 
 
 %\bstctlcite{IEEE:BSTcontrol}
 %=== TITLE & AUTHORS ====================================================================
 \begin{document}
+
 \bstctlcite{IEEEexample:BSTcontrol}
     \title{How can the effectiveness of marketing ‘Airbnb Seattle’ be improved?
 – dataset of 2016 
@@ -67,7 +69,7 @@ This paper should present, how the marketing effectiveness of Airbnb can be enha
 \noindent \begin{itshape}"Brian, I thought of a way to make a few bucks - turning our place into "designers bed and breakfast" - offering young designers who come to town a place to cra during the 4 day event, complete with wireless Internet, a small desk space, sleeping mat, and breakfast each morning. Ha Joe! \\
 \end{itshape}
 \IEEEPARstart{T}{}his simple email, sent on September 22 in year 2007, has been the start of an equally simple business, which has been started in 2008 and is 31 billion dollar worth today. In 2007 two locals from San Francisco decided to host visitors of the design conference, which took place in their hometown. This simple concept has been the impulse to create a platform, where private people can offer and rent out their accommodation to visitors. According to the basic idea, the platform is called Airbnb, the short form for 'Airbed and Breakfast' and a new company, which should become very successful was born. Since the company founding, the Airbnb community became more than just an opportunity to earn some extra money by renting out an accommodation, or to find a cheap place to stay. According to the company’s website, today it is about 'sharing' and having the possibility to 'experience' a town. In 2016, Airbnb stresses this in their marketing campaign 'Don't go there. Live there!'. Over the time the platform provided the possibility to offer tours and activities. So, locals can show their culture and city in another and special way to visitors than only renting apartments. As 11 years have passed since the company has been founded, Airbnb announced to start a new chapter by becoming a public-tradable company in 2020. So, in the future the stockholders will show great interest in the revenue and prognoses of the company and therefore, the company needs to present good predictions for the next years. Furthermore, it should reveal a plan how to increase its business value and reach its aims, set at the beginning of the year. At this point data collection and analysis is very important. Analyzing customers' and company’s past behavior can be used to predict the further development of the company and help to find the right instruments to reach the companies' aims. One major goal of companies is to increase their revenue or at least to increase their customer base. To have a good marketing is essential for Airbnb to reach the yearly goal as the quality of marketing is one of the factors, which influences the increase of number of customers.\\
-By definition marketing is about the firm’s effort to address customer needs and expectations, which influences the demands made by the customers on the product and need to be fulfilled by the product \cite{Schierenbeck}. So, it is also about the tradeoff of ‘evoking’ needs and expectation of consumers on a level that the product can satisfy and is able to compete with competitive product. In order to find the essential requirements, applying marketing instruments like the marketing mix can be helpful. The marketing mix consists of four policies: Product, Price, Promotion and Place. Having a good data foundation and analysis is important, as we can deduce future customer needs and behavior by analyzing the requirements of past visitors and therefore we can base our marketing assumptions within the four policies on solid data.\\
+By definition marketing is about the firm’s effort to address customer needs and expectations, which influences the demands made by the customers on the product and need to be fulfilled by the product \cite{schiernbeck}. So, it is also about the tradeoff of ‘evoking’ needs and expectation of consumers on a level that the product can satisfy and is able to compete with competitive product. In order to find the essential requirements, applying marketing instruments like the marketing mix can be helpful. The marketing mix consists of four policies: Product, Price, Promotion and Place. Having a good data foundation and analysis is important, as we can deduce future customer needs and behavior by analyzing the requirements of past visitors and therefore we can base our marketing assumptions within the four policies on solid data.\\
 In our paper we analyze a dataset containing information on rented accommodations in Seattle in the year 2016. As already mentioned the company will aim for good predictions in 2020, in order to present them to shareholders, the company will aim to obtain high quality data to base a marketing campaign on. As the dataset is of 2016, we actually can not make proper predictions for the year 2020 and therefore will not be able to deliver the information on the future development of the company in 2020. Nevertheless, analyzing this dataset is useful in order to improve the marketing of Airbnb and therefore can contribute to a positive company development also in year 2020, if the right instruments can be chosen according to our analysis. The following sections will 
 \begin{enumerate}
 \item raise some questions, which need to be answered, in order to give suggestions on the design of a marketing campaign
@@ -102,6 +104,10 @@ Furthermore, we would like to indicate the price trend of the rented apartments.
 When can lessors increase the price per night for their apartment and when should they lower it?
 \end{itshape}\\
 Helping the lessors to set the perfect price level might even help to secure the existence of Airbnb, as lessors do not quit to offer their accommodation on Airbnb as they have too low revenues (because of too low renting prices of too less customers - due to high prices).
+To estimate the price we used a neural network, but we scored fairly bad compared to another paper. This leads to the question:
+\begin{itshape}
+Why did our neural network score so much worse than the neural network of the paper Predictive modelling on Airbnb listing prices \cite{RN1}?
+\end{itshape}
 %=====================================================
 \subsection{Promotion}
 \noindent For this section, some information deduced for the previous two sections will be reused. As already mentioned, the word clouds represent the features customers value the most and therefore a marketing campaign should address these issues.\\
@@ -117,9 +123,10 @@ According to the Promotion Policy a second issue is to decide where/ via which t
 \section{Executive summary} 
 \noindent The aim of this report is to find out how the effectiveness of marketing ‘Airbnb Seattle’ can be improved. This report orients itself at the four Ps from Marketing Mix, which are Product, Price, Place and Promotion. 
 The data originally consisted of three data sheets Listing, Reviews and Calendar and had to be prepared for the analyzation. 
-The analysis wants to answer the following five questions: 
+The analysis wants to answer the following six questions: 
 %==================================================
 \begin{itemize}
+\item Why did our neural network score so much worse than the neural network of the paper \textit{Predictive modelling on Airbnb listing prices} \cite{RN1} ?
 \item Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?
 \item Which attributes have the highest impact on the charged price of an apartment?
 \item When can lessors increase the price per night for their apartment and when should they lower it?
@@ -167,7 +174,21 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \end{center}
 \end{figure}
 %
-Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than (8). So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists. Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than (8).\\ First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading the related work of the Seattle-Dataset, we noticed that another group already researched this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately the team found out, that this feature has no relevant impact on predicting the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, nobody found a Gaussian-Distribution or any other useful distribution for the reviews so far.\\
+
+%
+%Figure
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/3_count_per_district.png}\\
+  \caption{Compare review and accommodation count}\label{review_district}
+  \end{center}
+\end{figure}
+%
+
+Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than (8). So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists. Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than (8).\\ 
+Another comparison shows the amount of reviews depending on the neighbourhood \ref{review_district}. We can see a direct correlation between those two feature. Apparently there is no district which gets less reviews because of any special reason. \\
+
+First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading the related work of the Seattle-Dataset, we noticed that another group already researched this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately the team found out, that this feature has no relevant impact on predicting the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, nobody found a Gaussian-Distribution or any other useful distribution for the reviews so far.\\
 In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{compare_the_neighbourhoods}). \\
 %
 %Figure
@@ -178,8 +199,18 @@ In order to make sure that there is no correlation between the number of reviews
   \end{center}
 \end{figure}
 %
+
+%Figure
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/1_number_of_listings_depending_on_price.png}\\
+  \caption{Mean accommodation price with count}\label{mean_acc}
+  \end{center}
+\end{figure}
+%
+
 In this figure it becomes visible that neighborhoods, whose apartments in total got 50 to 100 reviews score a mean rating of about 9.2 to 9.7. Approximately the same mean rating is also achieved by district where the apartments are rated 125 to 300 times. There is only one outlier (‘University District’), which scored al pretty low mean rating value compared to all other districts. As this is the only outlier, we will neglect this in our following assumptions.
-To sum up, we can conclude that both figures (\ref{score_reviews_ratio} and \ref{compare_the_neighbourhoods}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district.
+To sum up, we can conclude that both figures (\ref{score_reviews_ratio} and \ref{compare_the_neighbourhoods}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district. For a better comparison we provide figure \ref{mean_acc} to show all the provided accommodation with their according prices.
 \subsubsection{Calendar}
 \noindent This part of the data shows, when certain apartments are available and when they are rented out. Within our analysis we assume, that an apartment, which is listed as ‘not available’ in the ‘calender.csv’ is occupied by a visitor. If it is ‘available’ we assume that the owners would have liked to rent the apartment out but there has not been any visitor renting it. In figure \ref{occupied_ratio_appartments} the ratio of occupied and available apartments in 2016 is presented.
 %
@@ -292,7 +323,7 @@ p(c|f_1,...,f_n) \propto p(c)p(f_1|c)...p(f_n|c)
 \end{equation}
 Of course these assumptions of independence are rarely true, which may explain why some have referred to the model as the "Idiot Bayes" model, but in practice Naive Bayes models have performed surprisingly well, even on complex tasks where it is clear that the strong independence assumptions are false.\\Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
 \subsection{LSTM Neuronal Network}
-“LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated for this paper to explain. 
+“LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated for this paper \cite{olah} to explain. 
 
 \section{Analysis}
 
@@ -323,7 +354,7 @@ To answer this question the six most reviewed cities Capitol Hill, Ballard, Quee
 
 
 \subsection{Which price can be charged for an apartment with certain characteristics?}
-First of all, we created a Linear Regression model in order to predict the price influenced by all other attributes. For this prediction we achieved a Mean Absolute Error of 44.28, which is, taking into account that the minimum rent is 10 dollar and maximum rent per night 1,650\$, very low. Therefore, we can assume that the listed attributes have a significant impact on the price of an accommodation and it is possible to estimate the rental price by these attributes and therefore it makes sense to use a classification tree, which takes these attributes into account.\\ In the following, we use the Extra Tree Classifier in order to find out, which attributes have a strong correlation with the price and therefore influence the price of an apartment the most. A classification tree uses the values of attributes to create groups, in which all the apartments have the same (or at least similar) values for the attributes. According to our analysis, the attributes with the highest influence on the price have a correlation coefficient in a range of 0.01 and 0.2. The highest influence on the price is the number of reviews an apartment has. This attribute has a correlation of approximately 20\%, which is almost twice as much as the second important attribute has by showing 0.112 as correlation coefficient. This attribute indicates how long the lessor is already registered as host on Airbnb. As third important factor, with a correlation coefficient of a little bit less than 0.1 the number of extra people influences the price. Other attributes which influence the price are for example the number of listings a host has/ had, number of beds, number of bath- and bedrooms. The least significant attribute in our visualization is, whether the guest needs a profile picture (with a coefficient of about 0.01). (Figure \ref{correlation-attribute-price})
+First of all, we created a Linear Regression model in order to predict the price influenced by all other attributes. For this prediction we achieved a Mean Absolute Error of 44.28, which is, taking into account that the minimum rent is 10 dollar and maximum rent per night 1,650\$, very low (Figure \ref{mean_acc}). Therefore, we can assume that the listed attributes have a significant impact on the price of an accommodation and it is possible to estimate the rental price by these attributes and therefore it makes sense to use a classification tree, which takes these attributes into account.\\ In the following, we use the Extra Tree Classifier in order to find out, which attributes have a strong correlation with the price and therefore influence the price of an apartment the most. A classification tree uses the values of attributes to create groups, in which all the apartments have the same (or at least similar) values for the attributes. According to our analysis, the attributes with the highest influence on the price have a correlation coefficient in a range of 0.01 and 0.2. The highest influence on the price is the number of reviews an apartment has. This attribute has a correlation of approximately 20\%, which is almost twice as much as the second important attribute has by showing 0.112 as correlation coefficient. This attribute indicates how long the lessor is already registered as host on Airbnb. As third important factor, with a correlation coefficient of a little bit less than 0.1 the number of extra people influences the price. Other attributes which influence the price are for example the number of listings a host has/ had, number of beds, number of bath- and bedrooms. The least significant attribute in our visualization is, whether the guest needs a profile picture (with a coefficient of about 0.01). (Figure \ref{correlation-attribute-price})
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/9_bathroom_price_correlation.png}\\
@@ -339,13 +370,15 @@ In order to check that all the attributes only determine the price and do not ha
 \end{figure}
 So, if a lessor wants to (re)determine the price for his accommodation, he first of all needs to consider how many reviews he got so far for the apartment. (Note: As we noted before, the reviews all give a high rating, so they are all positive. Taking this into account, it is very likely that the lessor needs to check the number of positive reviews for determining the price.) Furthermore, the lessor needs to consider how long he is already registered as host and how many people can stay in the apartment. If he considers the impact of the number of bedrooms, bathrooms and beds, he should also take into account, the correlation of the three attributes among each other.
 As we already saw in figure \ref{correlation-attribute-price}, the number of beds, bedrooms and bathrooms do not have the highest impact on the price although somebody might expect, that the price is strongly influenced by these factors. \\
-The same result was already shown by another paper, which further proofs those relevant features \cite{RN1}.\\ By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation})
+The same result was already shown by another paper, which further proofs those relevant features \cite{RN1}.\\ By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation}).
+
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/10_bedrooms_price_correlation.png}\\
   \caption{number-of-bedroom-price-correlation}\label{bedroom-price-correlation}
   \end{center}
 \end{figure}
+
 The same change can also be seen for the correlation of bathrooms and price but the change of the entry level is not that big. Therefore, the ‘strong’ change in the entry level price becomes already visible for 4 bathrooms. (Figure \ref{bathrooms-price-correlation})
 \begin{figure}
   \begin{center}
@@ -355,19 +388,35 @@ The same change can also be seen for the correlation of bathrooms and price but 
 \end{figure}
 
 \subsection{When can lessors increase the price per night for their apartment and when should they lower it?}
-\noindent To answer this question, we want to predict the price changes for 2017. First of all, we started by checking out the change of mean flat prices in 2016 (Figure \ref{correlation-attribute-price}). 
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/12_mean_flat_prices_2016.png}\\
+  \caption{Mean flat prices of 2016}\label{mean_flat_prices}
+  \end{center}
+\end{figure}
+
+To answer this question, we want to predict the price changes for 2017. First of all, we started by checking out the change of mean flat prices in 2016 (Figure \ref{mean_flat_prices}). 
 Prices increase from January to July form about 120 to 150 dollar and decrease until November to 135 dollar. During the last month prices slightly start to increase again. It can be seen that the correlation between charged prices and the occupation ratio is rather low, as the first drop of the occupation ratio in April does not reflect in a price drop. Nevertheless, the second decrease in the number of rented apartments does reflect in the charged prices as also the price curve decreases after July. But during the month of December, prices increase as well as the number of free apartments decrease. This irregularity might be due to the fact that many people travel during Christmas time and therefore their willingness to pay is slightly increased. 
 
 \subsection{What is a good point in time to start a marketing campaign?}
-\noindent In order to find the right point in time to start a marketing campaign, we need to know, during which periods the number of visitors decreases. To get some good results, we plotted a graph showing the number of visitors according to the time.\\ In Figure 5.2 it can be seen that the number of visitors fluctuates very strong also within a month. This might be caused by changes within a week, as usually on weekends more people consider to travel and therefore more apartments are rented as well as public holidays influence the number of tourists. As exactly reflecting this fluctuation in a model would lead to a very complex model, which is expensive to create and the risk of a model overfit becomes very high, we use Linear Regression to reflect the trend of 2016 and in a second step predict the numbers of visitors for 2017. We can see that the number of visitors decreases between January and March and increases between March and July. After that there is a decrease until December. Nevertheless, the fluctuation is about 200 visitors. Compared to a total number of over 2400 visitors this change is quite small.
-The predicted number of visitors can be seen in Figure 5.3.\\ For 2017 it is predicted that the number of visitors raises from January to March and decreases until July. For the rest of the Year the number of visitors will raise again. So, the best point in time to start a marketing campaign would be during February till March. As the number of visitors will fall from March to July, the marketing campaign should prevent this. A campaign usually needs some time until its effectiveness can be seen so it should be started earlier than the actual decrease takes place and when the predicted decrease should take place, the effect of the campaign should keep the number of visitors on the level of March or even increase it. The campaign could be stopped in August, as its effect will last a little bit longer and between September and October the number of visitors will be on the level of March again without any campaign.
 
-!!!!!!!
-!!!!!!!
-!!!!!!! Idea for business value section below
-This leads to a better understanding of the customers wants and especially the descriptions of apartments can be based on the findings of this paper. If the description addresses the facts customers value the most, it is more likely that customers will find a good offer and the degree of booking increases. This increase will have a positive impact on the view of shareholders of Airbnb and increases the companies value.
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/5_busiest_times_2016.png}\\
+  \caption{Busiest times of 2016}\label{busiest_times}
+  \end{center}
+\end{figure}
 
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/6_prediction_2017.png}\\
+  \caption{Prediction for 2017}\label{prediction_2017}
+  \end{center}
+\end{figure}
 
+\noindent In order to find the right point in time to start a marketing campaign, we need to know, during which periods the number of visitors decreases. To get some good results, we plotted a graph showing the number of visitors according to the time.\\ In Figure \ref{busiest_times} it can be seen that the number of visitors fluctuates very strong also within a month. This might be caused by changes within a week, as usually on weekends more people consider to travel and therefore more apartments are rented as well as public holidays influence the number of tourists. As exactly reflecting this fluctuation in a model would lead to a very complex model, which is expensive to create and the risk of a model overfit becomes very high, we use Linear Regression to reflect the trend of 2016 and in a second step predict the numbers of visitors for 2017. We can see that the number of visitors decreases between January and March and increases between March and July. After that there is a decrease until December. Nevertheless, the fluctuation is about 200 visitors. Compared to a total number of over 2400 visitors this change is quite small.
+The predicted number of visitors can be seen in Figure \ref{prediction_2017}.\\ For 2017 it is predicted that the number of visitors raises from January to March and decreases until July. For the rest of the Year the number of visitors will raise again. So, the best point in time to start a marketing campaign would be during February till March. As the number of visitors will fall from March to July, the marketing campaign should prevent this. A campaign usually needs some time until its effectiveness can be seen so it should be started earlier than the actual decrease takes place and when the predicted decrease should take place, the effect of the campaign should keep the number of visitors on the level of March or even increase it. The campaign could be stopped in August, as its effect will last a little bit longer and between September and October the number of visitors will be on the level of March again without any campaign.
 
 %
 \section{Your findings and impacts}
@@ -399,7 +448,7 @@ Another aspect which can be dealt with in future analysis is, whether the attrib
 
 
 \section*{Acknowledgment}
-\noindent The authors would like to thank Dr. Liu for really good supervising of our group. Dr. Liu helped us so much and we wouldn't have reached this result without him. 
+\noindent The authors would like to thank Dr. Liu Junming from the City University of Hongkong for a really good supervising of our group. Dr. Liu helped us so much and we wouldn't have reached this result without him. 
 
 
 
