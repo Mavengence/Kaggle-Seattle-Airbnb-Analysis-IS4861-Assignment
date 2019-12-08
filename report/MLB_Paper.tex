@@ -167,8 +167,8 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \end{center}
 \end{figure}
 %
-Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists. Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than (8).\\ First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading related work to the Seattle-Dataset, we noticed that another group already researched this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately the team found out, this feature has no relevant on predicting the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, nobody found a Gaussian-Distribution or any other useful distribution for the reviews so far.\\\\So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
-In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{compare_the_neighbourhoods}).
+Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than (8). So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists. Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than (8).\\ First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading the related work of the Seattle-Dataset, we noticed that another group already researched this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately the team found out, that this feature has no relevant impact on predicting the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, nobody found a Gaussian-Distribution or any other useful distribution for the reviews so far.\\
+In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{compare_the_neighbourhoods}). \\
 %
 %Figure
 \begin{figure}
@@ -220,6 +220,16 @@ The difference between stemming and lemmatization is, lemmatization looks at the
 \item Caring with \textit{Lemmatization} into Care
 \item Caring with \textit{Stemming} into Car
 \end{itemize}
+
+%Figure
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=3.5in]{photo/13_wordclouds.png}\\
+  \caption{Wordclouds for the top 6 most reviewed districts}\label{wordclouds}
+  \end{center}
+\end{figure}
+%
+
 \subsection{Linear Regression}
 \noindent Dr Liu described the Linear Regression as one of the most widely used techniques for advanced predictions. It is fundamental to more complex models, easy to interpret and easy to solve. \cite{RN7}
 Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
@@ -282,21 +292,16 @@ p(c|f_1,...,f_n) \propto p(c)p(f_1|c)...p(f_n|c)
 \end{equation}
 Of course these assumptions of independence are rarely true, which may explain why some have referred to the model as the "Idiot Bayes" model, but in practice Naive Bayes models have performed surprisingly well, even on complex tasks where it is clear that the strong independence assumptions are false.\\Up to this point we have said nothing about the distribution of each feature. In other words, we have left \(p(f_i|c)\) undefined. The term Multinomial Naive Bayes simply lets us know that each \(p(f_i|c)\) is a multinomial distribution, rather than some other distribution. This works well for data which can easily be turned into counts, such as word counts in text.
 \subsection{LSTM Neuronal Network}
-<<<<<<< HEAD
-\noindent “LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated as we could explain it in this paper. 
-=======
 “LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated for this paper to explain. 
 
 \section{Analysis}
 
 As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
-We didn't have the capacity to transform the categorical neighbourhood feature into a numerical one and try-out multiple neural networks. \\
+We didn't have the capacity to transform the categorical neighborhood feature into a numerical one and try-out multiple neural networks. \\
 Our deviation of 10\$ from their best result can be explained by that.
 
 \subsection{Why did our neural network score so much worse than the neural network of the paper \textit{Predictive modelling on Airbnb listing prices} \cite{RN1}?}
->>>>>>> 70fda3cee7a9e005d86e98ef6407d5a3a22eec4c
-
-Our Network is very simple network shown in figure \ref{lstm} has a worse MAE than the Linear Regression in figure \ref{nn}. \\
+Our Network is very simple network shown in figure \ref{lstm} has a worse mean absolute error than the Linear Regression in figure \ref{nn}. 
 The bad result could be explained by the missing features as already explained \cite{RN1}, but also on the not appropriate design of the network.
 
 \begin{figure}
@@ -311,10 +316,6 @@ The bad result could be explained by the missing features as already explained \
   \caption{LSTM Neural Network}\label{lstm}
   \end{center}
 \end{figure}
-
-As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
-We didn't have the capacity to transform the categorical neighborhood feature into a numerical one and try-out multiple neural networks. \\
-Our deviation of 10\$ from their best result can be explained by that.
 
 \subsection{Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?}
 In order to know what words the lessors are supposed to use in the description, we take a look at the reviews with a wordcloud. The bigger the words in the wordcloud, the more often the word was used. For example, if the customers often write the word walk in the reviews due to informing what was in walking distance of the Airbnb, the work walk will be big in the wordcloud. 
