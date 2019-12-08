@@ -397,36 +397,49 @@ We can see clearly the high fluctuation of visitors on a weekly basis, but it is
 \item The reviews are the most important factor of the costumers decision
 \item Lessors should ask their guests to leave a review after staying at the 
 \item Lessors should consider to update their description with attractive places nearby. For example a lake, park or restaurants.
-\end{itemize}
-\end{frame}
-%------------------------------------------------
-\begin{frame}
-\frametitle{Our Findings and Impacts}
-\begin{itemize}
 \item Another big factor is how long the host has been acted and how many listings the host has
 \item Hosts should try to increase their response time
-\item Obviously providing more bathrooms or bedrooms leads to rent the flat for a higher price
 \end{itemize}
+
 \end{frame}
+
+%---------------------------------------------
+
+%-------------------------------------------
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Verbatim}
+\begin{example}[Theorem Slide Code]
+\begin{verbatim}
+\begin{frame}
+\frametitle{Theorem}
+\begin{theorem}[Mass--energy equivalence]
+$E = mc^2$
+\end{theorem}
+\end{frame}\end{verbatim}
+\end{example}
+\end{frame}
+
 %------------------------------------------------
 \section{Conclusion}
 %------------------------------------------------
-\begin{frame}
-\begin{itemize}
-\item We made some suggestions how to apply marketing-mix strategies effectively. The focus was on the Product, Price and Promotion policy which is known from the marketing definition
-\item Lessors could experiment with new trendy words in their description
-\item The number of bedrooms has to be exceeded to five before the entry price increased
 
-\end{itemize}
-\end{frame}
-%---------------------------------------------
 \begin{frame}
-\begin{itemize}
-\item From January until July lessor should increase their price but decrease again until November
-\item On Chrismas they can Increase their price
-\item It make sense to start the marketing campaign in February to be noticed before the rising customer counts
-\end{itemize}
+\frametitle{Table}
+\begin{table}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+\midrule
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\caption{Table caption}
+\end{table}
 \end{frame}
+
 %---------------------------------------------
 
 \begin{frame}
@@ -437,12 +450,31 @@ Uncomment the code on this slide to include your own image from the same directo
 \end{figure}
 \end{frame}
 %------------------------------------------------
-\begin{frame}
-For references pleace look in the origin report "How can the effectivness of marketing 'Airbnb Seattle' be improved? - dataset of 2016 
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Citation}
+An example of the \verb|\cite| command to cite within the presentation:\\~
+
+This statement requires citation \cite{p1}.
 \end{frame}
+
 %------------------------------------------------
+
+\begin{frame}
+\frametitle{References}
+\footnotesize{
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Schierenbeck, 2012]{Schierenbeck} Henner Schierenbeck (2016)
+\newblock Foundations of Business Administration
+\end{thebibliography}
+}
+\end{frame}
+
+%------------------------------------------------
+
 \begin{frame}
 \Huge{\centerline{The End}}
 \end{frame}
+
 %----------------------------------------------------------------------------------------
 \end{document} 
