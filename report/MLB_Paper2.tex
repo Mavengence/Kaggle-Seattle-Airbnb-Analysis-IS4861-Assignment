@@ -23,6 +23,7 @@
 \usepackage{mdwtab}
 \usepackage{eqparbox}
 \usepackage{url}
+
 \hyphenation{op-tical net-works semi-conduc-tor}
 
 
@@ -49,6 +50,9 @@ Machine Learning for Business IS4861
 
 % ====================================================================
 \maketitle
+
+
+
 % === ABSTRACT 
 \begin{abstract}
 %\boldmath
@@ -64,45 +68,42 @@ This paper should present, how the marketing effectiveness of Airbnb can be enha
 
 % === I. Project background and motivation
 \section{Project background and motivation}
-\noindent \begin{itshape}"Brian, I thought of a way to make a few bucks - turning our place into "designers bed and breakfast" - offering young designers who come to town a place to cra during the 4 day event, complete with wireless Internet, a small desk space, sleeping mat, and breakfast each morning. Ha Joe! \\
-\end{itshape}
-\IEEEPARstart{T}{}his simple email, sent on September 22 in year 2007, has been the start of an equally simple business, which has been started in 2008 and is 31 billion dollar worth today. In 2007 two locals from San Francisco decided to host visitors of the design conference, which took place in their hometown. This simple concept has been the impulse to create a platform, where private people can offer and rent out their accommodation to visitors. According to the basic idea, the platform is called Airbnb, the short form for 'Airbed and Breakfast' and a new company, which should become very successful was born. Since the company founding, the Airbnb community became more than just an opportunity to earn some extra money by renting out an accommodation, or to find a cheap place to stay. According to the company’s website, today it is about 'sharing' and having the possibility to 'experience' a town. In 2016, Airbnb stresses this in their marketing campaign 'Don't go there. Live there!'. Over the time the platform provided the possibility to offer tours and activities. So, locals can show their culture and city in another and special way to visitors than only renting apartments. As 11 years have passed since the company has been founded, Airbnb announced to start a new chapter by becoming a public-tradable company in 2020. So, in the future the stockholders will show great interest in the revenue and prognoses of the company and therefore, the company needs to present good predictions for the next years. Furthermore, it should reveal a plan how to increase its business value and reach its aims, set at the beginning of the year. At this point data collection and analysis is very important. Analyzing customers' and company’s past behavior can be used to predict the further development of the company and help to find the right instruments to reach the companies' aims. One major goal of companies is to increase their revenue or at least to increase their customer base. To have a good marketing is essential for Airbnb to reach the yearly goal as the quality of marketing is one of the factors, which influences the increase of number of customers.\\
-By definition marketing is about the firm’s effort to address customer needs and expectations, which influences the demands made by the customers on the product and need to be fulfilled by the product \cite{Schierenbeck}. So, it is also about the tradeoff of ‘evoking’ needs and expectation of consumers on a level that the product can satisfy and is able to compete with competitive product. In order to find the essential requirements, applying marketing instruments like the marketing mix can be helpful. The marketing mix consists of four policies: Product, Price, Promotion and Place. Having a good data foundation and analysis is important, as we can deduce future customer needs and behavior by analyzing the requirements of past visitors and therefore we can base our marketing assumptions within the four policies on solid data.\\
-In our paper we analyze a dataset containing information on rented accommodations in Seattle in the year 2016. As already mentioned the company will aim for good predictions in 2020, in order to present them to shareholders, the company will aim to obtain high quality data to base a marketing campaign on. As the dataset is of 2016, we actually can not make proper predictions for the year 2020 and therefore will not be able to deliver the information on the future development of the company in 2020. Nevertheless, analyzing this dataset is useful in order to improve the marketing of Airbnb and therefore can contribute to a positive company development also in year 2020, if the right instruments can be chosen according to our analysis. The following sections will 
-\begin{enumerate}
-\item raise some questions, which need to be answered, in order to give suggestions on the design of a marketing campaign
-\item the dataset will be presented and visualized. The used models will be described and analyzed
-\item findings and their impacts on a suggested marketing strategy will be presented and the questions raised up will be answered\\
-\end{enumerate} 
-
-\noindent Before we start to describe how we analyzed our data according to each single policy, we explain the general idea of each policy and apply the general idea on Airbnb
+\IEEEPARstart{"} {}brian,\\ i thought of a way to make a few bucks - turning our place into "designers bed and breakfast" - offering young designers who come to town a place to cra during the 4 day event, complete with wireless Internet, a small desk space, sleeping mat, and breakfast each morning. Ha! \\ joe"\\
+This simple email, sent on September 22 in year 2007, has been the start of an equally simple business, which has been started in 2008 and is 31 billion dollar worth today. In 2007 two locals from San Francisco decided to host visitors of the design conference, which took place in their hometown. This simple concept has been the impulse to create a platform, where private people can offer and rent out their accommodation to visitors. According to the basic idea the platform was is called Airbnb, the short form for 'Airbed and Breakfast' and a new company, which should become very successful was born. Since the company founding, the Airbnb community became more than just an opportunity to earn some extra money by renting out an accommodation or to find a cheap place to stay. According to the company’s website, today it is about 'sharing' and having the possibility to 'experience' a town. In 2016 Airbnb stresses this in their marketing campaign 'Don't go there. Live there!'. Over the time the platform also provided the possibility to offer tours and activities. So locals can show their culture and city in another and special way to visitors than only renting apartments. As 11 years have passed since the company has been founded, Airbnb announced to start a new chapter by becoming a public-tradable company in 2020. So, in the future the (possible future) stockholders will show great interest in the revenue and prognoses of the company and therefore, the company needs to present good predictions for the next years. Furthermore, it should reveal a plan how to increase its business value and reach its aims, set at the beginning of the year. At this point data collection and analysis is very important, as analyzing customers' and company’s past behavior can be used to predict the further development of the company and help to find the right instruments to reach the companies' aims. As one major goal of companies usually is to increase their revenue or at least to increase their customer base, having a good marketing is essential for Airbnb to reach the yearly goal as the quality of marketing is one of the factors, which influences the increase of number of customers.\\
+By definition marketing is about the firm’s effort to address customer needs and expectations, which influences the demands made by the customers on the product and need to be fulfilled by the product. So, it is also about the tradeoff of ‘evoking’ needs and expectation of consumers on a level that the product can satisfy and is able to compete with competitive product. In order to find the essential requirements, applying marketing instruments like the marketing mix can be helpful. The marketing mix consists of four policies: Product, Price, Promotion and Place. Having a good data foundation and analysis is important, as we can deduce future customer wants and behavior by analyzing the requirements of past visitors and therefore we can base our marketing assumptions within the four policies on solid data.\\
+In our paper we analyze a dataset containing information on rented accommodations in Seattle in year 2016. As already mentioned the company will aim for good predictions for  2020, in order to present them to share holders and the company will aim to obtain high quality data to base a marketing campaign on. As the dataset is of 2016 we actually can not make proper predictions for the year 2020 and therefore will not be able to deliver the information on the future development of the company in 2020. Nevertheless, analyzing this dataset is useful in order to improve the marketing of Airbnb and therefore can contribute to a positive company development also in year 2020, if the right instruments can be chosen according to our analysis. The following sections will 1. raise some questions, which need to be answered, in order to give suggestions on the design of a marketing campaign, 2. the dataset will be presented and visualized, the used models will be described and analyzed, 3. findings and their impacts on a suggested marketing strategy will be presented and the questions raised up will be answered.\\
+Before we start to describe how we analyzed our data according to each single policy, we explain the general idea of each policy and apply the general idea on Airbnb
 \subsection{Product}
 \noindent As already mentioned before, marketing is about fulfilling customer needs and expectations. Within product policy the aim is to understand one’s market and be able to figure out which needs and wants the customers have. In general, one can say that the main need of travelers is to find an accommodation but nowadays it is not only about finding accommodations but even more about discovering the right accommodation. It is not only having a nice and clean room bathroom, with white and clean towels and bead sheets. The surrounding and flair of the accommodation becomes more and more important. This issue Airbnb has already addressed in its advertising spot \cite{RN6}, so Airbnb is aware of the wants of travelers and is responsive to this in its advertisement. Thinking a step further, it is not enough to just show the customer that renting Airbnb apartments is a nice way to ‘really live’ there instead of just ‘go there’. When the customer has been attracted by Airbnb to search for on apartment on their website it is important to present the apartment in a good way. Therefore, the description of the apartments should mention all aspects the customer considers as important.
 \subsection{Price}
 \noindent The price of a product is a very important aspect regarding the marketing of a product. If customers consume a product on a certain price level, their willingness to pay is higher than the price level. This means that they expect the value they obtain by purchasing is higher than their cost and therefore they accept paying a certain price. So for a certain price level the customer expects to obtain a certain value and therefore immediately raises some expectation the product needs to fulfill in order to satisfy the customer. So if a visitor decides to rent an apartment at a certain price level, this customer will have certain expectations. If these are not fulfilled by the apartment the customer will have a negative experience and might not book his next holiday accommodation on Airbnb. In order to prevent this scenario, Airbnb could support the lessors in determining the perfect price level for their accommodation, by letting them know, which attributes have a high value for visitors.
 \subsection{Promotion}
 \noindent For Promotion Policy it is important to find out when advertisement should issue a marketing campaign and which content to bring up. The aim of this is obvious: we need to be able to make suggestions, which advertise content will address future visitors and when it will be the best to effectively reach the customer. So far our suggestions mainly focused on suggestions for (former) lessors how they can improve renting their apartment. In this section we want to give Airbnb some suggestions, what a successful marketing campaign could look like. Of cores also single lessors could promote their apartment on other channels as well, so the tips we provide for Airbnb can probably also be applied by lessors it self but for now we want to focus on the suggestions for Airbnb.
-\subsection{Place}
-\noindent The Place Policy considers where customers get in touch with the product and consume it, in order to find a suitable retail location that is accessible for customers. The first contact between lessor and renter happens on Airbnb but the final ‘purchase’ of the product, takes places in Seattle. As Airbnb is a platform, which acts as agent between lessor in Seattle and renter, we do not need to care about this in our data analysis, as this fact is fixed and can not be changed.
 
-% === II. Procedural Method==================================== 
+
+% === II. Procedural Method
 \section{Procedural Method}
-\noindent In this section the four areas of the marketing-mix will be described and how our data analysis can contribute to improve the marketing of Airbnb in Seattle according to each policy of the marketing-mix.\\\\\noindent The dataset we are going to analyze contains several information about the renting of apartments via the platform Airbnb in Seattle. \\\\ As Airbnb is an agent for lessors, who want to rent their apartment to tourists, it earns its money by receiving a commission for every rented apartment. Therefore, Airbnb should aim for a high booking rate to increase their own profit. That is one reason, why Airbnb should care which apartments are offered on their platform and how they are presented (e.g. by the description, price, …). So, it can make sense for Airbnb to give lessors some suggestions how to promote and present their accommodation to achieve a maximal booking rate. Deducted of this assumption, we want to provide some suggestions for lessors to promote their apartments in the perfect manner but also want to give some suggestions, what point in time is best for Airbnb to release a marketing campaign to advertise some apartments in Seattle. 
+In this section the four areas of the marketing-mix will be described and how our data analysis can contribute to improve the marketing of Airbnb in Seattle according to each policy of the marketing-mix.\\
+
+The dataset we are going to analyze contains several information about the renting of apartments via the platform Airbnb in Seattle. \\
+
+As Airbnb is an agent for lessors, who want to rent their apartment to tourists, it earns its money by receiving a commission for every rented apartment. Therefore, Airbnb should aim for a high booking rate to increase their own profit. That is one reason, why Airbnb should care which apartments are offered on their platform and how they are presented (e.g. by the description, price, …). So, it can make sense for Airbnb to give lessors some suggestions how to promote and present their accommodation to achieve a maximal booking rate. Deducted of this assumption, we want to provide some suggestions for lessors to promote their apartments in the perfect manner but also want to give some suggestions, what point in time is best for Airbnb to release a marketing campaign to advertise some apartments in Seattle. 
 
 \subsection{Product}
 \noindent By our data analysis we would like to support the lessors in creating a good and appealing description. By analyzing the reviews of customers and filtering the 50 most mentioned words, we can conclude that these mentioned words are important to customers and therefore lessors should mention them in their description. As Seattle is a huge city with lots of different areas with different style and flairs, we conduct word clouds for every neighborhood, which represent how often a word of the 50 chosen ones occurs. This offers the advantage that we can better address and select certain customer groups. A neighborhood, with lots of parks, is probably better for nature lover than for reveler. So, nature lovers will mention the parks in their reviews very often and according to our word cloud (which is based on the reviews), lessors in this neighborhood will focus on the parks nearby their accommodation. If a person, who prefers partying at night, reads this description his or her interest will not be raised and therefore the person will search for apartments in another neighborhood. This creates an ‘automatic’ selection and increase the chance that a customer finds an apartment in a neighborhood, which fits his/ her interest. So, a first question we would like to answer is: \begin{itshape}Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?\end{itshape}
 
 \subsection{Price}
-\noindent As already mentioned Airbnb should support lessors to find the right price level for an appartment. By analyzing our dataset, it will be possible to determine the correlation between attributes and price. The attributes with the highest correlation are the most important to an average customer. By knowing the most important attributes a lessor can compare these attributes of his own accommodation with other accommodations and consider on which price level other apartments have been rented out or are offered. So it becomes easier for lessors to get an overview by focusing on the appropriate set of attributes. Based on the first question we need to answer:
+\noindent As already mentioned Airbnb should support lessors to find the right price level for an appartment. By analyzing our dataset, it will be possible to determine the correlation between attributes and price. The attributes with the highest correlation are the most important to an average customer. By knowing the most important attributes a lessor can compare these attributes of his own accommodation with other accommodations and consider on which price level other apartments have been rented out or are offered. So it becomes easier for lessors to get an overview by focosing on the appropriate set of attributes. Based on this the first question we need to answer is:
 \begin{itshape}
-Which attributes have the highest impact on the charged price of an apartment?
+Which attributes have the highest impact on the churched price of an apartment?
 \end{itshape}\\
-Furthermore, we would like to indicate the price trend of the rented apartments. Lessors can see during which season prices increase or decrease and can adapt their prices to the overall price variability. This makes the lessors yield an optimal return and increase their booking rate, as the price is neither too expensive nor too cheap. So, our next question to answer will be:
+Furthermore, we would like to indicate the price trend of the rented apartments. So, lessors can see during which season prices increase or decrease and can adapt their prices to the overall price variability. This makes the lessors yield an optimal return and increase their booking rate, as the price is neither too expensive nor too cheap.  So our next question to answer will be:
 \begin{itshape}
 When can lessors increase the price per night for their apartment and when should they lower it?
 \end{itshape}\\
 Helping the lessors to set the perfect price level might even help to secure the existence of Airbnb, as lessors do not quit to offer their accommodation on Airbnb as they have too low revenues (because of too low renting prices of too less customers - due to high prices).
-%=====================================================
+
+
 \subsection{Promotion}
 \noindent For this section, some information deduced for the previous two sections will be reused. As already mentioned, the word clouds represent the features customers value the most and therefore a marketing campaign should address these issues.\\
 The Promotion Policy does not only focus on the content of the marketing campaign but also when the campaign will be most effective. In order to give an indication regarding that issue, we would like to analyze the booking rate and predict it for the next year. So it becomes visible, when there will be phases with a lower booking rates. Shortly before that phase the campaign should be started in order to motivate people to book their apartment on Airbnb and keep the booking level up. So, regarding the Promotion Policy the two question of interest are:
@@ -110,15 +111,16 @@ The Promotion Policy does not only focus on the content of the marketing campaig
 Which content should a marketing campaign have?
 What is a good point in time to start a marketing campaign?
 \end{itshape}
-According to the Promotion Policy a second issue is to decide where/ via which tools the marketing campaign should be distributed and be presented to potential customers. As our dataset does not give any information on the fact how customers got to know of Airbnb or for which reason they decided to book their accommodation on Airbnb, we decided to neglect the aspect of Promotion Policy, as we can not yield any results or deduce some information, which would be helpful to decide on the distribution channel of our marketing campaign. 
-%
-%==================================================
-%
+According to the Promotion Policy a second issue is to decide where/ via which tools the marketing campaign should be distributed and be presented to potential customers. As our dataset does not give any information on the fact how customers got to know of Airbnb or for which reason they decided to book their accommodation on Airbnb, we decided to neglect the aspect of Promotion Policy, as we can not yield any results or deduce some information, which would be helpful to decide on the distribution channel of our marketing campaign.  
+\subsection{Place}
+\noindent The Place Policy considers where customers get in touch with the product and consume it, in order to find a suitable retail location that is accessible for customers. The first contact between lessor and renter happens on Airbnb but the final ‘purchase’ of the product, takes places in Seattle. As Airbnb is a platform, which acts as agent between lessor in Seattle and renter, we do not need to care about this in our data analysis, as this fact is fixed and can not be changed.
+
 \section{Executive summary} 
-\noindent The aim of this report is to find out how the effectiveness of marketing ‘Airbnb Seattle’ can be improved. This report orients itself at the four Ps from Marketing Mix, which are Product, Price, Place and Promotion. 
+\noindent 
+The aim of this report is to find out how the effectiveness of marketing ‘Airbnb Seattle’ can be improved. This report orients itself at the four Ps from Marketing Mix, which are Product, Price, Place and Promotion. 
 The data originally consisted of three data sheets Listing, Reviews and Calendar and had to be prepared for the analyzation. 
 The analysis wants to answer the following five questions: 
-%==================================================
+
 \begin{itemize}
 \item Which facts lessors need to address in their description to raise the interest of potential customer, who ‘fit’ the vibe of the neighborhood and set their focus on the same aspects as former customers of these apartments?
 \item Which attributes have the highest impact on the charged price of an apartment?
@@ -126,25 +128,23 @@ The analysis wants to answer the following five questions:
 \item Which content should a marketing campaign have?
 \item What is a good point in time to start a marketing campaign?
 \end{itemize}
-%==================================================
-The analysis yields out  which keywords lessor should use best to put into their accomondation description such such as parks, shops, restaurant, etc.
+
+The analysis finds out that the lessors need to write in the description what is in walking distance form their Airbnb, such as parks, shops, restaurant, etc.
 Furthermore, the amount of positive reviews are vital for possible renters being interested in ones listing. How long the lessors are active is also an important factor. 
-Host\_response\_time, host\_response\_rate and host\_acceptance\_rate are the most important indicators if and at which price the accomondation gets booked. The number of bathrooms, bedrooms and beds together have an influence on pricing as well. 
-%
-% === II. 4	Data description with visualization==========================
-%
+Host\_response\_time, host\_response\_rate and host\_acceptance\_rate are the most important indicators if and at what price the listing gets booked. The number of bathrooms, bedrooms and beds together have an influence on pricing as well. 
+Moreover, it can be beneficial if Airbnb itself starts the marketing campaign should start in February and end in August. 
+
+% === II. 4	Data description with visualization
+
 \section{Data description with visualization}
 \subsection {General}
 \noindent Our dataset consists of three excel sheet: ‘listings.csv’, ‘calendar.csv’ and ‘reviews.csv’.\\
 Listings consists of 92 attributes with 3,818 data entries. Every single row represents one apartment in Seattle that has been offered for rent via the platform of Airbnb. Calendar consists of 1,393,570 data entries and 4 columns. The dataset connects a certain time period with an apartment and indicates whether it has been rented out or been available during that period. The last dataset ‘reviews.csv’ contains all reviews former visitors have handed in for an apartment, it contains the reviewer’s Id, name comments, the date as well as the house ID.\\So, if the excel sheets are combined it can be deducted the following information: the key facts about an apartment (like the size, prize, number of beds, usable facilities, …), furthermore one can get a general idea about, what the apartment looks like by the description (written by the lessor) as well as by the reviews (written by former guests) and it is known when the apartment has been available or rented.
-%
-%==================================================
-%
+
 \subsection {Data preprocessing}
-\noindent First of all, we computed how many different values certain attributes can have. Therefore, we computed a table that listed the attribute name as well as how many unique attribute values exist for that attribute. In a following step we replace all na-values by suitable possible values. In order to be able to use the data in the following steps and analyze it in a proper way. To be able to fit our models, we replaced some textual values by numerical ones and split the dataset into a training dataset and a test dataset. The training dataset we will use to ‘create’ or models in order to check our created models and be able to see how good for example predictions will be and which error we need to expect we need the test data.
-%
-%==================================================
-%
+\noindent First of all, we computed how many different values certain attributes can have. Therefore, we computed a table that listed the attribute name as well as how many unique attribute values exist for that attribute.
+In a following step we replace all na-values by suitable possible values in order to be able to use the data in the following steps and analyze it in a proper way. To be able to fit our models, we replaced some textual values by numerical ones and split the dataset into a training dataset and a test dataset. The training dataset we will use to ‘create’ or models in order to check our created models and be able to see how good for example predictions will be and which error we need to expect we need the test data.
+
 \subsection {More detailed dataset description}
 \noindent \subsubsection{Listings}  The listing dataset consists of 92 columns, with attributes that describe different characteristics of the rented apartments. It describes 3818 apartments that are allocated in 79 neighborhoods. Combined with the review dataset it represents a dataset, which can be used to find some attributes, valued as most important by customers. If it is combined with the calendar dataset, a data analysis can help to determine the factors which are important to, not only attract visitors, but also to finally rent it out successfully. Especially we will use this combination to find out which attributes of the apartments did influence the price charged the most. The Figure \ref{districts_room_types} shows the districts with the most offers, spitted by their room type.
 %
@@ -152,7 +152,7 @@ Listings consists of 92 attributes with 3,818 data entries. Every single row rep
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/4_most_acc_split_by_roomtype.png}\\
-  \caption{Seven districts with most accommodations split by room type}\label{districts_room_types}
+  \caption{ten districts with most accommodations split by room type}\label{districts_room_types}
   \end{center}
 \end{figure}
 \subsubsection{Reviews}
@@ -166,8 +166,15 @@ In order to have an insight whether the reviews are written by satisfied or rath
   \caption{Score and number of reviews ratio}\label{score_reviews_ratio}
   \end{center}
 \end{figure}
+
 %
-Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists. Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than (8).\\ First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading related work to the Seattle-Dataset, we noticed that another group already researched this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately the team found out, this feature has no relevant on predicting the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, nobody found a Gaussian-Distribution or any other useful distribution for the reviews so far.\\\\So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
+Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
+=======
+Besides, it shows that most of the reviews give the highest value possible (10) and there are hardly no reviews that give a rating value lower than 8. \\
+First we had the idea of creating a new feature called \textit{Sentiment} for each review. It should be calculated with a Sentiment Analysis and label each review with a score. By reading related work to the Seattle-Dataset, we noticed that another group already research this idea. They used the Microsoft Azure Sentiment Analysis API to label each review with a score between 0 to 100. Unfortunately they gained the information in the Data section that this feature has no relevant effect on the prediction for the price \cite{RN1}, because as shown in figure \ref{score_reviews_ratio}, there is no Gaussian-Distribution or any other useful distribution for the reviews. \\
+
+So, in our further analysis we assume that the reviews are written in a rather positive tone and we need to keep in mind that the reviews have been written by overall satisfied tourists.
+>>>>>>> 3dcb1543e0f90a38b0ebc0696dfa9a29e17291fb
 In order to make sure that there is no correlation between the number of reviews and the review score of apartments in a certain neighborhood, we generated a figure which shows that relationship (Figure \ref{compare_the_neighbourhoods}).
 %
 %Figure
@@ -179,7 +186,7 @@ In order to make sure that there is no correlation between the number of reviews
 \end{figure}
 %
 In this figure it becomes visible that neighborhoods, whose apartments in total got 50 to 100 reviews score a mean rating of about 9.2 to 9.7. Approximately the same mean rating is also achieved by district where the apartments are rated 125 to 300 times. There is only one outlier (‘University District’), which scored al pretty low mean rating value compared to all other districts. As this is the only outlier, we will neglect this in our following assumptions.
-To sum up, we can conclude that both figures (\ref{score_reviews_ratio} and \ref{compare_the_neighbourhoods}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district.
+To sum up, we can conclude that both figures (\ref{score_reviews_ratio_neighborhood} and \ref{score_reviews_ratio}) show that the mean rating for every district is relatively high and a high value is not dependent on the number of reviews for a certain district.
 \subsubsection{Calendar}
 \noindent This part of the data shows, when certain apartments are available and when they are rented out. Within our analysis we assume, that an apartment, which is listed as ‘not available’ in the ‘calender.csv’ is occupied by a visitor. If it is ‘available’ we assume that the owners would have liked to rent the apartment out but there has not been any visitor renting it. In figure \ref{occupied_ratio_appartments} the ratio of occupied and available apartments in 2016 is presented.
 %
