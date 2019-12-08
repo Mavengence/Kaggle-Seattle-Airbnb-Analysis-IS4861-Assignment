@@ -7,6 +7,18 @@
 \mode<presentation> {
 \usetheme{Berlin}
 }
+
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
@@ -70,23 +82,22 @@ Airbnb is a model based on share economy. Everyone who owns an apartment can ren
 \end{figure}
 \end{frame}
 
-
 %------------------------------------------------
-\section{Summary}
+\section{Procedural Method}
 %---------------------------------------------
-
 \begin{frame}
 \frametitle{General Methology}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+Using data analysis and show how it can be used to improve the marketing of Airbnb in Seattle according to each policy of the marketing-mix.
 \end{frame}
-
+%
 %------------------------------------------------
+%
 \begin{frame}
-\frametitle{Product, Price, Promotion and Place}
+\frametitle{Marketing}
 \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
 \column{.45\textwidth} % Left column and width
-\textbf{Heading}
+\textbf{The 4 Ps of the Marketing-Mix}
 \begin{enumerate}
 \item Product
 \item Price
@@ -95,8 +106,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ul
 \end{enumerate}
 
 \column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
 
+\begin{block}{Definition Marketing}
+Marketing is about the firm’s effort to address customer needs and expectations, which influences the demands made by the customers on the product and need to be fulfilled by the product.\cite{Schierenbeck}
+\end{block}
 \end{columns}
 \end{frame}
 
@@ -105,38 +118,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ul
 \begin{frame}
 \frametitle{How to use Data Analysis to improve the Airbnb Marketing?}
 \begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+\item \textbf{Descriptive analysis:} reviews, locations, review and price correlation, details of listings and price correlation
+\item \textbf{Descriptive analysis:} predict the number of customer
+\item \textbf{Optimization:} optimize the booking of listings 
+\item \textbf{Adaptive learning:} learn from the results generated and combine results to give out suggestion in marketing campaigns may hold by Airbnb
 \end{itemize}
 \end{frame}
-
-%------------------------------------------------
-\section{Models}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Natural Language Processing}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
-\end{frame}
-
-%------------------------------------------------
-
 
 %------------------------------------------------
 \section{Data Description}
@@ -195,6 +182,28 @@ $E = mc^2$
 \item Consist of 92 columns, with attributes describing different characteristics of the rented apartments
 \item Contains 3818 apartments distributed in 79 Neighborhood
 \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Models}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Natural Language Processing}
+\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.45\textwidth} % Left column and width
+\textbf{Heading}
+\begin{enumerate}
+\item Statement
+\item Explanation
+\item Example
+\end{enumerate}
+
+\column{.5\textwidth} % Right column and width
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+
+\end{columns}
 \end{frame}
 
 %------------------------------------------------
@@ -398,9 +407,8 @@ This statement requires citation \cite{p1}.
 \frametitle{References}
 \footnotesize{
 \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
+\bibitem[Schierenbeck, 2012]{Schierenbeck} Henner Schierenbeck (2016)
+\newblock Foundations of Bussines Administration
 \end{thebibliography}
 }
 \end{frame}
