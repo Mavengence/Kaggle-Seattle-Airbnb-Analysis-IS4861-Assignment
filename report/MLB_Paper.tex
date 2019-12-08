@@ -326,12 +326,10 @@ Of course these assumptions of independence are rarely true, which may explain w
 “LSTMs,” a higher developed version of recurrent neural networks. It works, for many tasks, better than the standard version. Almost all exciting results based on recurrent neural networks are achieved with them. It’s these LSTMs that this essay will explore. Recurrent Neural Networks are too complicated for this paper \cite{olah} to explain. 
 
 \section{Analysis}
-
+\subsection{Why did our neural network score so much worse than the neural network of the paper \textit{Predictive modelling on Airbnb listing prices} \cite{RN1}?}
 As the team of this paper \cite{RN1} mentioned in their \textit{average listing price per neighbourhood}, they figured out that the \textit{neighbourhood} has a huge impact on the price prediction. The main focus of our project was not the price prediction, but we tried to reach similar results. Our best mean absolute error is the linear regression with 43.89\$ \ref{linear_regression}. The neural network scores best for their prediction with a score of 35–32\$ \cite{RN1}. \\
 We didn't have the capacity to transform the categorical neighborhood feature into a numerical one and try-out multiple neural networks. \\
-Our deviation of 10\$ from their best result can be explained by that.
-
-\subsection{Why did our neural network score so much worse than the neural network of the paper \textit{Predictive modelling on Airbnb listing prices} \cite{RN1}?}
+Our deviation of 10\$ from their best result can be explained by that.\\
 Our Network is very simple network shown in figure \ref{lstm} has a worse mean absolute error than the Linear Regression in figure \ref{nn}. 
 The bad result could be explained by the missing features as already explained \cite{RN1}, but also on the not appropriate design of the network.
 
@@ -370,20 +368,13 @@ In order to check that all the attributes only determine the price and do not ha
 \end{figure}
 So, if a lessor wants to (re)determine the price for his accommodation, he first of all needs to consider how many reviews he got so far for the apartment. (Note: As we noted before, the reviews all give a high rating, so they are all positive. Taking this into account, it is very likely that the lessor needs to check the number of positive reviews for determining the price.) Furthermore, the lessor needs to consider how long he is already registered as host and how many people can stay in the apartment. If he considers the impact of the number of bedrooms, bathrooms and beds, he should also take into account, the correlation of the three attributes among each other.
 As we already saw in figure \ref{correlation-attribute-price}, the number of beds, bedrooms and bathrooms do not have the highest impact on the price although somebody might expect, that the price is strongly influenced by these factors. \\
-The same result was already shown by another paper, which further proofs those relevant features \cite{RN1}.\\ By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{bedroom-price-correlation}).
-
-\begin{figure}
-  \begin{center}
-  \includegraphics[width=3.5in]{photo/10_bedrooms_price_correlation.png}\\
-  \caption{number-of-bedroom-price-correlation}\label{bedroom-price-correlation}
-  \end{center}
-\end{figure}
+The same result was already shown by another paper, which further proofs those relevant features \cite{RN1}.\\ By having a closer look on the correlation between the number of bathrooms and the price as well as the number of bathroom and price, it can be recognized that an increasing number of bed- and bathrooms does not increase the entry level price within this group but only the maximal price increases. So, it is possible to find an accommodation with a different amount of bath-/ bedroom for a price of 50 dollar per night. This changes if the number of bedrooms exceeds 5. Then there is also an increase of the entry level price visible. We can conclude that the price of an apartment is probably more influenced by the fact whether it has less or more than 5 bedrooms or not. (Figure \ref{correlation-attribute-price}).
 
 The same change can also be seen for the correlation of bathrooms and price but the change of the entry level is not that big. Therefore, the ‘strong’ change in the entry level price becomes already visible for 4 bathrooms. (Figure \ref{bathrooms-price-correlation})
 \begin{figure}
   \begin{center}
   \includegraphics[width=3.5in]{photo/9_bathroom_price_correlation.png}\\
-  \caption{number of bathrooms price correlation}\label{bathrooms-price-correlation}
+  \caption{Correlation bathrooms-price}\label{bathrooms-price-correlation}
   \end{center}
 \end{figure}
 
@@ -397,7 +388,7 @@ The same change can also be seen for the correlation of bathrooms and price but 
 \end{figure}
 
 To answer this question, we want to predict the price changes for 2017. First of all, we started by checking out the change of mean flat prices in 2016 (Figure \ref{mean_flat_prices}). 
-Prices increase from January to July form about 120 to 150 dollar and decrease until November to 135 dollar. During the last month prices slightly start to increase again. It can be seen that the correlation between charged prices and the occupation ratio is rather low, as the first drop of the occupation ratio in April does not reflect in a price drop. Nevertheless, the second decrease in the number of rented apartments does reflect in the charged prices as also the price curve decreases after July. But during the month of December, prices increase as well as the number of free apartments decrease. This irregularity might be due to the fact that many people travel during Christmas time and therefore their willingness to pay is slightly increased. 
+Prices increase from January to July from about 120 to 150 dollar and decrease until November to 135 dollar. During the last month prices slightly start to increase again. It can be seen that the correlation between charged prices and the occupation ratio is rather low, as the first drop of the occupation ratio in April does not reflect in a price drop. Nevertheless, the second decrease in the number of rented apartments does reflect in the charged prices as also the price curve decreases after July. But during the month of December, prices increase as well as the number of free apartments decrease. This irregularity might be due to the fact that many people travel during Christmas time and therefore their willingness to pay is slightly increased. 
 
 \subsection{What is a good point in time to start a marketing campaign?}
 
