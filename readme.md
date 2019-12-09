@@ -2,11 +2,13 @@
 <img src="https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/report/photo/0_cityu.png">
 </p>
 
+<div align="center">
 <p align="justify">
   <center>
     <h1>Airbnb Seattle Dataset Analysis<h1>
   </center>
 </p>
+</div>
 
 ## Abstract
 
