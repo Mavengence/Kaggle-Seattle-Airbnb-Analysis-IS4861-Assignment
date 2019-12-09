@@ -3,9 +3,7 @@
 </p>
 
 <div align="center">
-  <center>
-    <h1>Airbnb Seattle Dataset Analysis<h1>
-  </center>
+   <h1>Airbnb Seattle Dataset Analysis<h1>
 </div>
 
 ## Abstract
