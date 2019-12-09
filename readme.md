@@ -2,7 +2,9 @@
 <img src="https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/report/photo/0_cityu.png">
 </p>
 
-# Kaggle Seattle Airbnb-Analysis
+<p style="text-align: center;">
+  # Kaggle Seattle Airbnb-Analysis
+</p>
 
 ## Abstract
 
