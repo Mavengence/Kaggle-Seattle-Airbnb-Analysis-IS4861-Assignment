@@ -6,9 +6,9 @@ Our work should present, how the marketing effectiveness of Airbnb can be enhanc
 
 ## Content
 
-- The PDF presentation itself
-- The PDF report
-- The python notebook as ipython file
+- Python Notebook as iPython and HTML
+- Report/Paper as PDF
+- Presentation as PDF
 
 ## Getting Started
 
