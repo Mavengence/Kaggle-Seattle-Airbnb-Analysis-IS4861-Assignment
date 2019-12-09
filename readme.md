@@ -1,4 +1,4 @@
-![Image of Yaktocat](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/report/photo/0_cityu.png){.center}
+![Image of Yaktocat](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/report/photo/0_cityu.png)
 
 # Kaggle Seattle Airbnb-Analysis
 
