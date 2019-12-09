@@ -1,8 +1,7 @@
 <div align="center"> 
 <img src="https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/report/photo/0_cityu.png">
-    <div align="center">
+
         <h1 align="center">Airbnb Seattle Dataset Analysis<h1>
-    </div>
 </div>
 
 ## Abstract
