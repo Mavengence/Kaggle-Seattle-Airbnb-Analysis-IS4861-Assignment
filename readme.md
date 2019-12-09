@@ -3,7 +3,7 @@
 </p>
 
 
-# Kaggle Seattle Airbnb-Analysis
+# Kaggle Seattle Airbnb-Analysis {align=center}
 
 ## Abstract
 
