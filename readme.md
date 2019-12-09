@@ -54,4 +54,4 @@ Also if you do make some changes, feel free to make a pull request and help make
 
 ## Acknowledgments
 
-The authors would like to thank Dr. Liu Junming from the City University of Hongkong for a really good supervising of our group. Dr. Liu helped us so much and we wouldn’t have reached this result without him.
+The authors would like to thank [Dr. Liu Junming](https://www.cb.cityu.edu.hk/staff/junmiliu/) from the City University of Hongkong for a really good supervising of our group. Dr. Liu helped us so much and we wouldn’t have reached this result without him.
