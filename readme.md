@@ -32,7 +32,7 @@ Just pull the repo, if you wanna change sth you can ask :)
 * **Timo Bohnstedt** - *Coding, Report, Presentation* - [PurpleBooth](https://github.com/bohniti)
 * **List Nicole** - *Report, Presentation* - [PurpleBooth](https://github.com/kresnz)
 * **Bal Kiran Jeniffer** - *Report* - [PurpleBooth](https://github.com/kirjen)
-* **Pang Tsz Ching** - *Report* -
+* **Pang Tsz Ching** - *Report* - [PurpleBooth](https://github.com/kresnz)
 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
