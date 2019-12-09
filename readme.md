@@ -28,8 +28,8 @@ Just pull the repo, if you wanna change sth you can ask :)
 
 ## Authors
 
-* **Tim Loehr** - *Coding, Report, Presentation* - [GitHub Mavengence](https://github.com/Mavengence)
-* **Timo Bohnstedt** - *Coding, Report, Presentation* - [GitHub Mavengence](https://github.com/Mavengence)
+* **Tim Löhr** - *Coding, Report, Presentation* - [GitHub Mavengence](https://github.com/Mavengence)
+* **Timo Bohnstedt** - *Coding, Report, Presentation* - [GitHub Bohniti](https://github.com/bohniti)
 * **List Nicole** - *Report, Presentation* - [GitHub kresnz](https://github.com/kresnz)
 * **Bal Kiran Jeniffer** - *Report* - [GitHub kirjen](https://github.com/kirjen)
 * **Pang Tsz Ching** - *Report* -
