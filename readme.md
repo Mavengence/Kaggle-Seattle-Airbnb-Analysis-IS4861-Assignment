@@ -1,6 +1,8 @@
 <p align="center"> 
 <img src="https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/report/photo/0_cityu.png">
-    <h1>Airbnb Seattle Dataset Analysis<h1>
+    <div align="center">
+        <h1>Airbnb Seattle Dataset Analysis<h1>
+    </div>
 </p>
 
 ## Abstract
@@ -9,9 +11,9 @@ Our work should present, how the marketing effectiveness of Airbnb can be enhanc
 
 ## Content
 
-- Python Notebook as [iPython](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/IS4861_group_project_airbnb.ipynb) and [HTML](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/IS4861_group_project_airbnb.html)
-- Report/Paper as [PDF](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/Report.pdf)
-- Presentation as [PDF](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/Presentation.pdf)
+- Python Notebook as iPython and HTML
+- Report/Paper as PDF
+- Presentation as PDF
 
 ## Getting Started
 
