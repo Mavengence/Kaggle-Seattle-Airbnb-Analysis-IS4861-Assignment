@@ -3,7 +3,7 @@
 </p>
 
 <p style="text-align: center;">
-  # Kaggle Seattle Airbnb-Analysis
+  <h1>Kaggle Seattle Airbnb-Analysis<h1>
 </p>
 
 ## Abstract
