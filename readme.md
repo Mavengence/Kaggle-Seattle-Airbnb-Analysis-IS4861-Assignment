@@ -28,11 +28,11 @@ Just pull the repo, if you wanna change sth you can ask :)
 
 ## Authors
 
-* **Tim Loehr** - *Coding, Report, Presentation* - [PurpleBooth](https://github.com/Mavengence)
-* **Timo Bohnstedt** - *Coding, Report, Presentation* - [PurpleBooth](https://github.com/bohniti)
-* **List Nicole** - *Report, Presentation* - [PurpleBooth](https://github.com/kresnz)
-* **Bal Kiran Jeniffer** - *Report* - [PurpleBooth](https://github.com/kirjen)
-* **Pang Tsz Ching** - *Report* - [PurpleBooth](https://github.com/kresnz)
+* **Tim Loehr** - *Coding, Report, Presentation* - [GitHub Mavengence](https://github.com/Mavengence)
+* **Timo Bohnstedt** - *Coding, Report, Presentation* - [GitHub Mavengence](https://github.com/Mavengence)
+* **List Nicole** - *Report, Presentation* - [GitHub kresnz](https://github.com/kresnz)
+* **Bal Kiran Jeniffer** - *Report* - [GitHub kirjen](https://github.com/kirjen)
+* **Pang Tsz Ching** - *Report* -
 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
