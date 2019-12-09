@@ -16,7 +16,7 @@ git clone https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis.git
 - If you want to compile the report or the presentation by ur self u need a LaTex Compiler for your OS and maybe an IDE which makes things easier
 - If you want to compile, train and play with our Code you need a python working environment. We used Jupyter Notebooks. The requiered packeges you can see in the Notebooks itself.
 
-### Installing
+### Run the Notebook
 
 ```
 cd/you_cloned_repo_location jupyter notebook
