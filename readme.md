@@ -14,8 +14,7 @@ Our work should present, how the marketing effectiveness of Airbnb can be enhanc
 - Python Notebook as [iPython](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/IS4861_group_project_airbnb.ipynb) and [HTML](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/IS4861_group_project_airbnb.html)
 - Report/Paper as [PDF](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/Paper.pdf)
 - Presentation as [PDF](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/Presentation.pdf)
-
-[!embed?max_width=300&max_height=200](https://www.youtube.com/watch?v=VwHTCMuq3xs&feature=emb_title)
+- YouTube Video [first drive](https://www.youtube.com/watch?v=VwHTCMuq3xs&feature=emb_title)
 
 ## Getting Started
 
