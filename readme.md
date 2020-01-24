@@ -15,7 +15,7 @@ Our work should present, how the marketing effectiveness of Airbnb can be enhanc
 - Report/Paper as [PDF](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/Paper.pdf)
 - Presentation as [PDF](https://github.com/Mavengence/Kaggle-Seattle-Airbnb-Analysis/blob/dev/Presentation.pdf)
 
-[!embed](https://www.youtube.com/watch?v=VwHTCMuq3xs&feature=emb_title)
+[!embed?max_width=300&max_height=200](https://www.youtube.com/watch?v=VwHTCMuq3xs&feature=emb_title)
 
 ## Getting Started
 
